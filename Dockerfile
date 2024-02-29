@@ -14,7 +14,7 @@ WORKDIR /usr/src/app
 # Copy app source
 COPY . /usr/src/app
 
-EXPOSE 80
+EXPOSE 8080
 
 # Build the backend
 RUN npm install

@@ -1,6 +1,8 @@
 import express from 'express';
+import { createServer } from 'node:http';
 
 const app = express();
+const server = createServer(app);
 
 //Add middleware
 app.use(express.json());
@@ -17,7 +19,7 @@ app.post('/map-rooms', (req, res) => {
 function extractRoomType(roomName) {
   // Pre-process the roomName to insert a space before any digit if it is directly preceded by a letter without spacing
   let modifiedRoomName = roomName.replace(/(\D)(\d)/g, '$1 $2').replace(/room only/gi, '').trim();
-  
+
   const roomTypes = [
     'suite', 'executive room', 'rooms',
     'single room', 'double room', 'triple room', 'quad room', 'family room',
@@ -318,9 +320,9 @@ app.get('/', async (req, res) => {
   });
 });
 
-const port = process.env.PORT || 80;
+const port = process.env.PORT || 8080;
 
 // Start the server
-app.listen(port, '0.0.0.0', () => {
-  console.log(`Server running on port localhost:${port}`);
+server.listen(port, () => {
+  console.log(`Server running on port ${port}.`);
 });
