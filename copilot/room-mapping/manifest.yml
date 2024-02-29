@@ -21,6 +21,9 @@ exec: true
 network:
   connect: true
 
+variables:
+  PORT: 80
+
 environments:
   production:
     http:
