@@ -24,4 +24,4 @@ network:
 environments:
   production:
     http:
-      alias: room-mapping.nuitee.link
+      alias: room-mapping.wlbl.cloud
