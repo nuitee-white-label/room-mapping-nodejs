@@ -1,23 +1,11 @@
-import * as dotenv from 'dotenv';
-import express, { json } from 'express';
-import cors from 'cors';
-//import { Configuration, OpenAIApi } from 'openai';
-import Fuse from "fuse.js"
-
-dotenv.config();
+import express from 'express';
+import { createServer } from 'node:http';
 
 const app = express();
+const server = createServer(app);
 
 //Add middleware
 app.use(express.json());
-
-
-app.use(cors({
-  origin: true,
-  credentials: true // this allows the session cookie to be sent back and forth
-}));
-
-
 
 app.post('/map-rooms', (req, res) => {
   const { referenceCatalog, inputCatalog } = req.body;
@@ -62,7 +50,7 @@ function extractRoomType(roomName) {
 
 function extractBoardType(roomName) {
   const boardTypes = [
-    'room only', 'bed and breakfast', 'half board', 'full board', 
+    'room only', 'bed and breakfast', 'half board', 'full board',
     'all inclusive', 'self catering', 'board basis', 'breakfast included',
     'dinner included', 'lunch included', 'breakfast & dinner', 'full pension',
     'breakfast for 2', 'free breakfast', 'complimentary breakfast', 'no meals',
@@ -86,8 +74,8 @@ function extractRoomCategory(roomName) {
 
 function extractView(roomName) {
   const views = [
-    'city view', 'sea view', 'garden view', 'courtyard view', 'mountain view', 
-    'beachfront', 'pool view', 'lake view', 'river view', 'panoramic view', 
+    'city view', 'sea view', 'garden view', 'courtyard view', 'mountain view',
+    'beachfront', 'pool view', 'lake view', 'river view', 'panoramic view',
     'ocean view', 'forest view', 'park view', 'street view', 'skyline view',
     'terrace view', 'courtyard area'
   ];
@@ -134,9 +122,9 @@ function extractView(roomName) {
 
 function extractBedType(roomName) {
   const bedTypes = [
-    'single bed', 'double bed', 'queen bed', 'king bed', 'twin bed', 
-    'bunk bed', 'sofa bed', 'futon', 'murphy bed', 'queen', 'king', 
-    'single', 'double', 'twin', 'full bed', 'california king bed', 
+    'single bed', 'double bed', 'queen bed', 'king bed', 'twin bed',
+    'bunk bed', 'sofa bed', 'futon', 'murphy bed', 'queen', 'king',
+    'single', 'double', 'twin', 'full bed', 'california king bed',
     'day bed', 'trundle bed', 'extra bed', 'cot', 'rollaway bed'
   ];
   // Enhance logic to handle overlaps like "king" being in "king bed"
@@ -163,7 +151,7 @@ function extractAmenities(roomName) {
 
 function normalizeRoomName(roomName) {
   const normalizedRoomName = roomName.replace(/[^\w\s]|_/g, "").replace(/\s+/g, " ").toLowerCase();
-  
+
   let roomType = extractRoomType(normalizedRoomName);
   const roomCategory = extractRoomCategory(normalizedRoomName);
   if (roomCategory.length > 0 && roomType === 'unknown') {
@@ -173,13 +161,13 @@ function normalizeRoomName(roomName) {
   const view = extractView(normalizedRoomName);
   const bedType = extractBedType(normalizedRoomName);
   const amenities = extractAmenities(normalizedRoomName);
-  
+
   const combinedExtractedInfo = `${roomType} ${roomCategory.join(' ')} ${board} ${view} ${bedType} ${amenities.join(' ')}`.toLowerCase();
-  
+
   const words = normalizedRoomName.match(/\w+/g) || [];
-  
+
   const other = words.filter(word => !combinedExtractedInfo.includes(word));
-  
+
   return {
       normalizedRoomName,
       roomType,
@@ -337,7 +325,9 @@ app.get('/', async (req, res) => {
   });
 });
 
+const port = process.env.PORT || 8080;
+
 // Start the server
-app.listen(process.env.PORT, '0.0.0.0', () => {
-  console.log(`Server running on port localhost:${process.env.PORT}`);
+server.listen(port, () => {
+  console.log(`Server running on port ${port}.`);
 });

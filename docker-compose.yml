@@ -1,0 +1,17 @@
+version: "3.8"
+services:
+  backend:
+    build: ./
+    volumes:
+      - .:/usr/src/app
+    networks:
+      - whitelabel
+    ports:
+      - 8080:8080
+
+networks:
+  whitelabel:
+
+volumes:
+  db:
+    driver: local
