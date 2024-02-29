@@ -1,23 +1,9 @@
-import * as dotenv from 'dotenv';
-import express, { json } from 'express';
-import cors from 'cors';
-//import { Configuration, OpenAIApi } from 'openai';
-import Fuse from "fuse.js"
-
-dotenv.config();
+import express from 'express';
 
 const app = express();
 
 //Add middleware
 app.use(express.json());
-
-
-app.use(cors({
-  origin: 'http://ec2-44-203-135-172.compute-1.amazonaws.com:5173', // specify the origin
-  credentials: true // this allows the session cookie to be sent back and forth
-}));
-
-
 
 app.post('/map-rooms', (req, res) => {
   const { referenceCatalog, inputCatalog } = req.body;
@@ -27,16 +13,14 @@ app.post('/map-rooms', (req, res) => {
   res.json(results);
 });
 
-
-
 // Helper functions to extract room details
 function extractRoomType(roomName) {
   const roomTypes = [
     'presidential suite', 'junior suite', 'executive room', // Most specific, moved to top for priority
-    'single room', 'double room', 'triple room', 'quad room', 'family room', 
+    'single room', 'double room', 'triple room', 'quad room', 'family room',
     'shared room', 'private room', 'studio room', // Specific room configurations
-    'room', 'suite', 'apartment', 'studio', 'villa', 'bungalow', 
-    'cottage', 'penthouse', 'loft', 'cabin', 'chalet', 'mansion', 
+    'room', 'suite', 'apartment', 'studio', 'villa', 'bungalow',
+    'cottage', 'penthouse', 'loft', 'cabin', 'chalet', 'mansion',
     'duplex', 'guesthouse', 'hostel', // General types
   ];
 
@@ -52,7 +36,7 @@ function extractRoomType(roomName) {
 
 function extractBoardType(roomName) {
   const boardTypes = [
-    'room only', 'bed and breakfast', 'half board', 'full board', 
+    'room only', 'bed and breakfast', 'half board', 'full board',
     'all inclusive', 'self catering', 'board basis', 'breakfast included',
     'dinner included', 'lunch included', 'breakfast & dinner', 'full pension',
     'breakfast for 2', 'free breakfast', 'complimentary breakfast', 'no meals',
@@ -63,12 +47,12 @@ function extractBoardType(roomName) {
 
 function extractRoomCategory(roomName) {
   const roomCategories = [
-    'deluxe', 'superior', 'executive', 'club', 'presidential', 
-    'junior', 'luxury', 'economy', 'standard', 'budget', 
-    'accessible', 'family-friendly', 'romantic', 'honeymoon', 
-    'business class', 'premium', 'boutique', 'historic', 'modern', 
-    'oceanfront', 'beachfront', 
-   'high floor', 'low floor', 
+    'deluxe', 'superior', 'executive', 'club', 'presidential',
+    'junior', 'luxury', 'economy', 'standard', 'budget',
+    'accessible', 'family-friendly', 'romantic', 'honeymoon',
+    'business class', 'premium', 'boutique', 'historic', 'modern',
+    'oceanfront', 'beachfront',
+   'high floor', 'low floor',
      'balcony', 'penthouse', // Views as categories due to their significant impact on the guest experience
   ];
   return roomCategories.filter(category => roomName.toLowerCase().includes(category));
@@ -76,19 +60,19 @@ function extractRoomCategory(roomName) {
 
 function extractView(roomName) {
   const views = [
-    'city view', 'sea view', 'garden view', 'courtyard view', 'mountain view', 
-    'beachfront', 'pool view', 'lake view', 'river view', 'panoramic view', 
+    'city view', 'sea view', 'garden view', 'courtyard view', 'mountain view',
+    'beachfront', 'pool view', 'lake view', 'river view', 'panoramic view',
     'ocean view', 'forest view', 'park view', 'street view', 'skyline view',
-    'terrace view', 'courtyard area' 
+    'terrace view', 'courtyard area'
   ];
   return views.find(view => roomName.toLowerCase().includes(view)) || 'unknown';
 }
 
 function extractBedType(roomName) {
   const bedTypes = [
-    'single bed', 'double bed', 'queen bed', 'king bed', 'twin bed', 
-    'bunk bed', 'sofa bed', 'futon', 'murphy bed', 'queen', 'king', 
-    'single', 'double', 'twin', 'full bed', 'california king bed', 
+    'single bed', 'double bed', 'queen bed', 'king bed', 'twin bed',
+    'bunk bed', 'sofa bed', 'futon', 'murphy bed', 'queen', 'king',
+    'single', 'double', 'twin', 'full bed', 'california king bed',
     'day bed', 'trundle bed', 'extra bed', 'cot', 'rollaway bed'
   ];
   // Enhance logic to handle overlaps like "king" being in "king bed"
@@ -102,9 +86,9 @@ function extractAmenities(roomName) {
     'accessible', 'elevator', 'security', 'private entrance', 'smoke alarm',
     'carbon monoxide alarm', 'first aid kit', 'safety card', 'fire extinguisher',
     'no smoking', 'beach access', 'ski-in/ski-out', 'spa', 'hot tub', 'waterfront',
-    'executive', 'terrace', 'smart TV', 'streaming services', 'mini-bar', 
-    'coffee maker', 'soundproofing', 'private pool', 'plunge pool', 'bidet', 
-    'jacuzzi', 'ensuite bathroom', 'patio', 'garden access', 'roof access', 
+    'executive', 'terrace', 'smart TV', 'streaming services', 'mini-bar',
+    'coffee maker', 'soundproofing', 'private pool', 'plunge pool', 'bidet',
+    'jacuzzi', 'ensuite bathroom', 'patio', 'garden access', 'roof access',
     'private dock', 'hammock', 'game console', 'board games', 'book collection'
   ];
   // Return all amenities found in room name
@@ -115,7 +99,7 @@ function extractAmenities(roomName) {
 
 function normalizeRoomName(roomName) {
   const normalizedRoomName = roomName.replace(/[^\w\s]|_/g, "").replace(/\s+/g, " ").toLowerCase();
-  
+
   let roomType = extractRoomType(normalizedRoomName);
   const roomCategory = extractRoomCategory(normalizedRoomName);
   if (roomCategory.length > 0 && roomType === 'unknown') {
@@ -125,13 +109,13 @@ function normalizeRoomName(roomName) {
   const view = extractView(normalizedRoomName);
   const bedType = extractBedType(normalizedRoomName);
   const amenities = extractAmenities(normalizedRoomName);
-  
+
   const combinedExtractedInfo = `${roomType} ${roomCategory.join(' ')} ${board} ${view} ${bedType} ${amenities.join(' ')}`.toLowerCase();
-  
+
   const words = normalizedRoomName.match(/\w+/g) || [];
-  
+
   const other = words.filter(word => !combinedExtractedInfo.includes(word));
-  
+
   return {
       normalizedRoomName,
       roomType,
@@ -213,9 +197,9 @@ function mapRooms(referenceCatalog, inputCatalog) {
   });
 
   // Return both results and unmappedRooms in the response
-  return { 
+  return {
       Results: results,
-      UnmappedRooms: unmappedRooms 
+      UnmappedRooms: unmappedRooms
   };
 }
 
@@ -269,7 +253,9 @@ app.get('/', async (req, res) => {
   });
 });
 
+const port = process.env.PORT || 80;
+
 // Start the server
-app.listen(process.env.PORT, '0.0.0.0', () => {
-  console.log(`Server running on port localhost:${process.env.PORT}`);
+app.listen(port, '0.0.0.0', () => {
+  console.log(`Server running on port localhost:${port}`);
 });

@@ -1,0 +1,27 @@
+# The manifest for the "room-mapping" service.
+# Read the full specification for the "Load Balanced Web Service" type at:
+#  https://aws.github.io/copilot-cli/docs/manifest/lb-web-service/
+
+# Your service name will be used in naming your resources like log groups, ECS services, etc.
+name: room-mapping
+type: Load Balanced Web Service
+
+http:
+  redirect_to_https: false
+  path: '/'
+
+image:
+  build: Dockerfile
+  port: 80
+
+cpu: 256
+memory: 512
+count: 1
+exec: true
+network:
+  connect: true
+
+environments:
+  production:
+    http:
+      alias: room-mapping.nuitee.link
