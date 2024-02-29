@@ -27,33 +27,36 @@ app.post('/map-rooms', (req, res) => {
   res.json(results);
 });
 
-
-
 // Helper functions to extract room details
 function extractRoomType(roomName) {
   // Pre-process the roomName to insert a space before any digit if it is directly preceded by a letter without spacing
   let modifiedRoomName = roomName.replace(/(\D)(\d)/g, '$1 $2').replace(/room only/gi, '').trim();
-  
+
   const roomTypes = [
-    'suite', 'executive room', 'rooms',
-    'single room', 'double room', 'triple room', 'quad room', 'family room',
-    'shared room', 'private room', 'studio room', // Specific room configurations
-    'room', 'apartment', 'studio', 'villa', 'bungalow',
-    'cottage', 'penthouse', 'loft', 'cabin', 'chalet', 'mansion',
-    'duplex', 'guesthouse', 'hostel', // General types
+      'suite', 'executive room', 'rooms',
+      'single room', 'double room', 'triple room', 'quad room', 'family room', 'shared room',
+      'private room', 'studio room', // Specific room configurations
+      'room', 'apartment', 'studio', 'villa', 'bungalow',
+      'cottage', 'penthouse', 'loft', 'cabin', 'chalet', 'mansion',
+      'duplex', 'guesthouse', 'hostel', // General types
+      'single', 'double', 'triple', 'quad' // Adding singular terms for matching
   ];
 
+  // Sort roomTypes by length in descending order to prioritize longer matches first
+  roomTypes.sort((a, b) => b.length - a.length);
+
   for (let type of roomTypes) {
-    let pattern = type.replace(/ /g, '\\s'); // Replace spaces with regex space character
-    // Adjust regex to match the type followed by a non-word character or end of string
-    let regex = new RegExp("\\b" + pattern + "(\\W|$)", "i");
-    if (regex.test(modifiedRoomName)) {
-      // If matched, return the type without 's' at the end if it exists, to normalize plural forms
-      return type.endsWith('s') ? type.slice(0, -1) : type;
-    }
+      let pattern = type.replace(/ /g, '\\s'); // Replace spaces with regex space character
+      // Adjust regex to match the type followed by a non-word character or end of string
+      let regex = new RegExp("\\b" + pattern + "(\\W|$)", "i");
+      if (regex.test(modifiedRoomName)) {
+          // Normalize the room type to handle 'double' and 'double room' equivalently
+          return type.replace(/ room$/, ""); // Remove trailing " room" if present
+      }
   }
   return 'unknown'; // Return 'unknown' if no specific type matches
 }
+
 
 
 

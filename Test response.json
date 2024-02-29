@@ -1,42 +1,1372 @@
 {
     "Results": [
         {
-            "propertyName": "The Langham, New York, Fifth Avenue",
-            "propertyId": "259522",
-            "roomId": "25952201",
-            "roomName": "Superior City View with King Bed",
-            "cleanRoomName": "superior city view with king bed",
+            "propertyName": "Hôtel Eugénie",
+            "propertyId": "272630",
+            "roomId": "27263002",
+            "roomName": "Standard Double Room",
+            "cleanRoomName": "standard double room",
+            "roomDescription": {
+                "roomType": "double room",
+                "roomCategory": "standard",
+                "board": "unknown",
+                "view": "unknown",
+                "bedType": "double",
+                "amenities": ""
+            },
+            "mappedRooms": [
+                {
+                    "supplierRoomId": "GY2DMZRXGU3DENTDGY2TEMBXGI3GMNTGGZSHYMJDGIYDENBQGUYTO7BSGAZDIMBVGE4XYZLOL5KVG7CJKR6EKVKSPQZECMCDPQZDEOBTPRKTEVSYOJ6DCNZQHEYTEOBXHE2DSNZSONGFGVJDGM4DMMRYGIRTIOBSFUZTQNRSHAZHYTSSIZHHYMRQGI2DAMRSG4YTGNJZPQYTG7BVGA2TCNBDKJHSGTSSIZHCGMRQGI2C2MBSFUZDO",
+                    "supplierRoomName": "Double Room - Room Only",
+                    "cleanSupplierRoomName": "double room room only",
+                    "matchAttributes": {
+                        "roomType": "double room",
+                        "roomCategory": "",
+                        "board": "room only",
+                        "view": "unknown",
+                        "bedType": "double",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "G4ZTONBWGE3GKNRUGYYTOMRWGQZDANRUGZTDONJWGI3GGNRVGIYDOMRWMY3GMNTEGIYDEZBSGA3GKNTGGZSTEZBXGI3DKNRWG42TMZJWGQ3DCNRSGZRTMNL4GERTEMBSGQYDKMJXPQZDAMRUGA2TCOL4MVXF6VKTPREVI7CFKVJHYMSBGBBXYMRSHAZXYVJSKZMHE7BRG4YDSMJSHA3TSNBZG4ZHGTCTKURTGOBWGI4DEIZSHA4C2MZYGYZDQMT4JZJEMTT4GIYDENBQGIZDOMJTGU4XYML4GU4TKMRXENJE6I2OKJDE4IZSGAZDILJQGIWTENY",
+                    "supplierRoomName": "Standard Double Room - Non-refundable - Room Only",
+                    "cleanSupplierRoomName": "standard double room nonrefundable room only",
+                    "matchAttributes": {
+                        "roomType": "double room",
+                        "roomCategory": "standard",
+                        "board": "room only",
+                        "view": "unknown",
+                        "bedType": "double",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "GY2DMZRXGU3DENTDGY2TEMBXGI3GMNTGGZSHYMJDGIYDENBQGUYTO7BSGAZDIMBVGE4XYZLOL5KVG7CJKR6EKVKSPQZECMCDPQZDEOBTPRKTEVSYOJ6DCNZQHEYTEOBXHE2DSNZSONGFGVJDGM4DMMRYGIRTGMJNGM4DMMRYGJ6E4USGJZ6DEMBSGIYDCMBRPQYTE7BWGAYTINZDKJHSGTSSIZHCGMRQGIZC2MBRFUYDC",
+                    "supplierRoomName": "Double Room - Room Only",
+                    "cleanSupplierRoomName": "double room room only",
+                    "matchAttributes": {
+                        "roomType": "double room",
+                        "roomCategory": "",
+                        "board": "room only",
+                        "view": "unknown",
+                        "bedType": "double",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "GY2DMZRXGU3DENTDGY2TEMBXGI3GMNTGGZSHYMJDGIYDENBQGUYTO7BSGAZDIMBVGE4XYZLOL5KVG7CJKR6EKVKSPQZECMCDPQZDEOBTPRKTEVSYOJ6DCNZQHEYTEOBXHE2DSNZSONGFGVJDGM4DMMRYGIRTGMJNGM4DMMRYGJ6E4USGJZ6DEMBSGIYDCMBRPQ4HYNRQGIYDEI2SJ4RU4USGJYRTEMBSGIWTAMJNGAYQ",
+                    "supplierRoomName": "Double Room - Room Only",
+                    "cleanSupplierRoomName": "double room room only",
+                    "matchAttributes": {
+                        "roomType": "double room",
+                        "roomCategory": "",
+                        "board": "room only",
+                        "view": "unknown",
+                        "bedType": "double",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "GY2DMZRXGU3DENTDGY2TEMBXGI3GMNTGGZSDEMBSHAZTCMRQGY2DMZRXGU3DENTDGY2TEMBWGI3DKNRUGI4TEMBSMQZDANZQGYYTMMZWMI3DCNRXGY2TEMBXGI3DCNZUGY2XYMJDGIYDENBQGUYTO7BSGAZDIMBVGE4XYZLOL5KVG7CJKR6EKVKSPQZECMCDPQZDEOBTPRKTEVSYOJ6DCNZQHEYTEOBXHE2DSNZSONGFGVJDGM4DMMRYGIRTCMBSFUZTQNRSHAZHYUSGJZ6DEMBSGQYDEMRVPQYXYNRRGE3DCI2SJ4RU4USGJYRTEMBSGQWTAMRNGI2Q",
+                    "supplierRoomName": "Double Room (1 Double Bed) - Package Rate - Room Only",
+                    "cleanSupplierRoomName": "double room 1 double bed package rate room only",
+                    "matchAttributes": {
+                        "roomType": "double room",
+                        "roomCategory": "",
+                        "board": "room only",
+                        "view": "unknown",
+                        "bedType": "double bed",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "GY2DMZRXGU3DENTDGY2TEMBXGI3GMNTGGZSDEMBSHAZTCMRQGY2DMZRXGU3DENTDGY2TEMBWGI3DKNRUGI4XYMJDGIYDENBQGUYTO7BSGAZDIMBVGE4XYZLOL5KVG7CJKR6EKVKSPQZECMCDPQZDEOBTPRKTEVSYOJ6DCNZQHEYTEOBXHE2DSNZSONGFGVJDGM4DMMRYGIRTCMBSFUZTQNRSHAZHYUSGJZ6DEMBSGQYDEMRVPQ3XYNRRGE3DCI2SJ4RU4USGJYRTEMBSGQWTAMRNGI2Q",
+                    "supplierRoomName": "Double Room (1 Double Bed) - Room Only",
+                    "cleanSupplierRoomName": "double room 1 double bed room only",
+                    "matchAttributes": {
+                        "roomType": "double room",
+                        "roomCategory": "",
+                        "board": "room only",
+                        "view": "unknown",
+                        "bedType": "double bed",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "GY2DMZRXGU3DENTDGY2TEMBXGI3GMNTGGZSDEOBTGEZDANRUGZTDONJWGI3GGNRVGIYDMMRWGU3DIMRZPQYSGMRQGI2DANJRG56DEMBSGQYDKMJZPRSW4X2VKN6ESVD4IVKVE7BSIEYEG7BSGI4DG7CVGJLFQ4T4GE3TAOJRGI4DOOJUHE3TE42MKNKSGMZYGYZDQMRDGQ4DELJTHA3DEOBSPRHFERSOPQZDAMRUGAZDENZRGM2TS7BSGV6DMMJXGYZCGUSPENHFERSOEMZDAMRUFUYDELJSG4",
+                    "supplierRoomName": "Double Room(1 Double Bed) - Room Only",
+                    "cleanSupplierRoomName": "double room1 double bed room only",
+                    "matchAttributes": {
+                        "roomType": "double room",
+                        "roomCategory": "",
+                        "board": "room only",
+                        "view": "unknown",
+                        "bedType": "double bed",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "GY2DMZRXGU3DENTDGY2TEMBXGI3GMNTGGZSHYMJDGIYDENBQGUYTO7BSGAZDIMBVGE4XYZLOL5KVG7CJKR6EKVKSPQZECMCDPQZDEOBTPRKTEVSYOJ6DCNZQHEYTEOBXHE2DSNZSONGFGVJDGM4DMMRYGIRTIOBSFUZTQNRSHAZHYTSSIZHHYMRQGI2DAMRSG4YTGNJZPQYTQ7BWGMYTMNJDKJHSGTSSIZHCGMRQGI2C2MBSFUZDO",
+                    "supplierRoomName": "Double Room - Room Only",
+                    "cleanSupplierRoomName": "double room room only",
+                    "matchAttributes": {
+                        "roomType": "double room",
+                        "roomCategory": "",
+                        "board": "room only",
+                        "view": "unknown",
+                        "bedType": "double",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "GY2DMZRXGU3DENTDGY2TEMBXGI3GMNTGGZSHYMJDGIYDENBQGUYTO7BSGAZDIMBVGE4XYZLOL5KVG7CJKR6EKVKSPQZECMCDPQZDEOBTPRKTEVSYOJ6DCNZQHEYTEOBXHE2DSNZSONGFGVJDGM4DMMRYGIRTGOBRFUZTQNRSHAZHYTSSIZHHYMRQGIZDAMJQGF6DK7BWGMYTONZDKJHSGTSSIZHCGMRQGIZC2MBRFUYDC",
+                    "supplierRoomName": "Double Room - Room Only",
+                    "cleanSupplierRoomName": "double room room only",
+                    "matchAttributes": {
+                        "roomType": "double room",
+                        "roomCategory": "",
+                        "board": "room only",
+                        "view": "unknown",
+                        "bedType": "double",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "GY2DMZRXGU3DENTDGY2TEMBXGI3GMNTGGZSHYMJDGIYDENBQGUYTO7BSGAZDIMBVGE4XYZLOL5KVG7CJKR6EKVKSPQZECMCDPQZDEOBTPRKTEVSYOJ6DCNZQHEYTEOBXHE2DSNZSONGFGVJDGM4DMMRYGIRTIOBSFUZTQNRSHAZHYTSSIZHHYMRQGI2DAMRSG4YTGNJZPQYTO7BWGMZTAMJDIJBDEI2OKJDE4IZSGAZDILJQGIWTENY",
+                    "supplierRoomName": "Double Room - Breakfast for Two Guest",
+                    "cleanSupplierRoomName": "double room breakfast for two guest",
+                    "matchAttributes": {
+                        "roomType": "double room",
+                        "roomCategory": "",
+                        "board": "unknown",
+                        "view": "unknown",
+                        "bedType": "double",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "GY2DMZRXGU3DENTDGY2TEMBXGI3GMNTGGZSHYMJDGIYDENBQGUYTO7BSGAZDIMBVGE4XYZLOL5KVG7CJKR6EKVKSPQZECMCDPQZDEOBTPRKTEVSYOJ6DCNZQHEYTEOBXHE2DSNZSONGFGVJDGM4DMMRYGIRTIOBSFUZTQNRSHAZHYUSGJZ6DEMBSGQYDEMRZGEYDAMD4GE2XYNRTHAYDAI2SJ4RVERSOEMZDAMRUFUYDELJSG4",
+                    "supplierRoomName": "Double Room - Room Only",
+                    "cleanSupplierRoomName": "double room room only",
+                    "matchAttributes": {
+                        "roomType": "double room",
+                        "roomCategory": "",
+                        "board": "room only",
+                        "view": "unknown",
+                        "bedType": "double",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "GY2DMZRXGU3DENTDGY2TEMBXGI3GMNTGGZSHYMJDGIYDENBQGUYTO7BSGAZDIMBVGE4XYZLOL5KVG7CJKR6EKVKSPQZECMCDPQZDEOBTPRKTEVSYOJ6DCNZQHEYTEOBXHE2DSNZSONGFGVJDGM4DMMRYGIRTIOBSFUZTQNRSHAZHYTSSIZHHYMRQGI2DAMRSG4YTGNJZPQYTM7BWGM4DINJDIJBDEI2OKJDE4IZSGAZDILJQGIWTENY",
+                    "supplierRoomName": "Double Room - Breakfast for Two Guest",
+                    "cleanSupplierRoomName": "double room breakfast for two guest",
+                    "matchAttributes": {
+                        "roomType": "double room",
+                        "roomCategory": "",
+                        "board": "unknown",
+                        "view": "unknown",
+                        "bedType": "double",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "GY2DMZRXGU3DENTDGY2TEMBXGI3GMNTGGZSHYMJDGIYDENBQGUYTO7BSGAZDIMBVGE4XYZLOL5KVG7CJKR6EKVKSPQZECMCDPQZDEOBTPRKTEVSYOJ6DCNZQHEYTEOBXHE2DSNZSONGFGVJDGM4DMMRYGIRTIOBSFUZTQNRSHAZHYUSGJZ6DEMBSGQYDEMRZGEYDAMD4GE2HYNRTHEZTQI2CIIZCGUSGJYRTEMBSGQWTAMRNGI3Q",
+                    "supplierRoomName": "Double Room - Breakfast for Two Guest",
+                    "cleanSupplierRoomName": "double room breakfast for two guest",
+                    "matchAttributes": {
+                        "roomType": "double room",
+                        "roomCategory": "",
+                        "board": "unknown",
+                        "view": "unknown",
+                        "bedType": "double",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "GY2DMZRXGU3DENTDGY2TEMBXGI3GMNTGGZSHYMJDGIYDENBQGUYTO7BSGAZDIMBVGE4XYZLOL5KVG7CJKR6EKVKSPQZECMCDPQZDEOBTPRKTEVSYOJ6DCNZQHEYTEOBXHE2DSNZSONGFGVJDGM4DMMRYGIRTGMJNGM4DMMRYGJ6FERSOPQZDAMRUGA2TCMZSGIYDA7BZPQ3DKMBZGARVETZDKJDE4IZSGAZDILJQGUWTCMY",
+                    "supplierRoomName": "Double Room - Room Only",
+                    "cleanSupplierRoomName": "double room room only",
+                    "matchAttributes": {
+                        "roomType": "double room",
+                        "roomCategory": "",
+                        "board": "room only",
+                        "view": "unknown",
+                        "bedType": "double",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "GY2DMZRXGU3DENTDGY2TEMBXGI3GMNTGGZSHYMJDGIYDENBQGUYTO7BSGAZDIMBVGE4XYZLOL5KVG7CJKR6EKVKSPQZECMCDPQZDEOBTPRKTEVSYOJ6DCNZQHEYTEOBXHE2DSNZSONGFGVJDGM4DMMRYGIRTGMJNGM4DMMRYGJ6FERSOPQZDAMRUGA2TCMZSGIYDA7BRGF6DMNJRGUYSGUSPENJEMTRDGIYDENBNGA2S2MJT",
+                    "supplierRoomName": "Double Room - Room Only",
+                    "cleanSupplierRoomName": "double room room only",
+                    "matchAttributes": {
+                        "roomType": "double room",
+                        "roomCategory": "",
+                        "board": "room only",
+                        "view": "unknown",
+                        "bedType": "double",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "GY2DMZRXGU3DENTDGY2TEMBXGI3GMNTGGZSDEMBSHAZTCMRQGY2DMZRXGU3DENTDGY2TEMBWGI3DKNRUGI4TEMBSMQZDANZQGYYTMMZWMI3DCNRXGY2TEMBXGI3DCNZUGY2XYMJDGIYDENBQGUYTO7BSGAZDIMBVGE4XYZLOL5KVG7CJKR6EKVKSPQZECMCDPQZDEOBTPRKTEVSYOJ6DCNZQHEYTEOBXHE2DSNZSONGFGVJDGM4DMMRYGIRTCMBSFUZTQNRSHAZHYUSGJZ6DEMBSGQYDKMJSPQ2HYNRWGIYDGI2SJ4RVERSOEMZDAMRUFUYDKLJRGI",
+                    "supplierRoomName": "Double Room (1 Double Bed) - Package Rate - Room Only",
+                    "cleanSupplierRoomName": "double room 1 double bed package rate room only",
+                    "matchAttributes": {
+                        "roomType": "double room",
+                        "roomCategory": "",
+                        "board": "room only",
+                        "view": "unknown",
+                        "bedType": "double bed",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "GY2DMZRXGU3DENTDGY2TEMBXGI3GMNTGGZSDEMBSHAZTCMRQGY2DMZRXGU3DENTDGY2TEMBWGI3DKNRUGI4XYMJDGIYDENBQGUYTO7BSGAZDIMBVGE4XYZLOL5KVG7CJKR6EKVKSPQZECMCDPQZDEOBTPRKTEVSYOJ6DCNZQHEYTEOBXHE2DSNZSONGFGVJDGM4DMMRYGIRTCMBSFUZTQNRSHAZHYUSGJZ6DEMBSGQYDKMJSPQYTA7BWGYZDAMZDKJHSGUSGJYRTEMBSGQWTANJNGEZA",
+                    "supplierRoomName": "Double Room (1 Double Bed) - Room Only",
+                    "cleanSupplierRoomName": "double room 1 double bed room only",
+                    "matchAttributes": {
+                        "roomType": "double room",
+                        "roomCategory": "",
+                        "board": "room only",
+                        "view": "unknown",
+                        "bedType": "double bed",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "GY2DMZRXGU3DENTDGY2TEMBXGI3GMNTGGZSDEOBTGEZDANRUGZTDONJWGI3GGNRVGIYDMMRWGU3DIMRZPQYSGMRQGI2DANJRG56DEMBSGQYDKMJZPRSW4X2VKN6ESVD4IVKVE7BSIEYEG7BSGI4DG7CVGJLFQ4T4GE3TAOJRGI4DOOJUHE3TE42MKNKSGMZYGYZDQMRDGQ4DELJTHA3DEOBSPRHFERSOPQZDAMRUGAZDENZRGM2TS7BTGB6DMNZTHE3SGUSPENHFERSOEMZDAMRUFUYDELJSG4",
+                    "supplierRoomName": "Double Room(1 Double Bed) - Room Only",
+                    "cleanSupplierRoomName": "double room1 double bed room only",
+                    "matchAttributes": {
+                        "roomType": "double room",
+                        "roomCategory": "",
+                        "board": "room only",
+                        "view": "unknown",
+                        "bedType": "double bed",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "GY2DMZRXGU3DENTDGY2TEMBXGI3GMNTGGZSDEOBTGEZDANRUGZTDONJWGI3GGNRVGIYDMMRWGU3DIMRZPQYSGMRQGI2DANJRG56DEMBSGQYDKMJZPRSW4X2VKN6ESVD4IVKVE7BSIEYEG7BSGI4DG7CVGJLFQ4T4GE3TAOJRGI4DOOJUHE3TE42MKNKSGMZYGYZDQMRDGQ4DELJTHA3DEOBSPRJEMTT4GIYDENBQGIZDSMJQGAYHYMRYPQ3DQMJQGURVETZDKJDE4IZSGAZDILJQGIWTENY",
+                    "supplierRoomName": "Double Room(1 Double Bed) - Room Only",
+                    "cleanSupplierRoomName": "double room1 double bed room only",
+                    "matchAttributes": {
+                        "roomType": "double room",
+                        "roomCategory": "",
+                        "board": "room only",
+                        "view": "unknown",
+                        "bedType": "double bed",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "GY2DMZRXGU3DENTDGY2TEMBXGI3GMNTGGZSHYMJDGIYDENBQGUYTO7BSGAZDIMBVGE4XYZLOL5KVG7CJKR6EKVKSPQZECMCDPQZDEOBTPRKTEVSYOJ6DCNZQHEYTEOBXHE2DSNZSONGFGVJDGM4DMMRYGIRTGMJNGM4DMMRYGJ6FERSOPQZDAMRUGA2TCMZSGIYDA7BRGB6DMOBUGUYSGQSCENJEMTRDGIYDENBNGA2S2MJT",
+                    "supplierRoomName": "Double Room - Full Breakfast",
+                    "cleanSupplierRoomName": "double room full breakfast",
+                    "matchAttributes": {
+                        "roomType": "double room",
+                        "roomCategory": "",
+                        "board": "unknown",
+                        "view": "unknown",
+                        "bedType": "double",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "GY2DMZRXGU3DENTDGY2TEMBXGI3GMNTGGZSHYMJDGIYDENBQGUYTO7BSGAZDIMBVGE4XYZLOL5KVG7CJKR6EKVKSPQZECMCDPQZDEOBTPRKTEVSYOJ6DCNZQHEYTEOBXHE2DSNZSONGFGVJDGM4DMMRYGIRTGMJNGM4DMMRYGJ6FERSOPQZDAMRUGA2TCMZSGIYDA7BXPQ3DQNJTGYRUEQRDKJDE4IZSGAZDILJQGUWTCMY",
+                    "supplierRoomName": "Double Room - Full Breakfast",
+                    "cleanSupplierRoomName": "double room full breakfast",
+                    "matchAttributes": {
+                        "roomType": "double room",
+                        "roomCategory": "",
+                        "board": "unknown",
+                        "view": "unknown",
+                        "bedType": "double",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "GY2DMZRXGU3DENTDGY2TEMBXGI3GMNTGGZSHYMJDGIYDENBQGUYTO7BSGAZDIMBVGE4XYZLOL5KVG7CJKR6EKVKSPQZECMCDPQZDEOBTPRKTEVSYOJ6DCNZQHEYTEOBXHE2DSNZSONGFGVJDGM4DMMRYGIRTGOBRFUZTQNRSHAZHYUSGJZ6DEMBSGQYDKMJTPQYTA7BWHA2TSMBDKJHSGUSGJYRTEMBSGQWTANJNGEZQ",
+                    "supplierRoomName": "Double Room - Room Only",
+                    "cleanSupplierRoomName": "double room room only",
+                    "matchAttributes": {
+                        "roomType": "double room",
+                        "roomCategory": "",
+                        "board": "room only",
+                        "view": "unknown",
+                        "bedType": "double",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "GY2DMZRXGU3DENTDGY2TEMBXGI3GMNTGGZSDEMBSHAZTCMRQGY2DMZRXGU3DENTDGY2TEMBWGI3DKNRUGI4TEMBSMQZDANZQGYYTMMZWMI3DCNRXGY2TEMBXGI3DCNZUGY2XYMJDGIYDENBQGUYTO7BSGAZDIMBVGE4XYZLOL5KVG7CJKR6EKVKSPQZECMCDPQZDEOBTPRKTEVSYOJ6DCNZQHEYTEOBXHE2DSNZSONGFGVJDGM4DMMRYGIRTCMBSFUZTQNRSHAZHYUSGJZ6DEMBSGQYDKMJSPQYTG7BWHE2TMNJDIJBCGUSGJYRTEMBSGQWTANJNGEZA",
+                    "supplierRoomName": "Double Room (1 Double Bed) - Package Rate - BED AND BREAKFAST",
+                    "cleanSupplierRoomName": "double room 1 double bed package rate bed and breakfast",
+                    "matchAttributes": {
+                        "roomType": "double room",
+                        "roomCategory": "",
+                        "board": "bed and breakfast",
+                        "view": "unknown",
+                        "bedType": "double bed",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "GY2DMZRXGU3DENTDGY2TEMBXGI3GMNTGGZSDEMBSHAZTCMRQGY2DMZRXGU3DENTDGY2TEMBWGI3DKNRUGI4XYMJDGIYDENBQGUYTO7BSGAZDIMBVGE4XYZLOL5KVG7CJKR6EKVKSPQZECMCDPQZDEOBTPRKTEVSYOJ6DCNZQHEYTEOBXHE2DSNZSONGFGVJDGM4DMMRYGIRTCMBSFUZTQNRSHAZHYUSGJZ6DEMBSGQYDKMJSPQYTM7BWHE2TMNJDIJBCGUSGJYRTEMBSGQWTANJNGEZA",
+                    "supplierRoomName": "Double Room (1 Double Bed) - BED AND BREAKFAST",
+                    "cleanSupplierRoomName": "double room 1 double bed bed and breakfast",
+                    "matchAttributes": {
+                        "roomType": "double room",
+                        "roomCategory": "",
+                        "board": "bed and breakfast",
+                        "view": "unknown",
+                        "bedType": "double bed",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "GY2DMZRXGU3DENTDGY2TEMBXGI3GMNTGGZSDEOBTGEZDANRUGZTDONJWGI3GGNRVGIYDMMRWGU3DIMRZPQYSGMRQGI2DANJRG56DEMBSGQYDKMJZPRSW4X2VKN6ESVD4IVKVE7BSIEYEG7BSGI4DG7CVGJLFQ4T4GE3TAOJRGI4DOOJUHE3TE42MKNKSGMZYGYZDQMRDGQ4DELJTHA3DEOBSPRHFERSOPQZDAMRUGAZDENZRGM2TS7BSGZ6DOMBRGI3SGQSCGIRU4USGJYRTEMBSGQWTAMRNGI3Q",
+                    "supplierRoomName": "Double Room(1 Double Bed) - Breakfast for Two Guest",
+                    "cleanSupplierRoomName": "double room1 double bed breakfast for two guest",
+                    "matchAttributes": {
+                        "roomType": "double room",
+                        "roomCategory": "",
+                        "board": "unknown",
+                        "view": "unknown",
+                        "bedType": "double bed",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "GY2DMZRXGU3DENTDGY2TEMBXGI3GMNTGGZSDEOBTGEZDANRUGZTDONJWGI3GGNRVGIYDMMRWGU3DIMRZPQYSGMRQGI2DANJRG56DEMBSGQYDKMJZPRSW4X2VKN6ESVD4IVKVE7BSIEYEG7BSGI4DG7CVGJLFQ4T4GE3TAOJRGI4DOOJUHE3TE42MKNKSGMZYGYZDQMRDGQ4DELJTHA3DEOBSPRHFERSOPQZDAMRUGAZDENZRGM2TS7BSHF6DOMBYGA4SGQSCGIRU4USGJYRTEMBSGQWTAMRNGI3Q",
+                    "supplierRoomName": "Double Room(1 Double Bed) - Breakfast for Two Guest",
+                    "cleanSupplierRoomName": "double room1 double bed breakfast for two guest",
+                    "matchAttributes": {
+                        "roomType": "double room",
+                        "roomCategory": "",
+                        "board": "unknown",
+                        "view": "unknown",
+                        "bedType": "double bed",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "GY2DMZRXGU3DENTDGY2TEMBXGI3GMNTGGZSDEOBTGEZDANRUGZTDONJWGI3GGNRVGIYDMMRWGU3DIMRZPQYSGMRQGI2DANJRG56DEMBSGQYDKMJZPRSW4X2VKN6ESVD4IVKVE7BSIEYEG7BSGI4DG7CVGJLFQ4T4GE3TAOJRGI4DOOJUHE3TE42MKNKSGMZYGYZDQMRDGQ4DELJTHA3DEOBSPRJEMTT4GIYDENBQGIZDSMJQGAYHYMRXPQ3TCNJVGIRUEQRSENJEMTRDGIYDENBNGAZC2MRX",
+                    "supplierRoomName": "Double Room(1 Double Bed) - Breakfast for Two Guest",
+                    "cleanSupplierRoomName": "double room1 double bed breakfast for two guest",
+                    "matchAttributes": {
+                        "roomType": "double room",
+                        "roomCategory": "",
+                        "board": "unknown",
+                        "view": "unknown",
+                        "bedType": "double bed",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "GY2DMZRXGU3DENTDGY2TEMBXGI3GMNTGGZSHYMJDGIYDENBQGUYTO7BSGAZDIMBVGE4XYZLOL5KVG7CJKR6EKVKSPQZECMCDPQZDEOBTPRKTEVSYOJ6DCNZQHEYTEOBXHE2DSNZSONGFGVJDGM4DMMRYGIRTGOBRFUZTQNRSHAZHYUSGJZ6DEMBSGQYDKMJTPQYTI7BXGIYDMMZDIJBCGUSGJYRTEMBSGQWTANJNGEZQ",
+                    "supplierRoomName": "Double Room - Breakfast",
+                    "cleanSupplierRoomName": "double room breakfast",
+                    "matchAttributes": {
+                        "roomType": "double room",
+                        "roomCategory": "",
+                        "board": "unknown",
+                        "view": "unknown",
+                        "bedType": "double",
+                        "amenities": ""
+                    }
+                }
+            ]
+        },
+        {
+            "propertyName": "Hôtel Eugénie",
+            "propertyId": "272630",
+            "roomId": "27263005",
+            "roomName": "Superior Twin Room",
+            "cleanRoomName": "superior twin room",
             "roomDescription": {
                 "roomType": "room",
                 "roomCategory": "superior",
                 "board": "unknown",
-                "view": "city view",
-                "bedType": "king bed",
+                "view": "unknown",
+                "bedType": "twin",
                 "amenities": ""
             },
             "mappedRooms": [
                 {
-                    "supplierRoomId": "G4ZTONJXGA3DKNZSGY4TMZRXGIZDANZSGZTDMZRWMQZGGMRQGYZTMOJXGQ3TSMRQG43DMOJWGU3TO7BREMZDAMRUGA3DCN34GIYDENBQGYYTS7DFNZPVKU34JFKHYRKVKJ6DEQJQIN6DEMRYGN6FKMSWLBZHYMJXGA4DSNBWGE3TAMZYGRQUSTDBEMZTKMRWGEYSGMZRFUZTKMRWGEYXYUSGJZ6DEMBSGQYDMMJVGE4TAMD4GI3HYMRRG43DKMZDKJHSGUSGJYRTEMBSGQWTANRNGE2Q",
-                    "supplierRoomName": "Superior Room, City View - Room Only",
-                    "cleanSupplierRoomName": "superior room city view room only",
+                    "supplierRoomId": "G4ZTONJXGA3DKNZSGY4TMZRXGIZDANRUGZTDONJWGI3GGNRVPQYSGMRQGI2DANJRG56DEMBSGQYDKMJZPRSW4X2VKN6ESVD4IVKVE7BSIEYEG7BSGI4DG7CVGJLFQ4T4GE3TAOJRGI4DOOJUHE3TE42MKNKSGMZYGYZDQMRDGQZC2MZYGYZDQMT4JZJEMTT4GIYDENBQGIZDM7BVPQ2TEOBXGURVETZDJZJEMTRDGIYDENBNGAZC2MRW",
+                    "supplierRoomName": "SUPERIOR DOUBLE - ROOM ONLY",
+                    "cleanSupplierRoomName": "superior double room only",
                     "matchAttributes": {
                         "roomType": "room",
                         "roomCategory": "superior",
                         "board": "room only",
-                        "view": "city view",
-                        "bedType": "unknown",
+                        "view": "unknown",
+                        "bedType": "double",
                         "amenities": ""
                     }
                 },
                 {
-                    "supplierRoomId": "G4ZTONJXGA3DKNZSGY4TMZRXGIZDANZSGZTDMZRWMQZGGMRQGYZTMOJXGQ3TSMRQG43DMOJWGU3TO7BREMZDAMRUGA3DCN34GIYDENBQGYYTS7DFNZPVKU34JFKHYRKVKJ6DEQJQIN6DEMRYGN6FKMSWLBZHYMJXGA4DSNBWGE3TAMZYGRQUSTDBEMZTKMRWGEYSGMZRFUZTKMRWGEYXYUSGJZ6DEMBSGQYDMMJVGE4TAMD4GI2XYMRYG42DCOJDIJBCGUSGJYRTEMBSGQWTANRNGE2Q",
-                    "supplierRoomName": "Superior Room, City View - Free breakfast",
-                    "cleanSupplierRoomName": "superior room city view free breakfast",
+                    "supplierRoomId": "G4ZTONJXGA3DKNZSGY4TMZRXGIZDANZUG43TMOJWMV6DCIZSGAZDIMBVGE3XYMRQGI2DANJRHF6GK3S7KVJXYSKUPRCVKUT4GJATAQ34GIZDQM34KUZFMWDSPQYTOMBZGEZDQNZZGQ4TOMTTJRJVKIZTHA3DEOBSEM2DELJTHA3DEOBSPRHFERSOPQZDAMRUGAZDENT4G56DKMRYG42SGUSPENHFERSOEMZDAMRUFUYDELJSGY",
+                    "supplierRoomName": "SUPERIOR TWIN - ROOM ONLY",
+                    "cleanSupplierRoomName": "superior twin room only",
+                    "matchAttributes": {
+                        "roomType": "room",
+                        "roomCategory": "superior",
+                        "board": "room only",
+                        "view": "unknown",
+                        "bedType": "twin",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "G4ZTONJXGA3DKNZSGY4TMZRXGIZDANZUG43TMOJWMV6DCIZSGAZDIMBVGE3XYMRQGI2DANJRHF6GK3S7KVJXYSKUPRCVKUT4GJATAQ34GIZDQM34KUZFMWDSPQYTOMBZGEZDQNZZGQ4TOMTTJRJVKIZTHA3DEOBSEM2TMLJTHA3DEOBSPRHFERSOPQZDAMRUGAZDENT4G56DKMRYG42SGUSPENHFERSOEMZDAMRUFUYDELJSGY",
+                    "supplierRoomName": "SUPERIOR TWIN - ROOM ONLY",
+                    "cleanSupplierRoomName": "superior twin room only",
+                    "matchAttributes": {
+                        "roomType": "room",
+                        "roomCategory": "superior",
+                        "board": "room only",
+                        "view": "unknown",
+                        "bedType": "twin",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "G4ZTONJXGA3DKNZSGY4TMZRXGIZDANRUGZTDONJWGI3GGNRVPQYSGMRQGI2DANJRG56DEMBSGQYDKMJZPRSW4X2VKN6ESVD4IVKVE7BSIEYEG7BSGI4DG7CVGJLFQ4T4GE3TAOJRGI4DOOJUHE3TE42MKNKSGMZYGYZDQMRDGU3C2MZYGYZDQMT4JZJEMTT4GIYDENBQGIZDM7BRGB6DKMRYG42SGUSPENHFERSOEMZDAMRUFUYDELJSGY",
+                    "supplierRoomName": "SUPERIOR DOUBLE - ROOM ONLY",
+                    "cleanSupplierRoomName": "superior double room only",
+                    "matchAttributes": {
+                        "roomType": "room",
+                        "roomCategory": "superior",
+                        "board": "room only",
+                        "view": "unknown",
+                        "bedType": "double",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "G4ZTONJXGA3DKNZSGY4TMZRXGIZDANRUGZTDONJWGI3GGNRVPQYSGMRQGI2DANJRG56DEMBSGQYDKMJZPRSW4X2VKN6ESVD4IVKVE7BSIEYEG7BSGI4DG7CVGJLFQ4T4GE3TAOJRGI4DOOJUHE3TE42MKNKSGMZYGYZDQMRDGEYDOLJTHA3DEOBSPRHFERSOPQZDAMRUGAZDENT4HF6DKMRYG42SGUSPENHFERSOEMZDAMRUFUYDELJSGY",
+                    "supplierRoomName": "SUPERIOR DOUBLE - ROOM ONLY",
+                    "cleanSupplierRoomName": "superior double room only",
+                    "matchAttributes": {
+                        "roomType": "room",
+                        "roomCategory": "superior",
+                        "board": "room only",
+                        "view": "unknown",
+                        "bedType": "double",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "G4ZTONJXGA3DKNZSGY4TMZRXGIZDANZUG43TMOJWMV6DCIZSGAZDIMBVGE3XYMRQGI2DANJRHF6GK3S7KVJXYSKUPRCVKUT4GJATAQ34GIZDQM34KUZFMWDSPQYTOMBZGEZDQNZZGQ4TOMTTJRJVKIZTHA3DEOBSEMYTANZNGM4DMMRYGJ6E4USGJZ6DEMBSGQYDEMRWPQYTA7BVGI4DONJDKJHSGTSSIZHCGMRQGI2C2MBSFUZDM",
+                    "supplierRoomName": "SUPERIOR TWIN - ROOM ONLY",
+                    "cleanSupplierRoomName": "superior twin room only",
+                    "matchAttributes": {
+                        "roomType": "room",
+                        "roomCategory": "superior",
+                        "board": "room only",
+                        "view": "unknown",
+                        "bedType": "twin",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "G4ZTONJXGA3DKNZSGY4TMZRXGIZDANRUGZTDONJWGI3GGNRVPQYSGMRQGI2DANJRG56DEMBSGQYDKMJZPRSW4X2VKN6ESVD4IVKVE7BSIEYEG7BSGI4DG7CVGJLFQ4T4GE3TAOJRGI4DOOJUHE3TE42MKNKSGMZYGYZDQMRDGIZDOLJTHA3DEOBSPRHFERSOPQZDAMRUGAZDENT4GEYXYNJSHA3TKI2SJ4RU4USGJYRTEMBSGQWTAMRNGI3A",
+                    "supplierRoomName": "SUPERIOR DOUBLE - ROOM ONLY",
+                    "cleanSupplierRoomName": "superior double room only",
+                    "matchAttributes": {
+                        "roomType": "room",
+                        "roomCategory": "superior",
+                        "board": "room only",
+                        "view": "unknown",
+                        "bedType": "double",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "G4ZTONJXGA3DKNZSGY4TMZRXGIZDANZUG43TMOJWMV6DCIZSGAZDIMBVGE3XYMRQGI2DANJRHF6GK3S7KVJXYSKUPRCVKUT4GJATAQ34GIZDQM34KUZFMWDSPQYTOMBZGEZDQNZZGQ4TOMTTJRJVKIZTHA3DEOBSEMZDENZNGM4DMMRYGJ6E4USGJZ6DEMBSGQYDEMRWPQYTE7BVGI4DONJDKJHSGTSSIZHCGMRQGI2C2MBSFUZDM",
+                    "supplierRoomName": "SUPERIOR TWIN - ROOM ONLY",
+                    "cleanSupplierRoomName": "superior twin room only",
+                    "matchAttributes": {
+                        "roomType": "room",
+                        "roomCategory": "superior",
+                        "board": "room only",
+                        "view": "unknown",
+                        "bedType": "twin",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "G4ZTONJXGA3DKNZSGY4TMZRXGIZDANZUG43TMOJWMUZDANZSGZTDMZRWMR6DCIZSGAZDIMBVGE3XYMRQGI2DANJRHF6GK3S7KVJXYSKUPRCVKUT4GJATAQ34GIZDQM34KUZFMWDSPQYTOMBZGEZDQNZZGQ4TOMTTJRJVKIZTHA3DEOBSEM2DQMRNGM4DMMRYGJ6E4USGJZ6DEMBSGQYDEMRXGEZTKOL4GF6DKMZYGM3SGUSPENHFERSOEMZDAMRUFUYDELJSG4",
+                    "supplierRoomName": "Superior Twin Room - Room Only",
+                    "cleanSupplierRoomName": "superior twin room room only",
+                    "matchAttributes": {
+                        "roomType": "room",
+                        "roomCategory": "superior",
+                        "board": "room only",
+                        "view": "unknown",
+                        "bedType": "twin",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "GY2DMZRXGU3DENTDGY2TEMBXGM3TKNZQGY2TOMRWHE3GMNZSGIYDMNBWMY3TKNRSGZRTMNL4GERTEMBSGQYDKMJXPQZDAMRUGA2TCOL4MVXF6VKTPREVI7CFKVJHYMSBGBBXYMRSHAZXYVJSKZMHE7BRG4YDSMJSHA3TSNBZG4ZHGTCTKURTGOBWGI4DEIZTGYYS2MZYGYZDQMT4JZJEMTT4GIYDENBQGIZDIMJWGAYHYN34GU2TOMJWENJE6I2OKJDE4IZSGAZDILJQGIWTENA",
+                    "supplierRoomName": "DOUBLE SUPERIOR DOUBLE - Room Only",
+                    "cleanSupplierRoomName": "double superior double room only",
+                    "matchAttributes": {
+                        "roomType": "room",
+                        "roomCategory": "superior",
+                        "board": "room only",
+                        "view": "unknown",
+                        "bedType": "double",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "G42DONZWHE3GKMRQG4ZTONJXGA3DKNZSGY4TMZRXGIZDANZUG43TMOJWMV6DCIZSGAZDIMBVGE3XYMRQGI2DANJRHF6GK3S7KVJXYSKUPRCVKUT4GJATAQ34GIZDQM34KUZFMWDSPQYTOMBZGEZDQNZZGQ4TOMTTJRJVKIZTHA3DEOBSEMZTMMJNGM4DMMRYGJ6E4USGJZ6DEMBSGQYDEMRUGE3DAMD4HB6DKNJXGE3CGUSPENHFERSOEMZDAMRUFUYDELJSGQ",
+                    "supplierRoomName": "TWIN SUPERIOR TWIN - Room Only",
+                    "cleanSupplierRoomName": "twin superior twin room only",
+                    "matchAttributes": {
+                        "roomType": "room",
+                        "roomCategory": "superior",
+                        "board": "room only",
+                        "view": "unknown",
+                        "bedType": "twin",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "G4ZTONJXGA3DKNZSGY4TMZRXGIZDANZUG43TMOJWMV6DCIZSGAZDIMBVGE3XYMRQGI2DANJRHF6GK3S7KVJXYSKUPRCVKUT4GJATAQ34GIZDQM34KUZFMWDSPQYTOMBZGEZDQNZZGQ4TOMTTJRJVKIZTHA3DEOBSEMZTQMJNGM4DMMRYGJ6E4USGJZ6DEMBSGIYDCMBRPQZHYNJZGAZTII2SJ4RU4USGJYRTEMBSGIWTAMJNGAYQ",
+                    "supplierRoomName": "Superior Twin - Room Only",
+                    "cleanSupplierRoomName": "superior twin room only",
+                    "matchAttributes": {
+                        "roomType": "room",
+                        "roomCategory": "superior",
+                        "board": "room only",
+                        "view": "unknown",
+                        "bedType": "twin",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "G4ZTONJXGA3DKNZSGY4TMZRXGIZDANRUGZTDONJWGI3GGNRVPQYSGMRQGI2DANJRG56DEMBSGQYDKMJZPRSW4X2VKN6ESVD4IVKVE7BSIEYEG7BSGI4DG7CVGJLFQ4T4GE3TAOJRGI4DOOJUHE3TE42MKNKSGMZYGYZDQMRDGM4DCLJTHA3DEOBSPRHFERSOPQZDAMRSGAYTAML4GN6DKOJQGM2CGUSPENHFERSOEMZDAMRSFUYDCLJQGE",
+                    "supplierRoomName": "Superior Double - Room Only",
+                    "cleanSupplierRoomName": "superior double room only",
+                    "matchAttributes": {
+                        "roomType": "room",
+                        "roomCategory": "superior",
+                        "board": "room only",
+                        "view": "unknown",
+                        "bedType": "double",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "G4ZTONJXGA3DKNZSGY4TMZRXGIZDANZUG43TMOJWMV6DCIZSGAZDIMBVGE3XYMRQGI2DANJRHF6GK3S7KVJXYSKUPRCVKUT4GJATAQ34GIZDQM34KUZFMWDSPQYTOMBZGEZDQNZZGQ4TOMTTJRJVKIZTHA3DEOBSEM2TMLJTHA3DEOBSPRJEMTT4GIYDENBQGUYTI7BUPQ3DAMJXGIRVETZDKJDE4IZSGAZDILJQGUWTCNA",
+                    "supplierRoomName": "SUPERIOR TWIN - ROOM ONLY",
+                    "cleanSupplierRoomName": "superior twin room only",
+                    "matchAttributes": {
+                        "roomType": "room",
+                        "roomCategory": "superior",
+                        "board": "room only",
+                        "view": "unknown",
+                        "bedType": "twin",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "G4ZTONJXGA3DKNZSGY4TMZRXGIZDANRUGZTDONJWGI3GGNRVPQYSGMRQGI2DANJRG56DEMBSGQYDKMJZPRSW4X2VKN6ESVD4IVKVE7BSIEYEG7BSGI4DG7CVGJLFQ4T4GE3TAOJRGI4DOOJUHE3TE42MKNKSGMZYGYZDQMRDGU3C2MZYGYZDQMT4KJDE47BSGAZDIMBVGE2HYOD4GYYDCNZSENJE6I2SIZHCGMRQGI2C2MBVFUYTI",
+                    "supplierRoomName": "SUPERIOR DOUBLE - ROOM ONLY",
+                    "cleanSupplierRoomName": "superior double room only",
+                    "matchAttributes": {
+                        "roomType": "room",
+                        "roomCategory": "superior",
+                        "board": "room only",
+                        "view": "unknown",
+                        "bedType": "double",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "G4ZTONJXGA3DKNZSGY4TMZRXGIZDANZUG43TMOJWMV6DCIZSGAZDIMBVGE3XYMRQGI2DANJRHF6GK3S7KVJXYSKUPRCVKUT4GJATAQ34GIZDQM34KUZFMWDSPQYTOMBZGEZDQNZZGQ4TOMTTJRJVKIZTHA3DEOBSEMYTANZNGM4DMMRYGJ6FERSOPQZDAMRUGA2TCND4G56DMMBRG4ZCGUSPENJEMTRDGIYDENBNGA2S2MJU",
+                    "supplierRoomName": "SUPERIOR TWIN - ROOM ONLY",
+                    "cleanSupplierRoomName": "superior twin room only",
+                    "matchAttributes": {
+                        "roomType": "room",
+                        "roomCategory": "superior",
+                        "board": "room only",
+                        "view": "unknown",
+                        "bedType": "twin",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "G4ZTONJXGA3DKNZSGY4TMZRXGIZDANRUGZTDONJWGI3GGNRVPQYSGMRQGI2DANJRG56DEMBSGQYDKMJZPRSW4X2VKN6ESVD4IVKVE7BSIEYEG7BSGI4DG7CVGJLFQ4T4GE3TAOJRGI4DOOJUHE3TE42MKNKSGMZYGYZDQMRDGEYDOLJTHA3DEOBSPRJEMTT4GIYDENBQGUYTI7BRGJ6DMMBRG4ZCGUSPENJEMTRDGIYDENBNGA2S2MJU",
+                    "supplierRoomName": "SUPERIOR DOUBLE - ROOM ONLY",
+                    "cleanSupplierRoomName": "superior double room only",
+                    "matchAttributes": {
+                        "roomType": "room",
+                        "roomCategory": "superior",
+                        "board": "room only",
+                        "view": "unknown",
+                        "bedType": "double",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "G4ZTONJXGA3DKNZSGY4TMZRXGIZDANZUG43TMOJWMV6DCIZSGAZDIMBVGE3XYMRQGI2DANJRHF6GK3S7KVJXYSKUPRCVKUT4GJATAQ34GIZDQM34KUZFMWDSPQYTOMBZGEZDQNZZGQ4TOMTTJRJVKIZTHA3DEOBSEMZDENZNGM4DMMRYGJ6FERSOPQZDAMRUGA2TCND4GR6DMMBRG4ZCGUSPENJEMTRDGIYDENBNGA2S2MJU",
+                    "supplierRoomName": "SUPERIOR TWIN - ROOM ONLY",
+                    "cleanSupplierRoomName": "superior twin room only",
+                    "matchAttributes": {
+                        "roomType": "room",
+                        "roomCategory": "superior",
+                        "board": "room only",
+                        "view": "unknown",
+                        "bedType": "twin",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "G4ZTONJXGA3DKNZSGY4TMZRXGIZDANRUGZTDONJWGI3GGNRVPQYSGMRQGI2DANJRG56DEMBSGQYDKMJZPRSW4X2VKN6ESVD4IVKVE7BSIEYEG7BSGI4DG7CVGJLFQ4T4GE3TAOJRGI4DOOJUHE3TE42MKNKSGMZYGYZDQMRDGIZDOLJTHA3DEOBSPRJEMTT4GIYDENBQGUYTI7BXPQ3DAMJXGIRVETZDKJDE4IZSGAZDILJQGUWTCNA",
+                    "supplierRoomName": "SUPERIOR DOUBLE - ROOM ONLY",
+                    "cleanSupplierRoomName": "superior double room only",
+                    "matchAttributes": {
+                        "roomType": "room",
+                        "roomCategory": "superior",
+                        "board": "room only",
+                        "view": "unknown",
+                        "bedType": "double",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "G42DONZWHE3GKMRQG4ZTONJXGA3DKNZSGY4TMZRXGIZDANZUG43TMOJWMV6DCIZSGAZDIMBVGE3XYMRQGI2DANJRHF6GK3S7KVJXYSKUPRCVKUT4GJATAQ34GIZDQM34KUZFMWDSPQYTOMBZGEZDQNZZGQ4TOMTTJRJVKIZTHA3DEOBSEMZTMMJNGM4DMMRYGJ6E4USGJZ6DEMBSGQYDEMRUGE3DAMD4GEYXYNRTGIYTII2SJ4RU4USGJYRTEMBSGQWTAMRNGI2A",
+                    "supplierRoomName": "TWIN SUPERIOR TWIN - Room Only",
+                    "cleanSupplierRoomName": "twin superior twin room only",
+                    "matchAttributes": {
+                        "roomType": "room",
+                        "roomCategory": "superior",
+                        "board": "room only",
+                        "view": "unknown",
+                        "bedType": "twin",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "GY2DMZRXGU3DENTDGY2TEMBXGM3TKNZQGY2TOMRWHE3GMNZSGIYDMNBWMY3TKNRSGZRTMNL4GERTEMBSGQYDKMJXPQZDAMRUGA2TCOL4MVXF6VKTPREVI7CFKVJHYMSBGBBXYMRSHAZXYVJSKZMHE7BRG4YDSMJSHA3TSNBZG4ZHGTCTKURTGOBWGI4DEIZTGYYS2MZYGYZDQMT4JZJEMTT4GIYDENBQGIZDIMJWGAYHYMJUPQ3DGMRRGQRVETZDJZJEMTRDGIYDENBNGAZC2MRU",
+                    "supplierRoomName": "DOUBLE SUPERIOR DOUBLE - Room Only",
+                    "cleanSupplierRoomName": "double superior double room only",
+                    "matchAttributes": {
+                        "roomType": "room",
+                        "roomCategory": "superior",
+                        "board": "room only",
+                        "view": "unknown",
+                        "bedType": "double",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "G42DONZWHE3GKMRQG4ZTONJXGA3DKNZSGY4TMZRXGIZDANZUG43TMOJWMV6DCIZSGAZDIMBVGE3XYMRQGI2DANJRHF6GK3S7KVJXYSKUPRCVKUT4GJATAQ34GIZDQM34KUZFMWDSPQYTOMBZGEZDQNZZGQ4TOMTTJRJVKIZTHA3DEOBSEMZTMMJNGM4DMMRYGJ6FERSOPQZDAMRUGA2TCMRRGYYDA7BSPQ3DGNBQGURVETZDKJDE4IZSGAZDILJQGUWTCMQ",
+                    "supplierRoomName": "TWIN SUPERIOR TWIN - Room Only",
+                    "cleanSupplierRoomName": "twin superior twin room only",
+                    "matchAttributes": {
+                        "roomType": "room",
+                        "roomCategory": "superior",
+                        "board": "room only",
+                        "view": "unknown",
+                        "bedType": "twin",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "GY2DMZRXGU3DENTDGY2TEMBXGM3TKNZQGY2TOMRWHE3GMNZSGIYDMNBWMY3TKNRSGZRTMNL4GERTEMBSGQYDKMJXPQZDAMRUGA2TCOL4MVXF6VKTPREVI7CFKVJHYMSBGBBXYMRSHAZXYVJSKZMHE7BRG4YDSMJSHA3TSNBZG4ZHGTCTKURTGOBWGI4DEIZTGYYS2MZYGYZDQMT4KJDE47BSGAZDIMBVGEZDCNRQGB6DK7BWGM2DANJDKJHSGUSGJYRTEMBSGQWTANJNGEZA",
+                    "supplierRoomName": "DOUBLE SUPERIOR DOUBLE - Room Only",
+                    "cleanSupplierRoomName": "double superior double room only",
+                    "matchAttributes": {
+                        "roomType": "room",
+                        "roomCategory": "superior",
+                        "board": "room only",
+                        "view": "unknown",
+                        "bedType": "double",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "G4ZTONJXGA3DKNZSGY4TMZRXGIZDANZUG43TMOJWMUZDANZSGZTDMZRWMR6DCIZSGAZDIMBVGE3XYMRQGI2DANJRHF6GK3S7KVJXYSKUPRCVKUT4GJATAQ34GIZDQM34KUZFMWDSPQYTOMBZGEZDQNZZGQ4TOMTTJRJVKIZTHA3DEOBSEMZTCLJTHA3DEOBSPRHFERSOPQZDAMRSGAYTAML4GE4HYNRUGEYDEI2SJ4RU4USGJYRTEMBSGIWTAMJNGAYQ",
+                    "supplierRoomName": "Superior Twin Room - Room Only",
+                    "cleanSupplierRoomName": "superior twin room room only",
+                    "matchAttributes": {
+                        "roomType": "room",
+                        "roomCategory": "superior",
+                        "board": "room only",
+                        "view": "unknown",
+                        "bedType": "twin",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "G4ZTONJXGA3DKNZSGY4TMZRXGIZDANZUG43TMOJWMUZDANZSGZTDMZRWMR6DCIZSGAZDIMBVGE3XYMRQGI2DANJRHF6GK3S7KVJXYSKUPRCVKUT4GJATAQ34GIZDQM34KUZFMWDSPQYTOMBZGEZDQNZZGQ4TOMTTJRJVKIZTHA3DEOBSEMZTCLJTHA3DEOBSPRHFERSOPQZDAMRSGAYTAML4GE3HYNRUGE3DEI2SJ4RU4USGJYRTEMBSGIWTAMJNGAYQ",
+                    "supplierRoomName": "Superior Twin Room - Room Only",
+                    "cleanSupplierRoomName": "superior twin room room only",
+                    "matchAttributes": {
+                        "roomType": "room",
+                        "roomCategory": "superior",
+                        "board": "room only",
+                        "view": "unknown",
+                        "bedType": "twin",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "G4ZTONJXGA3DKNZSGY4TMZRXGIZDANZUG43TMOJWMUZDANZSGZTDMZRWMQZDAMRYGMZDEMBXGQ3TONRZGZSTEMBWGI3DKNRUG4ZTEOJSGAZGIMRQG4YDMMJWGM3GENRRGY3TMNJSGA3TENRRG42DMNL4GERTEMBSGQYDKMJXPQZDAMRUGA2TCOL4MVXF6VKTPREVI7CFKVJHYMSBGBBXYMRSHAZXYVJSKZMHE7BRG4YDSMJSHA3TSNBZG4ZHGTCTKURTGOBWGI4DEIZRGAZC2MZYGYZDQMT4KJDE47BSGAZDIMBSGI2XYM34GY2TCNZWENJE6I2OKJDE4IZSGAZDILJQGIWTENI",
+                    "supplierRoomName": "Superior Twin Room (2 Twin Beds) - Package Rate - Room Only",
+                    "cleanSupplierRoomName": "superior twin room 2 twin beds package rate room only",
+                    "matchAttributes": {
+                        "roomType": "room",
+                        "roomCategory": "superior",
+                        "board": "room only",
+                        "view": "unknown",
+                        "bedType": "twin bed",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "G4ZTONJXGA3DKNZSGY4TMZRXGIZDANZUG43TMOJWMUZDANZSGZTDMZRWMQZDAMRYGMZDEMBXGQ3TONRZGZSTEMBWGI3DKNRUG4ZTEOL4GERTEMBSGQYDKMJXPQZDAMRUGA2TCOL4MVXF6VKTPREVI7CFKVJHYMSBGBBXYMRSHAZXYVJSKZMHE7BRG4YDSMJSHA3TSNBZG4ZHGTCTKURTGOBWGI4DEIZRGAZC2MZYGYZDQMT4KJDE47BSGAZDIMBSGI2XYOL4GY2TCNZWENJE6I2OKJDE4IZSGAZDILJQGIWTENI",
+                    "supplierRoomName": "Superior Twin Room (2 Twin Beds) - Room Only",
+                    "cleanSupplierRoomName": "superior twin room 2 twin beds room only",
+                    "matchAttributes": {
+                        "roomType": "room",
+                        "roomCategory": "superior",
+                        "board": "room only",
+                        "view": "unknown",
+                        "bedType": "twin bed",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "G4ZTONJXGA3DKNZSGY4TMZRXGIZDANZUG43TMOJWMUZDANZSGZTDMZRWMQZDQMZSGIYDONBXG43DSNTFGIYDMMRWGU3DINZTGI4XYMJDGIYDENBQGUYTO7BSGAZDIMBVGE4XYZLOL5KVG7CJKR6EKVKSPQZECMCDPQZDEOBTPRKTEVSYOJ6DCNZQHEYTEOBXHE2DSNZSONGFGVJDGM4DMMRYGIRTIOBSFUZTQNRSHAZHYTSSIZHHYMRQGI2DAMRSG4YTGNJZPQYTS7BWGU4DGMBDKJHSGTSSIZHCGMRQGI2C2MBSFUZDO",
+                    "supplierRoomName": "Superior Twin Room(2 Twin Beds) - Room Only",
+                    "cleanSupplierRoomName": "superior twin room2 twin beds room only",
+                    "matchAttributes": {
+                        "roomType": "room",
+                        "roomCategory": "superior",
+                        "board": "room only",
+                        "view": "unknown",
+                        "bedType": "twin bed",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "G4ZTONJXGA3DKNZSGY4TMZRXGIZDANRUGZTDONJWGI3GGNRVPQYSGMRQGI2DANJRG56DEMBSGQYDKMJZPRSW4X2VKN6ESVD4IVKVE7BSIEYEG7BSGI4DG7CVGJLFQ4T4GE3TAOJRGI4DOOJUHE3TE42MKNKSGMZYGYZDQMRDGEZC2MZYGYZDQMT4KJDE47BSGAZDIMBVGEZXYMT4GY2TSMZSENBEEI2SIZHCGMRQGI2C2MBVFUYTG",
+                    "supplierRoomName": "Superior Double - Breakfast",
+                    "cleanSupplierRoomName": "superior double breakfast",
+                    "matchAttributes": {
+                        "roomType": "room",
+                        "roomCategory": "superior",
+                        "board": "unknown",
+                        "view": "unknown",
+                        "bedType": "double",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "G4ZTONJXGA3DKNZSGY4TMZRXGIZDANZUG43TMOJWMV6DCIZSGAZDIMBVGE3XYMRQGI2DANJRHF6GK3S7KVJXYSKUPRCVKUT4GJATAQ34GIZDQM34KUZFMWDSPQYTOMBZGEZDQNZZGQ4TOMTTJRJVKIZTHA3DEOBSEMYTELJTHA3DEOBSPRJEMTT4GIYDENBQGUYTG7BTPQ3DKOJTGIRUEQRDKJDE4IZSGAZDILJQGUWTCMY",
+                    "supplierRoomName": "Superior Twin - Breakfast",
+                    "cleanSupplierRoomName": "superior twin breakfast",
+                    "matchAttributes": {
+                        "roomType": "room",
+                        "roomCategory": "superior",
+                        "board": "unknown",
+                        "view": "unknown",
+                        "bedType": "twin",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "G4ZTONJXGA3DKNZSGY4TMZRXGIZDANRUGZTDONJWGI3GGNRVPQYSGMRQGI2DANJRG56DEMBSGQYDKMJZPRSW4X2VKN6ESVD4IVKVE7BSIEYEG7BSGI4DG7CVGJLFQ4T4GE3TAOJRGI4DOOJUHE3TE42MKNKSGMZYGYZDQMRDGQZC2MZYGYZDQMT4KJDE47BSGAZDIMBVGE2HYOD4GY3DOOBRENJE6I2SIZHCGMRQGI2C2MBVFUYTI",
+                    "supplierRoomName": "SUPERIOR DOUBLE - ROOM ONLY",
+                    "cleanSupplierRoomName": "superior double room only",
+                    "matchAttributes": {
+                        "roomType": "room",
+                        "roomCategory": "superior",
+                        "board": "room only",
+                        "view": "unknown",
+                        "bedType": "double",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "G4ZTONJXGA3DKNZSGY4TMZRXGIZDANZUG43TMOJWMV6DCIZSGAZDIMBVGE3XYMRQGI2DANJRHF6GK3S7KVJXYSKUPRCVKUT4GJATAQ34GIZDQM34KUZFMWDSPQYTOMBZGEZDQNZZGQ4TOMTTJRJVKIZTHA3DEOBSEM2DELJTHA3DEOBSPRJEMTT4GIYDENBQGUYTI7BZPQ3DMNZYGERVETZDKJDE4IZSGAZDILJQGUWTCNA",
+                    "supplierRoomName": "SUPERIOR TWIN - ROOM ONLY",
+                    "cleanSupplierRoomName": "superior twin room only",
+                    "matchAttributes": {
+                        "roomType": "room",
+                        "roomCategory": "superior",
+                        "board": "room only",
+                        "view": "unknown",
+                        "bedType": "twin",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "G4ZTONJXGA3DKNZSGY4TMZRXGIZDANZUG43TMOJWMV6DCIZSGAZDIMBVGE3XYMRQGI2DANJRHF6GK3S7KVJXYSKUPRCVKUT4GJATAQ34GIZDQM34KUZFMWDSPQYTOMBZGEZDQNZZGQ4TOMTTJRJVKIZTHA3DEOBSEM2TMLJTHA3DEOBSPRJEMTT4GIYDENBQGUYTI7BWPQ3DMNZYGERVETZDKJDE4IZSGAZDILJQGUWTCNA",
+                    "supplierRoomName": "SUPERIOR TWIN - ROOM ONLY",
+                    "cleanSupplierRoomName": "superior twin room only",
+                    "matchAttributes": {
+                        "roomType": "room",
+                        "roomCategory": "superior",
+                        "board": "room only",
+                        "view": "unknown",
+                        "bedType": "twin",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "G4ZTONJXGA3DKNZSGY4TMZRXGIZDANRUGZTDONJWGI3GGNRVPQYSGMRQGI2DANJRG56DEMBSGQYDKMJZPRSW4X2VKN6ESVD4IVKVE7BSIEYEG7BSGI4DG7CVGJLFQ4T4GE3TAOJRGI4DOOJUHE3TE42MKNKSGMZYGYZDQMRDGU3C2MZYGYZDQMT4KJDE47BSGAZDIMBVGE2HYOL4GY3DOOBRENJE6I2SIZHCGMRQGI2C2MBVFUYTI",
+                    "supplierRoomName": "SUPERIOR DOUBLE - ROOM ONLY",
+                    "cleanSupplierRoomName": "superior double room only",
+                    "matchAttributes": {
+                        "roomType": "room",
+                        "roomCategory": "superior",
+                        "board": "room only",
+                        "view": "unknown",
+                        "bedType": "double",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "G4ZTONJXGA3DKNZSGY4TMZRXGIZDANRUGZTDONJWGI3GGNRVPQYSGMRQGI2DANJRG56DEMBSGQYDKMJZPRSW4X2VKN6ESVD4IVKVE7BSIEYEG7BSGI4DG7CVGJLFQ4T4GE3TAOJRGI4DOOJUHE3TE42MKNKSGMZYGYZDQMRDGEYDOLJTHA3DEOBSPRJEMTT4GIYDENBQGUYTI7BUPQ3DMNZYGERVETZDKJDE4IZSGAZDILJQGUWTCNA",
+                    "supplierRoomName": "SUPERIOR DOUBLE - ROOM ONLY",
+                    "cleanSupplierRoomName": "superior double room only",
+                    "matchAttributes": {
+                        "roomType": "room",
+                        "roomCategory": "superior",
+                        "board": "room only",
+                        "view": "unknown",
+                        "bedType": "double",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "G4ZTONJXGA3DKNZSGY4TMZRXGIZDANZUG43TMOJWMV6DCIZSGAZDIMBVGE3XYMRQGI2DANJRHF6GK3S7KVJXYSKUPRCVKUT4GJATAQ34GIZDQM34KUZFMWDSPQYTOMBZGEZDQNZZGQ4TOMTTJRJVKIZTHA3DEOBSEMYTANZNGM4DMMRYGJ6FERSOPQZDAMRUGA2TCND4GEYXYNRWG44DCI2SJ4RVERSOEMZDAMRUFUYDKLJRGQ",
+                    "supplierRoomName": "SUPERIOR TWIN - ROOM ONLY",
+                    "cleanSupplierRoomName": "superior twin room only",
+                    "matchAttributes": {
+                        "roomType": "room",
+                        "roomCategory": "superior",
+                        "board": "room only",
+                        "view": "unknown",
+                        "bedType": "twin",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "G4ZTONJXGA3DKNZSGY4TMZRXGIZDANZUG43TMOJWMV6DCIZSGAZDIMBVGE3XYMRQGI2DANJRHF6GK3S7KVJXYSKUPRCVKUT4GJATAQ34GIZDQM34KUZFMWDSPQYTOMBZGEZDQNZZGQ4TOMTTJRJVKIZTHA3DEOBSEMZDENZNGM4DMMRYGJ6FERSOPQZDAMRUGA2TCND4GV6DMNRXHAYSGUSPENJEMTRDGIYDENBNGA2S2MJU",
+                    "supplierRoomName": "SUPERIOR TWIN - ROOM ONLY",
+                    "cleanSupplierRoomName": "superior twin room only",
+                    "matchAttributes": {
+                        "roomType": "room",
+                        "roomCategory": "superior",
+                        "board": "room only",
+                        "view": "unknown",
+                        "bedType": "twin",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "G4ZTONJXGA3DKNZSGY4TMZRXGIZDANRUGZTDONJWGI3GGNRVPQYSGMRQGI2DANJRG56DEMBSGQYDKMJZPRSW4X2VKN6ESVD4IVKVE7BSIEYEG7BSGI4DG7CVGJLFQ4T4GE3TAOJRGI4DOOJUHE3TE42MKNKSGMZYGYZDQMRDGIZDOLJTHA3DEOBSPRJEMTT4GIYDENBQGUYTI7BRGB6DMNRXHAYSGUSPENJEMTRDGIYDENBNGA2S2MJU",
+                    "supplierRoomName": "SUPERIOR DOUBLE - ROOM ONLY",
+                    "cleanSupplierRoomName": "superior double room only",
+                    "matchAttributes": {
+                        "roomType": "room",
+                        "roomCategory": "superior",
+                        "board": "room only",
+                        "view": "unknown",
+                        "bedType": "double",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "G4ZTONJXGA3DKNZSGY4TMZRXGIZDANZUG43TMOJWMV6DCIZSGAZDIMBVGE3XYMRQGI2DANJRHF6GK3S7KVJXYSKUPRCVKUT4GJATAQ34GIZDQM34KUZFMWDSPQYTOMBZGEZDQNZZGQ4TOMTTJRJVKIZTHA3DEOBSEM2DELJTHA3DEOBSPRJEMTT4GIYDENBQGUYTI7BTPQ3DMOBYGIRUEQRDKJDE4IZSGAZDILJQGUWTCNA",
+                    "supplierRoomName": "SUPERIOR TWIN - BED AND BREAKFAST",
+                    "cleanSupplierRoomName": "superior twin bed and breakfast",
+                    "matchAttributes": {
+                        "roomType": "room",
+                        "roomCategory": "superior",
+                        "board": "bed and breakfast",
+                        "view": "unknown",
+                        "bedType": "twin bed",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "G4ZTONJXGA3DKNZSGY4TMZRXGIZDANZUG43TMOJWMV6DCIZSGAZDIMBVGE3XYMRQGI2DANJRHF6GK3S7KVJXYSKUPRCVKUT4GJATAQ34GIZDQM34KUZFMWDSPQYTOMBZGEZDQNZZGQ4TOMTTJRJVKIZTHA3DEOBSEM2TMLJTHA3DEOBSPRJEMTT4GIYDENBQGUYTI7BRPQ3DMOBYGIRUEQRDKJDE4IZSGAZDILJQGUWTCNA",
+                    "supplierRoomName": "SUPERIOR TWIN - BED AND BREAKFAST",
+                    "cleanSupplierRoomName": "superior twin bed and breakfast",
+                    "matchAttributes": {
+                        "roomType": "room",
+                        "roomCategory": "superior",
+                        "board": "bed and breakfast",
+                        "view": "unknown",
+                        "bedType": "twin bed",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "G4ZTONJXGA3DKNZSGY4TMZRXGIZDANZUG43TMOJWMV6DCIZSGAZDIMBVGE3XYMRQGI2DANJRHF6GK3S7KVJXYSKUPRCVKUT4GJATAQ34GIZDQM34KUZFMWDSPQYTOMBZGEZDQNZZGQ4TOMTTJRJVKIZTHA3DEOBSEMYTANZNGM4DMMRYGJ6FERSOPQZDAMRUGA2TCND4GN6DMNRYHAZCGQSCENJEMTRDGIYDENBNGA2S2MJU",
+                    "supplierRoomName": "SUPERIOR TWIN - BED AND BREAKFAST",
+                    "cleanSupplierRoomName": "superior twin bed and breakfast",
+                    "matchAttributes": {
+                        "roomType": "room",
+                        "roomCategory": "superior",
+                        "board": "bed and breakfast",
+                        "view": "unknown",
+                        "bedType": "twin bed",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "G4ZTONJXGA3DKNZSGY4TMZRXGIZDANZUG43TMOJWMV6DCIZSGAZDIMBVGE3XYMRQGI2DANJRHF6GK3S7KVJXYSKUPRCVKUT4GJATAQ34GIZDQM34KUZFMWDSPQYTOMBZGEZDQNZZGQ4TOMTTJRJVKIZTHA3DEOBSEMZDENZNGM4DMMRYGJ6FERSOPQZDAMRUGA2TCND4GJ6DMNRYHAZCGQSCENJEMTRDGIYDENBNGA2S2MJU",
+                    "supplierRoomName": "SUPERIOR TWIN - BED AND BREAKFAST",
+                    "cleanSupplierRoomName": "superior twin bed and breakfast",
+                    "matchAttributes": {
+                        "roomType": "room",
+                        "roomCategory": "superior",
+                        "board": "bed and breakfast",
+                        "view": "unknown",
+                        "bedType": "twin bed",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "G4ZTONJXGA3DKNZSGY4TMZRXGIZDANZUG43TMOJWMV6DCIZSGAZDIMBVGE3XYMRQGI2DANJRHF6GK3S7KVJXYSKUPRCVKUT4GJATAQ34GIZDQM34KUZFMWDSPQYTOMBZGEZDQNZZGQ4TOMTTJRJVKIZTHA3DEOBSEMZTQMJNGM4DMMRYGJ6FERSOPQZDAMRUGA2TCM34GZ6DMNZRG44SGUSPENJEMTRDGIYDENBNGA2S2MJT",
+                    "supplierRoomName": "Superior Twin - Room Only",
+                    "cleanSupplierRoomName": "superior twin room only",
+                    "matchAttributes": {
+                        "roomType": "room",
+                        "roomCategory": "superior",
+                        "board": "room only",
+                        "view": "unknown",
+                        "bedType": "twin",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "G4ZTONJXGA3DKNZSGY4TMZRXGIZDANRUGZTDONJWGI3GGNRVPQYSGMRQGI2DANJRG56DEMBSGQYDKMJZPRSW4X2VKN6ESVD4IVKVE7BSIEYEG7BSGI4DG7CVGJLFQ4T4GE3TAOJRGI4DOOJUHE3TE42MKNKSGMZYGYZDQMRDGM4DCLJTHA3DEOBSPRJEMTT4GIYDENBQGUYTG7BXPQ3DOMJXHERVETZDKJDE4IZSGAZDILJQGUWTCMY",
+                    "supplierRoomName": "Superior Double - Room Only",
+                    "cleanSupplierRoomName": "superior double room only",
+                    "matchAttributes": {
+                        "roomType": "room",
+                        "roomCategory": "superior",
+                        "board": "room only",
+                        "view": "unknown",
+                        "bedType": "double",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "G4ZTONJXGA3DKNZSGY4TMZRXGIZDANZUG43TMOJWMUZDANZSGZTDMZRWMR6DCIZSGAZDIMBVGE3XYMRQGI2DANJRHF6GK3S7KVJXYSKUPRCVKUT4GJATAQ34GIZDQM34KUZFMWDSPQYTOMBZGEZDQNZZGQ4TOMTTJRJVKIZTHA3DEOBSEM2DQMRNGM4DMMRYGJ6E4USGJZ6DEMBSGQYDEMRXGEZTKOL4GZ6DMNZTGIYCGUSPENHFERSOEMZDAMRUFUYDELJSG4",
+                    "supplierRoomName": "Superior Twin Room - Room Only",
+                    "cleanSupplierRoomName": "superior twin room room only",
+                    "matchAttributes": {
+                        "roomType": "room",
+                        "roomCategory": "superior",
+                        "board": "room only",
+                        "view": "unknown",
+                        "bedType": "twin",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "G4ZTONJXGA3DKNZSGY4TMZRXGIZDANZUG43TMOJWMUZDANZSGZTDMZRWMR6DCIZSGAZDIMBVGE3XYMRQGI2DANJRHF6GK3S7KVJXYSKUPRCVKUT4GJATAQ34GIZDQM34KUZFMWDSPQYTOMBZGEZDQNZZGQ4TOMTTJRJVKIZTHA3DEOBSEMZTQMJNGM4DMMRYGJ6E4USGJZ6DEMBSGIYDCMBRPQ4HYNRXGMZTCI2SJ4RU4USGJYRTEMBSGIWTAMJNGAYQ",
+                    "supplierRoomName": "Superior Twin Room - Room Only",
+                    "cleanSupplierRoomName": "superior twin room room only",
+                    "matchAttributes": {
+                        "roomType": "room",
+                        "roomCategory": "superior",
+                        "board": "room only",
+                        "view": "unknown",
+                        "bedType": "twin",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "G4ZTONJXGA3DKNZSGY4TMZRXGIZDANZUG43TMOJWMUZDANZSGZTDMZRWMR6DCIZSGAZDIMBVGE3XYMRQGI2DANJRHF6GK3S7KVJXYSKUPRCVKUT4GJATAQ34GIZDQM34KUZFMWDSPQYTOMBZGEZDQNZZGQ4TOMTTJRJVKIZTHA3DEOBSEM2DQMRNGM4DMMRYGJ6E4USGJZ6DEMBSGQYDEMRXGEZTKOL4GV6DMNZUGIYSGQSCGIRU4USGJYRTEMBSGQWTAMRNGI3Q",
+                    "supplierRoomName": "Superior Twin Room - Breakfast for Two Guest",
+                    "cleanSupplierRoomName": "superior twin room breakfast for two guest",
+                    "matchAttributes": {
+                        "roomType": "room",
+                        "roomCategory": "superior",
+                        "board": "unknown",
+                        "view": "unknown",
+                        "bedType": "twin",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "G4ZTONJXGA3DKNZSGY4TMZRXGIZDANZUG43TMOJWMUZDANZSGZTDMZRWMR6DCIZSGAZDIMBVGE3XYMRQGI2DANJRHF6GK3S7KVJXYSKUPRCVKUT4GJATAQ34GIZDQM34KUZFMWDSPQYTOMBZGEZDQNZZGQ4TOMTTJRJVKIZTHA3DEOBSEM2DQMRNGM4DMMRYGJ6FERSOPQZDAMRUGAZDEOJRGAYDA7BTPQ3DOOJZGYRVETZDKJDE4IZSGAZDILJQGIWTENY",
+                    "supplierRoomName": "Superior Twin Room - Room Only",
+                    "cleanSupplierRoomName": "superior twin room room only",
+                    "matchAttributes": {
+                        "roomType": "room",
+                        "roomCategory": "superior",
+                        "board": "room only",
+                        "view": "unknown",
+                        "bedType": "twin",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "G4ZTONJXGA3DKNZSGY4TMZRXGIZDANZUG43TMOJWMUZDANZSGZTDMZRWMR6DCIZSGAZDIMBVGE3XYMRQGI2DANJRHF6GK3S7KVJXYSKUPRCVKUT4GJATAQ34GIZDQM34KUZFMWDSPQYTOMBZGEZDQNZZGQ4TOMTTJRJVKIZTHA3DEOBSEM2DQMRNGM4DMMRYGJ6E4USGJZ6DEMBSGQYDEMRXGEZTKOL4GR6DMOBQGA3CGQSCGIRU4USGJYRTEMBSGQWTAMRNGI3Q",
+                    "supplierRoomName": "Superior Twin Room - Breakfast for Two Guest",
+                    "cleanSupplierRoomName": "superior twin room breakfast for two guest",
+                    "matchAttributes": {
+                        "roomType": "room",
+                        "roomCategory": "superior",
+                        "board": "unknown",
+                        "view": "unknown",
+                        "bedType": "twin",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "G4ZTONJXGA3DKNZSGY4TMZRXGIZDANZUG43TMOJWMUZDANZSGZTDMZRWMR6DCIZSGAZDIMBVGE3XYMRQGI2DANJRHF6GK3S7KVJXYSKUPRCVKUT4GJATAQ34GIZDQM34KUZFMWDSPQYTOMBZGEZDQNZZGQ4TOMTTJRJVKIZTHA3DEOBSEM2DQMRNGM4DMMRYGJ6FERSOPQZDAMRUGAZDEOJRGAYDA7BSPQ3DQMBZHERUEQRSENJEMTRDGIYDENBNGAZC2MRX",
+                    "supplierRoomName": "Superior Twin Room - Breakfast for Two Guest",
+                    "cleanSupplierRoomName": "superior twin room breakfast for two guest",
+                    "matchAttributes": {
+                        "roomType": "room",
+                        "roomCategory": "superior",
+                        "board": "unknown",
+                        "view": "unknown",
+                        "bedType": "twin",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "G4ZTONJXGA3DKNZSGY4TMZRXGIZDANZUG43TMOJWMUZDANZSGZTDMZRWMR6DCIZSGAZDIMBVGE3XYMRQGI2DANJRHF6GK3S7KVJXYSKUPRCVKUT4GJATAQ34GIZDQM34KUZFMWDSPQYTOMBZGEZDQNZZGQ4TOMTTJRJVKIZTHA3DEOBSEMZTCLJTHA3DEOBSPRJEMTT4GIYDENBQGUYTGMRSGAYHYMJVPQ3DSMZXGYRVETZDKJDE4IZSGAZDILJQGUWTCMY",
+                    "supplierRoomName": "Superior Twin Room - Room Only",
+                    "cleanSupplierRoomName": "superior twin room room only",
+                    "matchAttributes": {
+                        "roomType": "room",
+                        "roomCategory": "superior",
+                        "board": "room only",
+                        "view": "unknown",
+                        "bedType": "twin",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "G4ZTONJXGA3DKNZSGY4TMZRXGIZDANZUG43TMOJWMUZDANZSGZTDMZRWMR6DCIZSGAZDIMBVGE3XYMRQGI2DANJRHF6GK3S7KVJXYSKUPRCVKUT4GJATAQ34GIZDQM34KUZFMWDSPQYTOMBZGEZDQNZZGQ4TOMTTJRJVKIZTHA3DEOBSEMZTCLJTHA3DEOBSPRJEMTT4GIYDENBQGUYTGMRSGAYHYMJXPQ3DSNBUGARVETZDKJDE4IZSGAZDILJQGUWTCMY",
+                    "supplierRoomName": "Superior Twin Room - Room Only",
+                    "cleanSupplierRoomName": "superior twin room room only",
+                    "matchAttributes": {
+                        "roomType": "room",
+                        "roomCategory": "superior",
+                        "board": "room only",
+                        "view": "unknown",
+                        "bedType": "twin",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "G4ZTONJXGA3DKNZSGY4TMZRXGIZDANRUGZTDONJWGI3GGNRVPQYSGMRQGI2DANJRG56DEMBSGQYDKMJZPRSW4X2VKN6ESVD4IVKVE7BSIEYEG7BSGI4DG7CVGJLFQ4T4GE3TAOJRGI4DOOJUHE3TE42MKNKSGMZYGYZDQMRDGQZC2MZYGYZDQMT4KJDE47BSGAZDIMBVGE2HYMT4G4YDEMJUENBEEI2SIZHCGMRQGI2C2MBVFUYTI",
+                    "supplierRoomName": "SUPERIOR DOUBLE - BED AND BREAKFAST",
+                    "cleanSupplierRoomName": "superior double bed and breakfast",
+                    "matchAttributes": {
+                        "roomType": "room",
+                        "roomCategory": "superior",
+                        "board": "bed and breakfast",
+                        "view": "unknown",
+                        "bedType": "double bed",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "G4ZTONJXGA3DKNZSGY4TMZRXGIZDANRUGZTDONJWGI3GGNRVPQYSGMRQGI2DANJRG56DEMBSGQYDKMJZPRSW4X2VKN6ESVD4IVKVE7BSIEYEG7BSGI4DG7CVGJLFQ4T4GE3TAOJRGI4DOOJUHE3TE42MKNKSGMZYGYZDQMRDGU3C2MZYGYZDQMT4KJDE47BSGAZDIMBVGE2HYMT4G4YDEMJUENBEEI2SIZHCGMRQGI2C2MBVFUYTI",
+                    "supplierRoomName": "SUPERIOR DOUBLE - BED AND BREAKFAST",
+                    "cleanSupplierRoomName": "superior double bed and breakfast",
+                    "matchAttributes": {
+                        "roomType": "room",
+                        "roomCategory": "superior",
+                        "board": "bed and breakfast",
+                        "view": "unknown",
+                        "bedType": "double bed",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "G4ZTONJXGA3DKNZSGY4TMZRXGIZDANRUGZTDONJWGI3GGNRVPQYSGMRQGI2DANJRG56DEMBSGQYDKMJZPRSW4X2VKN6ESVD4IVKVE7BSIEYEG7BSGI4DG7CVGJLFQ4T4GE3TAOJRGI4DOOJUHE3TE42MKNKSGMZYGYZDQMRDGEYDOLJTHA3DEOBSPRJEMTT4GIYDENBQGUYTI7BSPQ3TAMRRGQRUEQRDKJDE4IZSGAZDILJQGUWTCNA",
+                    "supplierRoomName": "SUPERIOR DOUBLE - BED AND BREAKFAST",
+                    "cleanSupplierRoomName": "superior double bed and breakfast",
+                    "matchAttributes": {
+                        "roomType": "room",
+                        "roomCategory": "superior",
+                        "board": "bed and breakfast",
+                        "view": "unknown",
+                        "bedType": "double bed",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "G4ZTONJXGA3DKNZSGY4TMZRXGIZDANRUGZTDONJWGI3GGNRVPQYSGMRQGI2DANJRG56DEMBSGQYDKMJZPRSW4X2VKN6ESVD4IVKVE7BSIEYEG7BSGI4DG7CVGJLFQ4T4GE3TAOJRGI4DOOJUHE3TE42MKNKSGMZYGYZDQMRDGIZDOLJTHA3DEOBSPRJEMTT4GIYDENBQGUYTI7BRPQ3TAMRRGQRUEQRDKJDE4IZSGAZDILJQGUWTCNA",
+                    "supplierRoomName": "SUPERIOR DOUBLE - BED AND BREAKFAST",
+                    "cleanSupplierRoomName": "superior double bed and breakfast",
+                    "matchAttributes": {
+                        "roomType": "room",
+                        "roomCategory": "superior",
+                        "board": "bed and breakfast",
+                        "view": "unknown",
+                        "bedType": "double bed",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "G42DONZWHE3GKMRQG4ZTONJXGA3DKNZSGY4TMZRXGIZDANZUG43TMOJWMV6DCIZSGAZDIMBVGE3XYMRQGI2DANJRHF6GK3S7KVJXYSKUPRCVKUT4GJATAQ34GIZDQM34KUZFMWDSPQYTOMBZGEZDQNZZGQ4TOMTTJRJVKIZTHA3DEOBSEMZTMMJNGM4DMMRYGJ6E4USGJZ6DEMBSGQYDEMRUGE3DAMD4GEYHYNZQGI3DGI2CIIRU4USGJYRTEMBSGQWTAMRNGI2A",
+                    "supplierRoomName": "TWIN SUPERIOR TWIN - With Breakfast",
+                    "cleanSupplierRoomName": "twin superior twin with breakfast",
+                    "matchAttributes": {
+                        "roomType": "room",
+                        "roomCategory": "superior",
+                        "board": "unknown",
+                        "view": "unknown",
+                        "bedType": "twin",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "G42DONZWHE3GKMRQG4ZTONJXGA3DKNZSGY4TMZRXGIZDANZUG43TMOJWMV6DCIZSGAZDIMBVGE3XYMRQGI2DANJRHF6GK3S7KVJXYSKUPRCVKUT4GJATAQ34GIZDQM34KUZFMWDSPQYTOMBZGEZDQNZZGQ4TOMTTJRJVKIZTHA3DEOBSEMZTMMJNGM4DMMRYGJ6FERSOPQZDAMRUGA2TCMRRGYYDA7BRPQ3TANBXGURUEQRDKJDE4IZSGAZDILJQGUWTCMQ",
+                    "supplierRoomName": "TWIN SUPERIOR TWIN - With Breakfast",
+                    "cleanSupplierRoomName": "twin superior twin with breakfast",
+                    "matchAttributes": {
+                        "roomType": "room",
+                        "roomCategory": "superior",
+                        "board": "unknown",
+                        "view": "unknown",
+                        "bedType": "twin",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "G4ZTONJXGA3DKNZSGY4TMZRXGIZDANZUG43TMOJWMUZDANZSGZTDMZRWMQZDAMRYGMZDEMBXGQ3TONRZGZSTEMBWGI3DKNRUG4ZTEOJSGAZGIMRQG4YDMMJWGM3GENRRGY3TMNJSGA3TENRRG42DMNL4GERTEMBSGQYDKMJXPQZDAMRUGA2TCOL4MVXF6VKTPREVI7CFKVJHYMSBGBBXYMRSHAZXYVJSKZMHE7BRG4YDSMJSHA3TSNBZG4ZHGTCTKURTGOBWGI4DEIZRGAZC2MZYGYZDQMT4KJDE47BSGAZDIMBVGEZHYNT4G4YDIOJZENJE6I2SIZHCGMRQGI2C2MBVFUYTE",
+                    "supplierRoomName": "Superior Twin Room (2 Twin Beds) - Package Rate - Room Only",
+                    "cleanSupplierRoomName": "superior twin room 2 twin beds package rate room only",
+                    "matchAttributes": {
+                        "roomType": "room",
+                        "roomCategory": "superior",
+                        "board": "room only",
+                        "view": "unknown",
+                        "bedType": "twin bed",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "G4ZTONJXGA3DKNZSGY4TMZRXGIZDANZUG43TMOJWMUZDANZSGZTDMZRWMQZDAMRYGMZDEMBXGQ3TONRZGZSTEMBWGI3DKNRUG4ZTEOL4GERTEMBSGQYDKMJXPQZDAMRUGA2TCOL4MVXF6VKTPREVI7CFKVJHYMSBGBBXYMRSHAZXYVJSKZMHE7BRG4YDSMJSHA3TSNBZG4ZHGTCTKURTGOBWGI4DEIZRGAZC2MZYGYZDQMT4KJDE47BSGAZDIMBVGEZHYMJSPQ3TANBZHERVETZDKJDE4IZSGAZDILJQGUWTCMQ",
+                    "supplierRoomName": "Superior Twin Room (2 Twin Beds) - Room Only",
+                    "cleanSupplierRoomName": "superior twin room 2 twin beds room only",
+                    "matchAttributes": {
+                        "roomType": "room",
+                        "roomCategory": "superior",
+                        "board": "room only",
+                        "view": "unknown",
+                        "bedType": "twin bed",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "G4ZTONJXGA3DKNZSGY4TMZRXGIZDANZUG43TMOJWMUZDANZSGZTDMZRWMQZDQMZSGIYDONBXG43DSNTFGIYDMMRWGU3DINZTGI4XYMJDGIYDENBQGUYTO7BSGAZDIMBVGE4XYZLOL5KVG7CJKR6EKVKSPQZECMCDPQZDEOBTPRKTEVSYOJ6DCNZQHEYTEOBXHE2DSNZSONGFGVJDGM4DMMRYGIRTIOBSFUZTQNRSHAZHYTSSIZHHYMRQGI2DAMRSG4YTGNJZPQZDI7BXGE4DGMBDKJHSGTSSIZHCGMRQGI2C2MBSFUZDO",
+                    "supplierRoomName": "Superior Twin Room(2 Twin Beds) - Room Only",
+                    "cleanSupplierRoomName": "superior twin room2 twin beds room only",
+                    "matchAttributes": {
+                        "roomType": "room",
+                        "roomCategory": "superior",
+                        "board": "room only",
+                        "view": "unknown",
+                        "bedType": "twin bed",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "G4ZTONJXGA3DKNZSGY4TMZRXGIZDANZUG43TMOJWMUZDANZSGZTDMZRWMQZDQMZSGIYDONBXG43DSNTFGIYDMMRWGU3DINZTGI4XYMJDGIYDENBQGUYTO7BSGAZDIMBVGE4XYZLOL5KVG7CJKR6EKVKSPQZECMCDPQZDEOBTPRKTEVSYOJ6DCNZQHEYTEOBXHE2DSNZSONGFGVJDGM4DMMRYGIRTIOBSFUZTQNRSHAZHYUSGJZ6DEMBSGQYDEMRZGEYDAMD4GIZHYNZSGU4DOI2SJ4RVERSOEMZDAMRUFUYDELJSG4",
+                    "supplierRoomName": "Superior Twin Room(2 Twin Beds) - Room Only",
+                    "cleanSupplierRoomName": "superior twin room2 twin beds room only",
+                    "matchAttributes": {
+                        "roomType": "room",
+                        "roomCategory": "superior",
+                        "board": "room only",
+                        "view": "unknown",
+                        "bedType": "twin bed",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "G4ZTONJXGA3DKNZSGY4TMZRXGIZDANZUG43TMOJWMUZDANZSGZTDMZRWMR6DCIZSGAZDIMBVGE3XYMRQGI2DANJRHF6GK3S7KVJXYSKUPRCVKUT4GJATAQ34GIZDQM34KUZFMWDSPQYTOMBZGEZDQNZZGQ4TOMTTJRJVKIZTHA3DEOBSEMZTCLJTHA3DEOBSPRJEMTT4GIYDENBQGUYTGMRSGAYHYMJTPQ3TENZTHARUEQRDKJDE4IZSGAZDILJQGUWTCMY",
+                    "supplierRoomName": "Superior Twin Room - Full Breakfast",
+                    "cleanSupplierRoomName": "superior twin room full breakfast",
+                    "matchAttributes": {
+                        "roomType": "room",
+                        "roomCategory": "superior",
+                        "board": "unknown",
+                        "view": "unknown",
+                        "bedType": "twin",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "G4ZTONJXGA3DKNZSGY4TMZRXGIZDANZUG43TMOJWMUZDANZSGZTDMZRWMR6DCIZSGAZDIMBVGE3XYMRQGI2DANJRHF6GK3S7KVJXYSKUPRCVKUT4GJATAQ34GIZDQM34KUZFMWDSPQYTOMBZGEZDQNZZGQ4TOMTTJRJVKIZTHA3DEOBSEMZTCLJTHA3DEOBSPRJEMTT4GIYDENBQGUYTGMRSGAYHYMJUPQ3TEOBSHARUEQRDKJDE4IZSGAZDILJQGUWTCMY",
+                    "supplierRoomName": "Superior Twin Room - Full Breakfast",
+                    "cleanSupplierRoomName": "superior twin room full breakfast",
+                    "matchAttributes": {
+                        "roomType": "room",
+                        "roomCategory": "superior",
+                        "board": "unknown",
+                        "view": "unknown",
+                        "bedType": "twin",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "G4ZTONJXGA3DKNZSGY4TMZRXGIZDANZUG43TMOJWMUZDANZSGZTDMZRWMR6DCIZSGAZDIMBVGE3XYMRQGI2DANJRHF6GK3S7KVJXYSKUPRCVKUT4GJATAQ34GIZDQM34KUZFMWDSPQYTOMBZGEZDQNZZGQ4TOMTTJRJVKIZTHA3DEOBSEMZTQMJNGM4DMMRYGJ6FERSOPQZDAMRUGA2TCM34GEYXYNZTGEYDII2SJ4RVERSOEMZDAMRUFUYDKLJRGM",
+                    "supplierRoomName": "Superior Twin Room - Room Only",
+                    "cleanSupplierRoomName": "superior twin room room only",
+                    "matchAttributes": {
+                        "roomType": "room",
+                        "roomCategory": "superior",
+                        "board": "room only",
+                        "view": "unknown",
+                        "bedType": "twin",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "GY2DMZRXGU3DENTDGY2TEMBXGM3TKNZQGY2TOMRWHE3GMNZSGIYDMNBWMY3TKNRSGZRTMNL4GERTEMBSGQYDKMJXPQZDAMRUGA2TCOL4MVXF6VKTPREVI7CFKVJHYMSBGBBXYMRSHAZXYVJSKZMHE7BRG4YDSMJSHA3TSNBZG4ZHGTCTKURTGOBWGI4DEIZTGYYS2MZYGYZDQMT4JZJEMTT4GIYDENBQGIZDIMJWGAYHYMJSPQ3TGNZWGYRUEQRDJZJEMTRDGIYDENBNGAZC2MRU",
+                    "supplierRoomName": "DOUBLE SUPERIOR DOUBLE - With Breakfast",
+                    "cleanSupplierRoomName": "double superior double with breakfast",
+                    "matchAttributes": {
+                        "roomType": "room",
+                        "roomCategory": "superior",
+                        "board": "unknown",
+                        "view": "unknown",
+                        "bedType": "double",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "G4ZTONJXGA3DKNZSGY4TMZRXGIZDANZUG43TMOJWMUZDANZSGZTDMZRWMQZDAMRYGMZDEMBXGQ3TONRZGZSTEMBWGI3DKNRUG4ZTEOJSGAZGIMRQG4YDMMJWGM3GENRRGY3TMNJSGA3TENRRG42DMNL4GERTEMBSGQYDKMJXPQZDAMRUGA2TCOL4MVXF6VKTPREVI7CFKVJHYMSBGBBXYMRSHAZXYVJSKZMHE7BRG4YDSMJSHA3TSNBZG4ZHGTCTKURTGOBWGI4DEIZRGAZC2MZYGYZDQMT4KJDE47BSGAZDIMBVGEZHYMJVPQ3TGOBWGARUEQRDKJDE4IZSGAZDILJQGUWTCMQ",
+                    "supplierRoomName": "Superior Twin Room (2 Twin Beds) - Package Rate - BED AND BREAKFAST",
+                    "cleanSupplierRoomName": "superior twin room 2 twin beds package rate bed and breakfast",
+                    "matchAttributes": {
+                        "roomType": "room",
+                        "roomCategory": "superior",
+                        "board": "bed and breakfast",
+                        "view": "unknown",
+                        "bedType": "twin bed",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "G4ZTONJXGA3DKNZSGY4TMZRXGIZDANZUG43TMOJWMUZDANZSGZTDMZRWMQZDAMRYGMZDEMBXGQ3TONRZGZSTEMBWGI3DKNRUG4ZTEOL4GERTEMBSGQYDKMJXPQZDAMRUGA2TCOL4MVXF6VKTPREVI7CFKVJHYMSBGBBXYMRSHAZXYVJSKZMHE7BRG4YDSMJSHA3TSNBZG4ZHGTCTKURTGOBWGI4DEIZRGAZC2MZYGYZDQMT4KJDE47BSGAZDIMBVGEZHYMJYPQ3TGOBWGARUEQRDKJDE4IZSGAZDILJQGUWTCMQ",
+                    "supplierRoomName": "Superior Twin Room (2 Twin Beds) - BED AND BREAKFAST",
+                    "cleanSupplierRoomName": "superior twin room 2 twin beds bed and breakfast",
+                    "matchAttributes": {
+                        "roomType": "room",
+                        "roomCategory": "superior",
+                        "board": "bed and breakfast",
+                        "view": "unknown",
+                        "bedType": "twin bed",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "GY2DMZRXGU3DENTDGY2TEMBXGM3TKNZQGY2TOMRWHE3GMNZSGIYDMNBWMY3TKNRSGZRTMNL4GERTEMBSGQYDKMJXPQZDAMRUGA2TCOL4MVXF6VKTPREVI7CFKVJHYMSBGBBXYMRSHAZXYVJSKZMHE7BRG4YDSMJSHA3TSNBZG4ZHGTCTKURTGOBWGI4DEIZTGYYS2MZYGYZDQMT4KJDE47BSGAZDIMBVGEZDCNRQGB6DG7BXGM4TQNZDIJBCGUSGJYRTEMBSGQWTANJNGEZA",
+                    "supplierRoomName": "DOUBLE SUPERIOR DOUBLE - With Breakfast",
+                    "cleanSupplierRoomName": "double superior double with breakfast",
+                    "matchAttributes": {
+                        "roomType": "room",
+                        "roomCategory": "superior",
+                        "board": "unknown",
+                        "view": "unknown",
+                        "bedType": "double",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "G4ZTONJXGA3DKNZSGY4TMZRXGIZDANZUG43TMOJWMUZDANZSGZTDMZRWMQZDQMZSGIYDONBXG43DSNTFGIYDMMRWGU3DINZTGI4XYMJDGIYDENBQGUYTO7BSGAZDIMBVGE4XYZLOL5KVG7CJKR6EKVKSPQZECMCDPQZDEOBTPRKTEVSYOJ6DCNZQHEYTEOBXHE2DSNZSONGFGVJDGM4DMMRYGIRTIOBSFUZTQNRSHAZHYTSSIZHHYMRQGI2DAMRSG4YTGNJZPQZDA7BXGQ2TGMZDIJBDEI2OKJDE4IZSGAZDILJQGIWTENY",
+                    "supplierRoomName": "Superior Twin Room(2 Twin Beds) - Breakfast for Two Guest",
+                    "cleanSupplierRoomName": "superior twin room2 twin beds breakfast for two guest",
+                    "matchAttributes": {
+                        "roomType": "room",
+                        "roomCategory": "superior",
+                        "board": "unknown",
+                        "view": "unknown",
+                        "bedType": "twin bed",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "G4ZTONJXGA3DKNZSGY4TMZRXGIZDANZUG43TMOJWMV6DCIZSGAZDIMBVGE3XYMRQGI2DANJRHF6GK3S7KVJXYSKUPRCVKUT4GJATAQ34GIZDQM34KUZFMWDSPQYTOMBZGEZDQNZZGQ4TOMTTJRJVKIZTHA3DEOBSEMZTQMJNGM4DMMRYGJ6FERSOPQZDAMRUGA2TCM34GE2XYNZUGY3TII2CIIRVERSOEMZDAMRUFUYDKLJRGM",
+                    "supplierRoomName": "Superior Twin - Breakfast",
+                    "cleanSupplierRoomName": "superior twin breakfast",
+                    "matchAttributes": {
+                        "roomType": "room",
+                        "roomCategory": "superior",
+                        "board": "unknown",
+                        "view": "unknown",
+                        "bedType": "twin",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "G4ZTONJXGA3DKNZSGY4TMZRXGIZDANZUG43TMOJWMUZDANZSGZTDMZRWMQZDQMZSGIYDONBXG43DSNTFGIYDMMRWGU3DINZTGI4XYMJDGIYDENBQGUYTO7BSGAZDIMBVGE4XYZLOL5KVG7CJKR6EKVKSPQZECMCDPQZDEOBTPRKTEVSYOJ6DCNZQHEYTEOBXHE2DSNZSONGFGVJDGM4DMMRYGIRTIOBSFUZTQNRSHAZHYTSSIZHHYMRQGI2DAMRSG4YTGNJZPQZDG7BXGUZDINBDIJBDEI2OKJDE4IZSGAZDILJQGIWTENY",
+                    "supplierRoomName": "Superior Twin Room(2 Twin Beds) - Breakfast for Two Guest",
+                    "cleanSupplierRoomName": "superior twin room2 twin beds breakfast for two guest",
+                    "matchAttributes": {
+                        "roomType": "room",
+                        "roomCategory": "superior",
+                        "board": "unknown",
+                        "view": "unknown",
+                        "bedType": "twin bed",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "G4ZTONJXGA3DKNZSGY4TMZRXGIZDANZUG43TMOJWMUZDANZSGZTDMZRWMQZDQMZSGIYDONBXG43DSNTFGIYDMMRWGU3DINZTGI4XYMJDGIYDENBQGUYTO7BSGAZDIMBVGE4XYZLOL5KVG7CJKR6EKVKSPQZECMCDPQZDEOBTPRKTEVSYOJ6DCNZQHEYTEOBXHE2DSNZSONGFGVJDGM4DMMRYGIRTIOBSFUZTQNRSHAZHYUSGJZ6DEMBSGQYDEMRZGEYDAMD4GIYXYNZWGAZTII2CIIZCGUSGJYRTEMBSGQWTAMRNGI3Q",
+                    "supplierRoomName": "Superior Twin Room(2 Twin Beds) - Breakfast for Two Guest",
+                    "cleanSupplierRoomName": "superior twin room2 twin beds breakfast for two guest",
+                    "matchAttributes": {
+                        "roomType": "room",
+                        "roomCategory": "superior",
+                        "board": "unknown",
+                        "view": "unknown",
+                        "bedType": "twin bed",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "G4ZTONJXGA3DKNZSGY4TMZRXGIZDANRUGZTDONJWGI3GGNRVPQYSGMRQGI2DANJRG56DEMBSGQYDKMJZPRSW4X2VKN6ESVD4IVKVE7BSIEYEG7BSGI4DG7CVGJLFQ4T4GE3TAOJRGI4DOOJUHE3TE42MKNKSGMZYGYZDQMRDGM4DCLJTHA3DEOBSPRJEMTT4GIYDENBQGUYTG7BRG56DOOBTHEZSGQSCENJEMTRDGIYDENBNGA2S2MJT",
+                    "supplierRoomName": "Superior Double - Breakfast",
+                    "cleanSupplierRoomName": "superior double breakfast",
+                    "matchAttributes": {
+                        "roomType": "room",
+                        "roomCategory": "superior",
+                        "board": "unknown",
+                        "view": "unknown",
+                        "bedType": "double",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "G4ZTONJXGA3DKNZSGY4TMZRXGIZDAMZSGIYDMMRWGU3DINZTPQYSGMRQGI2DANJRG56DEMBSGQYDKMJZPRSW4X2VKN6ESVD4IVKVE7BSIEYEG7BSGI4DG7CVGJLFQ4T4GE3TAOJRGI4DOOJUHE3TE42MKNKSGMZYGYZDQMRDGMYTSLJTHA3DEOBSPRHFERSOPRKEI7BTPQ4TSMRRGMRUEQRDJZJEMTRDGIYDENBNGAZC2MRX",
+                    "supplierRoomName": "Superior 2 Beds - Free Breakfast",
+                    "cleanSupplierRoomName": "superior 2 beds free breakfast",
                     "matchAttributes": {
                         "roomType": "room",
                         "roomCategory": "superior",
                         "board": "free breakfast",
-                        "view": "city view",
+                        "view": "unknown",
                         "bedType": "unknown",
                         "amenities": ""
                     }
@@ -44,262 +1374,779 @@
             ]
         },
         {
-            "propertyName": "The Langham, New York, Fifth Avenue",
-            "propertyId": "259522",
-            "roomId": "25952202",
-            "roomName": "Deluxe Room with King Bed",
-            "cleanRoomName": "deluxe room with king bed",
+            "propertyName": "Hôtel Eugénie",
+            "propertyId": "272630",
+            "roomId": "27263006",
+            "roomName": "Superior Double Room",
+            "cleanRoomName": "superior double room",
             "roomDescription": {
-                "roomType": "room",
-                "roomCategory": "deluxe",
+                "roomType": "double room",
+                "roomCategory": "superior",
                 "board": "unknown",
                 "view": "unknown",
-                "bedType": "king bed",
+                "bedType": "double",
                 "amenities": ""
             },
             "mappedRooms": [
                 {
-                    "supplierRoomId": "GY2DMNJWMM3TKNZYGY2TEMBXGI3GMNTGGZSHYMJDGIYDENBQGYYTO7BSGAZDIMBWGE4XYZLOL5KVG7CJKR6EKVKSPQZECMCDPQZDEOBTPRKTEVSYOJ6DCNZQHA4TINRRG4YDGOBUMFEUYYJDGM2TENRRGERTGMJNGM2TENRRGF6FERSOPQZDAMRUGA3DCNJRHEYDA7BRGF6DEMZSGA2DII2SJ4RVERSOEMZDAMRUFUYDMLJRGU",
-                    "supplierRoomName": "Deluxe Room - Room Only",
-                    "cleanSupplierRoomName": "deluxe room room only",
+                    "supplierRoomId": "G4ZTONJXGA3DKNZSGY4TMZRXGIZDANRUGZTDONJWGI3GGNRVGIYDOMRWMY3GMNTEPQYSGMRQGI2DANJRG56DEMBSGQYDKMJZPRSW4X2VKN6ESVD4IVKVE7BSIEYEG7BSGI4DG7CVGJLFQ4T4GE3TAOJRGI4DOOJUHE3TE42MKNKSGMZYGYZDQMRDGQ4DELJTHA3DEOBSPRHFERSOPQZDAMRUGAZDENZRGM2TS7BXPQ2TGOBTG4RVETZDJZJEMTRDGIYDENBNGAZC2MRX",
+                    "supplierRoomName": "Superior Double Room - Room Only",
+                    "cleanSupplierRoomName": "superior double room room only",
                     "matchAttributes": {
-                        "roomType": "room",
-                        "roomCategory": "deluxe",
+                        "roomType": "double room",
+                        "roomCategory": "superior",
                         "board": "room only",
                         "view": "unknown",
-                        "bedType": "unknown",
+                        "bedType": "double",
                         "amenities": ""
                     }
                 },
                 {
-                    "supplierRoomId": "GY2DMNJWMM3TKNZYGY2TEMBXGI3GMNTGGZSHYMJDGIYDENBQGYYTO7BSGAZDIMBWGE4XYZLOL5KVG7CJKR6EKVKSPQZECMCDPQZDEOBTPRKTEVSYOJ6DCNZQHA4TINRRG4YDGOBUMFEUYYJDGM2TENRRGERTGMJNGM2TENRRGF6FERSOPQZDAMRUGA3DCNJRHEYDA7BRGB6DGMBVGMYDII2CIIRVERSOEMZDAMRUFUYDMLJRGU",
-                    "supplierRoomName": "Deluxe Room - Free breakfast",
-                    "cleanSupplierRoomName": "deluxe room free breakfast",
+                    "supplierRoomId": "G4ZTONJXGA3DKNZSGY4TMZRXGIZDANRUGZTDONJWGI3GGNRVGIYDOMRWMY3GMNTEPQYSGMRQGI2DANJRG56DEMBSGQYDKMJZPRSW4X2VKN6ESVD4IVKVE7BSIEYEG7BSGI4DG7CVGJLFQ4T4GE3TAOJRGI4DOOJUHE3TE42MKNKSGMZYGYZDQMRDGMYS2MZYGYZDQMT4JZJEMTT4GIYDEMRQGEYDC7BVPQ3DIMJQGIRVETZDJZJEMTRDGIYDEMRNGAYS2MBR",
+                    "supplierRoomName": "Superior Double Room - Room Only",
+                    "cleanSupplierRoomName": "superior double room room only",
                     "matchAttributes": {
-                        "roomType": "room",
-                        "roomCategory": "deluxe",
-                        "board": "free breakfast",
-                        "view": "unknown",
-                        "bedType": "unknown",
-                        "amenities": ""
-                    }
-                }
-            ]
-        },
-        {
-            "propertyName": "The Langham, New York, Fifth Avenue",
-            "propertyId": "259522",
-            "roomId": "25952204",
-            "roomName": "Junior Suite",
-            "cleanRoomName": "junior suite",
-            "roomDescription": {
-                "roomType": "junior suite",
-                "roomCategory": "junior",
-                "board": "unknown",
-                "view": "unknown",
-                "bedType": "unknown",
-                "amenities": ""
-            },
-            "mappedRooms": [
-                {
-                    "supplierRoomId": "GZQTONJWMU3DSNTGG4ZDEMBXGM3TKNRZG42DMNL4GERTEMBSGQYDMMJXPQZDAMRUGA3DCOL4MVXF6VKTPREVI7CFKVJHYMSBGBBXYMRSHAZXYVJSKZMHE7BRG4YDQOJUGYYTOMBTHA2GCSKMMERTGNJSGYYTCIZTGEWTGNJSGYYTC7CSIZHHYMRQGI2DANRRGUYTSMBQPQZDG7BTGM4TIOJYENJE6I2SIZHCGMRQGI2C2MBWFUYTK",
-                    "supplierRoomName": "Junior Suite - Room Only",
-                    "cleanSupplierRoomName": "junior suite room only",
-                    "matchAttributes": {
-                        "roomType": "junior suite",
-                        "roomCategory": "junior",
+                        "roomType": "double room",
+                        "roomCategory": "superior",
                         "board": "room only",
                         "view": "unknown",
-                        "bedType": "unknown",
+                        "bedType": "double",
                         "amenities": ""
                     }
                 },
                 {
-                    "supplierRoomId": "GZQTONJWMU3DSNTGG4ZDEMBXGM3TKNRZG42DMNJSGAZDQNRVGZSDOMBWHE3TENRVGIYDOMZXGQ3DCNZUGY2TEMBXGY3DSNRVG43TEOL4GERTEMBSGQYDMMJXPQZDAMRUGA3DCOL4MVXF6VKTPREVI7CFKVJHYMSBGBBXYMRSHAZXYVJSKZMHE7BRG4YDQOJUGYYTOMBTHA2GCSKMMERTGNJSGYYTCIZTGEWTGNJSGYYTC7CSIZHHYMRQGI2DANRRGUYTSMBQPQZXYNBTGM4DCMJDKJHSGUSGJYRTEMBSGQWTANRNGE2Q",
-                    "supplierRoomName": "Junior Suite (Empire State View) - Breakfast for 2",
-                    "cleanSupplierRoomName": "junior suite empire state view breakfast for 2",
+                    "supplierRoomId": "G4ZTONJXGA3DKNZSGY4TMZRXGIZDANRUGZTDONJWGI3GGNRVGIYDOMRWMY3GMNTEPQYSGMRQGI2DANJRG56DEMBSGQYDKMJZPRSW4X2VKN6ESVD4IVKVE7BSIEYEG7BSGI4DG7CVGJLFQ4T4GE3TAOJRGI4DOOJUHE3TE42MKNKSGMZYGYZDQMRDGMYS2MZYGYZDQMT4JZJEMTT4GIYDEMRQGEYDC7BUPQ3DIMJWGIRVETZDJZJEMTRDGIYDEMRNGAYS2MBR",
+                    "supplierRoomName": "Superior Double Room - Room Only",
+                    "cleanSupplierRoomName": "superior double room room only",
                     "matchAttributes": {
-                        "roomType": "junior suite",
-                        "roomCategory": "junior",
-                        "board": "breakfast for 2",
-                        "view": "unknown",
-                        "bedType": "unknown",
-                        "amenities": ""
-                    }
-                },
-                {
-                    "supplierRoomId": "GZQTONJWMU3DSNTGG4ZDEMBXGM3TKNRZG42DMNL4GERTEMBSGQYDMMJXPQZDAMRUGA3DCOL4MVXF6VKTPREVI7CFKVJHYMSBGBBXYMRSHAZXYVJSKZMHE7BRG4YDQOJUGYYTOMBTHA2GCSKMMERTGNJSGYYTCIZTGEWTGNJSGYYTC7CSIZHHYMRQGI2DANRRGUYTSMBQPQZDI7BUGM4DQMZUENBEEI2SIZHCGMRQGI2C2MBWFUYTK",
-                    "supplierRoomName": "Junior Suite - Free breakfast",
-                    "cleanSupplierRoomName": "junior suite free breakfast",
-                    "matchAttributes": {
-                        "roomType": "junior suite",
-                        "roomCategory": "junior",
-                        "board": "free breakfast",
-                        "view": "unknown",
-                        "bedType": "unknown",
-                        "amenities": ""
-                    }
-                }
-            ]
-        },
-        {
-            "propertyName": "The Langham, New York, Fifth Avenue",
-            "propertyId": "259522",
-            "roomId": "25952217",
-            "roomName": "Junior Suite Empire State View with Club Access",
-            "cleanRoomName": "junior suite empire state view with club access",
-            "roomDescription": {
-                "roomType": "junior suite",
-                "roomCategory": "club, junior",
-                "board": "unknown",
-                "view": "unknown",
-                "bedType": "unknown",
-                "amenities": ""
-            },
-            "mappedRooms": [
-                {
-                    "supplierRoomId": "GZQTONJWMU3DSNTGG4ZDEMBXGM3TKNRZG42DMNL4GERTEMBSGQYDMMJXPQZDAMRUGA3DCOL4MVXF6VKTPREVI7CFKVJHYMSBGBBXYMRSHAZXYVJSKZMHE7BRG4YDQOJUGYYTOMBTHA2GCSKMMERTGNJSGYYTCIZTGEWTGNJSGYYTC7CSIZHHYMRQGI2DANRRGUYTSMBQPQZDG7BTGM4TIOJYENJE6I2SIZHCGMRQGI2C2MBWFUYTK",
-                    "supplierRoomName": "Junior Suite - Room Only",
-                    "cleanSupplierRoomName": "junior suite room only",
-                    "matchAttributes": {
-                        "roomType": "junior suite",
-                        "roomCategory": "junior",
+                        "roomType": "double room",
+                        "roomCategory": "superior",
                         "board": "room only",
                         "view": "unknown",
-                        "bedType": "unknown",
+                        "bedType": "double",
                         "amenities": ""
                     }
                 },
                 {
-                    "supplierRoomId": "GZQTONJWMU3DSNTGG4ZDEMBXGM3TKNRZG42DMNJSGAZDQNRVGZSDOMBWHE3TENRVGIYDOMZXGQ3DCNZUGY2TEMBXGY3DSNRVG43TEOL4GERTEMBSGQYDMMJXPQZDAMRUGA3DCOL4MVXF6VKTPREVI7CFKVJHYMSBGBBXYMRSHAZXYVJSKZMHE7BRG4YDQOJUGYYTOMBTHA2GCSKMMERTGNJSGYYTCIZTGEWTGNJSGYYTC7CSIZHHYMRQGI2DANRRGUYTSMBQPQZXYNBTGM4DCMJDKJHSGUSGJYRTEMBSGQWTANRNGE2Q",
-                    "supplierRoomName": "Junior Suite (Empire State View) - Breakfast for 2",
-                    "cleanSupplierRoomName": "junior suite empire state view breakfast for 2",
+                    "supplierRoomId": "G4ZTONJXGA3DKNZSGY4TMZRXGIZDANRUGZTDONJWGI3GGNRVGIYDOMRWMY3GMNTEGIYDEOBTGEZDANZRG42TMNJWGU3GKMRQGYZDMNJWGQZDSMRQGJSDEMBXGA3DCNRTGZRDMMJWG43DKMRQG4ZDMMJXGQ3DK7BREMZDAMRUGA2TCN34GIYDENBQGUYTS7DFNZPVKU34JFKHYRKVKJ6DEQJQIN6DEMRYGN6FKMSWLBZHYMJXGA4TCMRYG44TIOJXGJZUYU2VEMZTQNRSHAZCGMJQGIWTGOBWGI4DE7CSIZHHYMRQGI2DAMRSGV6DE7BWGUYTONRDKJHSGTSSIZHCGMRQGI2C2MBSFUZDK",
+                    "supplierRoomName": "Superior Double Room (1 Queen Bed) - Package Rate - Room Only",
+                    "cleanSupplierRoomName": "superior double room 1 queen bed package rate room only",
                     "matchAttributes": {
-                        "roomType": "junior suite",
-                        "roomCategory": "junior",
-                        "board": "breakfast for 2",
-                        "view": "unknown",
-                        "bedType": "unknown",
-                        "amenities": ""
-                    }
-                },
-                {
-                    "supplierRoomId": "GZQTONJWMU3DSNTGG4ZDEMBXGM3TKNRZG42DMNL4GERTEMBSGQYDMMJXPQZDAMRUGA3DCOL4MVXF6VKTPREVI7CFKVJHYMSBGBBXYMRSHAZXYVJSKZMHE7BRG4YDQOJUGYYTOMBTHA2GCSKMMERTGNJSGYYTCIZTGEWTGNJSGYYTC7CSIZHHYMRQGI2DANRRGUYTSMBQPQZDI7BUGM4DQMZUENBEEI2SIZHCGMRQGI2C2MBWFUYTK",
-                    "supplierRoomName": "Junior Suite - Free breakfast",
-                    "cleanSupplierRoomName": "junior suite free breakfast",
-                    "matchAttributes": {
-                        "roomType": "junior suite",
-                        "roomCategory": "junior",
-                        "board": "free breakfast",
-                        "view": "unknown",
-                        "bedType": "unknown",
-                        "amenities": ""
-                    }
-                }
-            ]
-        },
-        {
-            "propertyName": "The Langham, New York, Fifth Avenue",
-            "propertyId": "259522",
-            "roomId": "25952221",
-            "roomName": "Deluxe City View with King Bed",
-            "cleanRoomName": "deluxe city view with king bed",
-            "roomDescription": {
-                "roomType": "room",
-                "roomCategory": "deluxe",
-                "board": "unknown",
-                "view": "city view",
-                "bedType": "king bed",
-                "amenities": ""
-            },
-            "mappedRooms": [
-                {
-                    "supplierRoomId": "GY2DMNJWMM3TKNZYGY2TEMBXGI3GMNTGGZSDEYZSGA3DGNRZG42DOOJSGA3TMNRZGY2TON34GERTEMBSGQYDMMJXPQZDAMRUGA3DCOL4MVXF6VKTPREVI7CFKVJHYMSBGBBXYMRSHAZXYVJSKZMHE7BRG4YDQOJUGYYTOMBTHA2GCSKMMERTGNJSGYYTCIZTGEWTGNJSGYYTC7CSIZHHYMRQGI2DANRRGUYTSMBQPQYTQ7BSGM3TKMJXENJE6I2SIZHCGMRQGI2C2MBWFUYTK",
-                    "supplierRoomName": "Deluxe Room, City View - Room Only",
-                    "cleanSupplierRoomName": "deluxe room city view room only",
-                    "matchAttributes": {
-                        "roomType": "room",
-                        "roomCategory": "deluxe",
+                        "roomType": "double room",
+                        "roomCategory": "superior",
                         "board": "room only",
-                        "view": "city view",
-                        "bedType": "unknown",
+                        "view": "unknown",
+                        "bedType": "queen bed",
                         "amenities": ""
                     }
                 },
                 {
-                    "supplierRoomId": "GY2DMNJWMM3TKNZYGY2TEMBXGI3GMNTGGZSDEYZSGA3DGNRZG42DOOJSGA3TMNRZGY2TON34GERTEMBSGQYDMMJXPQZDAMRUGA3DCOL4MVXF6VKTPREVI7CFKVJHYMSBGBBXYMRSHAZXYVJSKZMHE7BRG4YDQOJUGYYTOMBTHA2GCSKMMERTGNJSGYYTCIZTGEWTGNJSGYYTC7CSIZHHYMRQGI2DANRRGUYTSMBQPQYTO7BTGEZDCMJZENBEEI2SIZHCGMRQGI2C2MBWFUYTK",
-                    "supplierRoomName": "Deluxe Room, City View - Free breakfast",
-                    "cleanSupplierRoomName": "deluxe room city view free breakfast",
+                    "supplierRoomId": "G4ZTONJXGA3DKNZSGY4TMZRXGIZDANRUGZTDONJWGI3GGNRVGIYDOMRWMY3GMNTEGIYDEOBTGEZDANZRG42TMNJWGU3GKMRQGYZDMNJWGQZDS7BREMZDAMRUGA2TCN34GIYDENBQGUYTS7DFNZPVKU34JFKHYRKVKJ6DEQJQIN6DEMRYGN6FKMSWLBZHYMJXGA4TCMRYG44TIOJXGJZUYU2VEMZTQNRSHAZCGMJQGIWTGOBWGI4DE7CSIZHHYMRQGI2DAMRSGV6DQ7BWGUYTONRDKJHSGTSSIZHCGMRQGI2C2MBSFUZDK",
+                    "supplierRoomName": "Superior Double Room (1 Queen Bed) - Room Only",
+                    "cleanSupplierRoomName": "superior double room 1 queen bed room only",
                     "matchAttributes": {
-                        "roomType": "room",
-                        "roomCategory": "deluxe",
-                        "board": "free breakfast",
-                        "view": "city view",
-                        "bedType": "unknown",
+                        "roomType": "double room",
+                        "roomCategory": "superior",
+                        "board": "room only",
+                        "view": "unknown",
+                        "bedType": "queen bed",
                         "amenities": ""
                     }
-                }
-            ]
-        },
-        {
-            "propertyName": "The Langham, New York, Fifth Avenue",
-            "propertyId": "259522",
-            "roomId": "25952222",
-            "roomName": "Executive Club Room with Kitchen",
-            "cleanRoomName": "executive club room with kitchen",
-            "roomDescription": {
-                "roomType": "room",
-                "roomCategory": "executive, club",
-                "board": "unknown",
-                "view": "unknown",
-                "bedType": "unknown",
-                "amenities": "kitchen, executive"
-            },
-            "mappedRooms": [
+                },
                 {
-                    "supplierRoomId": "GYZTMYZXGU3DEMRQG4ZDMZRWMY3GIMTDGIYDMYRWHE3TINRTGY4DMNJWMUZDAMRYGY2TOOBWGU3DGNZVG42DMOJXGY3DKMRZPQYSGMRQGI2DANRRG56DEMBSGQYDMMJZPRSW4X2VKN6ESVD4IVKVE7BSIEYEG7BSGI4DG7CVGJLFQ4T4GE3TAOBZGQ3DCNZQGM4DIYKJJRQSGMZVGI3DCMJDGMYS2MZVGI3DCML4KJDE47BSGAZDIMBWGE2TCOJQGB6DEMT4GI4TQOJYGYRVETZDKJDE4IZSGAZDILJQGYWTCNI",
-                    "supplierRoomName": "Club Room, Kitchen (Executive) - Breakfast for 2",
-                    "cleanSupplierRoomName": "club room kitchen executive breakfast for 2",
+                    "supplierRoomId": "G4ZTONJXGA3DKNZSGY4TMZRXGIZDANRUGZTDONJWGI3GGNRVGIYDOMRWMY3GMNTEGI4DGMJSGA3TCNZVGY2TMNJWMUZDANRSGY2TMNBSHF6DCIZSGAZDIMBVGE3XYMRQGI2DANJRHF6GK3S7KVJXYSKUPRCVKUT4GJATAQ34GIZDQM34KUZFMWDSPQYTOMBZGEZDQNZZGQ4TOMTTJRJVKIZTHA3DEOBSEM2DQMRNGM4DMMRYGJ6E4USGJZ6DEMBSGQYDEMRXGEZTKOL4GMYXYNRVHAZTAI2SJ4RU4USGJYRTEMBSGQWTAMRNGI3Q",
+                    "supplierRoomName": "Superior Double Room(1 Queen Bed) - Room Only",
+                    "cleanSupplierRoomName": "superior double room1 queen bed room only",
                     "matchAttributes": {
-                        "roomType": "room",
-                        "roomCategory": "executive, club",
-                        "board": "breakfast for 2",
+                        "roomType": "double room",
+                        "roomCategory": "superior",
+                        "board": "room only",
                         "view": "unknown",
-                        "bedType": "unknown",
-                        "amenities": "kitchen, executive"
+                        "bedType": "queen bed",
+                        "amenities": ""
                     }
-                }
-            ]
-        },
-        {
-            "propertyName": "The Langham, New York, Fifth Avenue",
-            "propertyId": "259522",
-            "roomId": "25952226",
-            "roomName": "Executive Club Room ",
-            "cleanRoomName": "executive club room ",
-            "roomDescription": {
-                "roomType": "room",
-                "roomCategory": "executive, club",
-                "board": "unknown",
-                "view": "unknown",
-                "bedType": "unknown",
-                "amenities": "executive"
-            },
-            "mappedRooms": [
+                },
                 {
-                    "supplierRoomId": "GYZTMYZXGU3DEMRQG4ZDMZRWMY3GIMRQGI4DMNJXHA3DKNRTG42TONBWHE3TMNRVGI4XYMJDGIYDENBQGYYTO7BSGAZDIMBWGE4XYZLOL5KVG7CJKR6EKVKSPQZECMCDPQZDEOBTPRKTEVSYOJ6DCNZQHA4TINRRG4YDGOBUMFEUYYJDGM2TENRRGERTGMJNGM2TENRRGF6FERSOPQZDAMRUGA3DCNJRHEYDA7BRHF6DGMJWHAZDOI2SJ4RVERSOEMZDAMRUFUYDMLJRGU",
-                    "supplierRoomName": "Club Room (Executive) - Breakfast for 2",
-                    "cleanSupplierRoomName": "club room executive breakfast for 2",
+                    "supplierRoomId": "G4ZTONJXGA3DKNZSGY4TMZRXGIZDANRUGZTDONJWGI3GGNRVGIYDOMRWMY3GMNTEPQYSGMRQGI2DANJRG56DEMBSGQYDKMJZPRSW4X2VKN6ESVD4IVKVE7BSIEYEG7BSGI4DG7CVGJLFQ4T4GE3TAOJRGI4DOOJUHE3TE42MKNKSGMZYGYZDQMRDGQ4DELJTHA3DEOBSPRHFERSOPQZDAMRUGAZDENZRGM2TS7BRGB6DMNZTGIYCGUSPENHFERSOEMZDAMRUFUYDELJSG4",
+                    "supplierRoomName": "Superior Double Room - Room Only",
+                    "cleanSupplierRoomName": "superior double room room only",
                     "matchAttributes": {
-                        "roomType": "room",
-                        "roomCategory": "executive, club",
-                        "board": "breakfast for 2",
+                        "roomType": "double room",
+                        "roomCategory": "superior",
+                        "board": "room only",
                         "view": "unknown",
-                        "bedType": "unknown",
-                        "amenities": "executive"
+                        "bedType": "double",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "G4ZTONJXGA3DKNZSGY4TMZRXGIZDANRUGZTDONJWGI3GGNRVGIYDOMRWMY3GMNTEPQYSGMRQGI2DANJRG56DEMBSGQYDKMJZPRSW4X2VKN6ESVD4IVKVE7BSIEYEG7BSGI4DG7CVGJLFQ4T4GE3TAOJRGI4DOOJUHE3TE42MKNKSGMZYGYZDQMRDGM4DCLJTHA3DEOBSPRHFERSOPQZDAMRSGAYTAML4HF6DMNZTGMYSGUSPENHFERSOEMZDAMRSFUYDCLJQGE",
+                    "supplierRoomName": "Superior Double Room - Room Only",
+                    "cleanSupplierRoomName": "superior double room room only",
+                    "matchAttributes": {
+                        "roomType": "double room",
+                        "roomCategory": "superior",
+                        "board": "room only",
+                        "view": "unknown",
+                        "bedType": "double",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "G4ZTONJXGA3DKNZSGY4TMZRXGIZDANRUGZTDONJWGI3GGNRVGIYDOMRWMY3GMNTEPQYSGMRQGI2DANJRG56DEMBSGQYDKMJZPRSW4X2VKN6ESVD4IVKVE7BSIEYEG7BSGI4DG7CVGJLFQ4T4GE3TAOJRGI4DOOJUHE3TE42MKNKSGMZYGYZDQMRDGQ4DELJTHA3DEOBSPRJEMTT4GIYDENBQGIZDSMJQGAYHYOD4GY3TSOJWENJE6I2SIZHCGMRQGI2C2MBSFUZDO",
+                    "supplierRoomName": "Superior Double Room - Room Only",
+                    "cleanSupplierRoomName": "superior double room room only",
+                    "matchAttributes": {
+                        "roomType": "double room",
+                        "roomCategory": "superior",
+                        "board": "room only",
+                        "view": "unknown",
+                        "bedType": "double",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "G4ZTONJXGA3DKNZSGY4TMZRXGIZDANRUGZTDONJWGI3GGNRVGIYDOMRWMY3GMNTEPQYSGMRQGI2DANJRG56DEMBSGQYDKMJZPRSW4X2VKN6ESVD4IVKVE7BSIEYEG7BSGI4DG7CVGJLFQ4T4GE3TAOJRGI4DOOJUHE3TE42MKNKSGMZYGYZDQMRDGMYS2MZYGYZDQMT4KJDE47BSGAZDIMBVGEZTEMRQGB6DM7BWHEZTONRDKJHSGUSGJYRTEMBSGQWTANJNGEZQ",
+                    "supplierRoomName": "Superior Double Room - Room Only",
+                    "cleanSupplierRoomName": "superior double room room only",
+                    "matchAttributes": {
+                        "roomType": "double room",
+                        "roomCategory": "superior",
+                        "board": "room only",
+                        "view": "unknown",
+                        "bedType": "double",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "G4ZTONJXGA3DKNZSGY4TMZRXGIZDANRUGZTDONJWGI3GGNRVGIYDOMRWMY3GMNTEPQYSGMRQGI2DANJRG56DEMBSGQYDKMJZPRSW4X2VKN6ESVD4IVKVE7BSIEYEG7BSGI4DG7CVGJLFQ4T4GE3TAOJRGI4DOOJUHE3TE42MKNKSGMZYGYZDQMRDGMYS2MZYGYZDQMT4KJDE47BSGAZDIMBVGEZTEMRQGB6DG7BWHE2DIMBDKJHSGUSGJYRTEMBSGQWTANJNGEZQ",
+                    "supplierRoomName": "Superior Double Room - Room Only",
+                    "cleanSupplierRoomName": "superior double room room only",
+                    "matchAttributes": {
+                        "roomType": "double room",
+                        "roomCategory": "superior",
+                        "board": "room only",
+                        "view": "unknown",
+                        "bedType": "double",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "G4ZTONJXGA3DKNZSGY4TMZRXGIZDANRUGZTDONJWGI3GGNRVGIYDOMRWMY3GMNTEGIYDEOBTGEZDANZRG42TMNJWGU3GKMRQGYZDMNJWGQZDSMRQGJSDEMBXGA3DCNRTGZRDMMJWG43DKMRQG4ZDMMJXGQ3DK7BREMZDAMRUGA2TCN34GIYDENBQGUYTS7DFNZPVKU34JFKHYRKVKJ6DEQJQIN6DEMRYGN6FKMSWLBZHYMJXGA4TCMRYG44TIOJXGJZUYU2VEMZTQNRSHAZCGMJQGIWTGOBWGI4DE7CSIZHHYMRQGI2DANJRGJ6DK7BXGA2DSOJDKJHSGUSGJYRTEMBSGQWTANJNGEZA",
+                    "supplierRoomName": "Superior Double Room (1 Queen Bed) - Package Rate - Room Only",
+                    "cleanSupplierRoomName": "superior double room 1 queen bed package rate room only",
+                    "matchAttributes": {
+                        "roomType": "double room",
+                        "roomCategory": "superior",
+                        "board": "room only",
+                        "view": "unknown",
+                        "bedType": "queen bed",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "G4ZTONJXGA3DKNZSGY4TMZRXGIZDANRUGZTDONJWGI3GGNRVGIYDOMRWMY3GMNTEGIYDEOBTGEZDANZRG42TMNJWGU3GKMRQGYZDMNJWGQZDS7BREMZDAMRUGA2TCN34GIYDENBQGUYTS7DFNZPVKU34JFKHYRKVKJ6DEQJQIN6DEMRYGN6FKMSWLBZHYMJXGA4TCMRYG44TIOJXGJZUYU2VEMZTQNRSHAZCGMJQGIWTGOBWGI4DE7CSIZHHYMRQGI2DANJRGJ6DCML4G4YDIOJZENJE6I2SIZHCGMRQGI2C2MBVFUYTE",
+                    "supplierRoomName": "Superior Double Room (1 Queen Bed) - Room Only",
+                    "cleanSupplierRoomName": "superior double room 1 queen bed room only",
+                    "matchAttributes": {
+                        "roomType": "double room",
+                        "roomCategory": "superior",
+                        "board": "room only",
+                        "view": "unknown",
+                        "bedType": "queen bed",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "G4ZTONJXGA3DKNZSGY4TMZRXGIZDANRUGZTDONJWGI3GGNRVGIYDOMRWMY3GMNTEPQYSGMRQGI2DANJRG56DEMBSGQYDKMJZPRSW4X2VKN6ESVD4IVKVE7BSIEYEG7BSGI4DG7CVGJLFQ4T4GE3TAOJRGI4DOOJUHE3TE42MKNKSGMZYGYZDQMRDGQ4DELJTHA3DEOBSPRHFERSOPQZDAMRUGAZDENZRGM2TS7BRGJ6DOMBXHAYSGQSCGIRU4USGJYRTEMBSGQWTAMRNGI3Q",
+                    "supplierRoomName": "Superior Double Room - Breakfast for Two Guest",
+                    "cleanSupplierRoomName": "superior double room breakfast for two guest",
+                    "matchAttributes": {
+                        "roomType": "double room",
+                        "roomCategory": "superior",
+                        "board": "unknown",
+                        "view": "unknown",
+                        "bedType": "double",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "G4ZTONJXGA3DKNZSGY4TMZRXGIZDANRUGZTDONJWGI3GGNRVGIYDOMRWMY3GMNTEPQYSGMRQGI2DANJRG56DEMBSGQYDKMJZPRSW4X2VKN6ESVD4IVKVE7BSIEYEG7BSGI4DG7CVGJLFQ4T4GE3TAOJRGI4DOOJUHE3TE42MKNKSGMZYGYZDQMRDGQ4DELJTHA3DEOBSPRHFERSOPQZDAMRUGAZDENZRGM2TS7BRGF6DOMJTHE4SGQSCGIRU4USGJYRTEMBSGQWTAMRNGI3Q",
+                    "supplierRoomName": "Superior Double Room - Breakfast for Two Guest",
+                    "cleanSupplierRoomName": "superior double room breakfast for two guest",
+                    "matchAttributes": {
+                        "roomType": "double room",
+                        "roomCategory": "superior",
+                        "board": "unknown",
+                        "view": "unknown",
+                        "bedType": "double",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "G4ZTONJXGA3DKNZSGY4TMZRXGIZDANRUGZTDONJWGI3GGNRVGIYDOMRWMY3GMNTEPQYSGMRQGI2DANJRG56DEMBSGQYDKMJZPRSW4X2VKN6ESVD4IVKVE7BSIEYEG7BSGI4DG7CVGJLFQ4T4GE3TAOJRGI4DOOJUHE3TE42MKNKSGMZYGYZDQMRDGQ4DELJTHA3DEOBSPRJEMTT4GIYDENBQGIZDSMJQGAYHYOL4G4YTIOJSENBEEMRDKJDE4IZSGAZDILJQGIWTENY",
+                    "supplierRoomName": "Superior Double Room - Breakfast for Two Guest",
+                    "cleanSupplierRoomName": "superior double room breakfast for two guest",
+                    "matchAttributes": {
+                        "roomType": "double room",
+                        "roomCategory": "superior",
+                        "board": "unknown",
+                        "view": "unknown",
+                        "bedType": "double",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "G4ZTONJXGA3DKNZSGY4TMZRXGIZDANRUGZTDONJWGI3GGNRVGIYDOMRWMY3GMNTEGI4DGMJSGA3TCNZVGY2TMNJWMUZDANRSGY2TMNBSHF6DCIZSGAZDIMBVGE3XYMRQGI2DANJRHF6GK3S7KVJXYSKUPRCVKUT4GJATAQ34GIZDQM34KUZFMWDSPQYTOMBZGEZDQNZZGQ4TOMTTJRJVKIZTHA3DEOBSEM2DQMRNGM4DMMRYGJ6E4USGJZ6DEMBSGQYDEMRXGEZTKOL4GM3HYNZRHAZTAI2SJ4RU4USGJYRTEMBSGQWTAMRNGI3Q",
+                    "supplierRoomName": "Superior Double Room(1 Queen Bed) - Room Only",
+                    "cleanSupplierRoomName": "superior double room1 queen bed room only",
+                    "matchAttributes": {
+                        "roomType": "double room",
+                        "roomCategory": "superior",
+                        "board": "room only",
+                        "view": "unknown",
+                        "bedType": "queen bed",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "G4ZTONJXGA3DKNZSGY4TMZRXGIZDANRUGZTDONJWGI3GGNRVGIYDOMRWMY3GMNTEGI4DGMJSGA3TCNZVGY2TMNJWMUZDANRSGY2TMNBSHF6DCIZSGAZDIMBVGE3XYMRQGI2DANJRHF6GK3S7KVJXYSKUPRCVKUT4GJATAQ34GIZDQM34KUZFMWDSPQYTOMBZGEZDQNZZGQ4TOMTTJRJVKIZTHA3DEOBSEM2DQMRNGM4DMMRYGJ6FERSOPQZDAMRUGAZDEOJRGAYDA7BTGR6DOMRVHA3SGUSPENJEMTRDGIYDENBNGAZC2MRX",
+                    "supplierRoomName": "Superior Double Room(1 Queen Bed) - Room Only",
+                    "cleanSupplierRoomName": "superior double room1 queen bed room only",
+                    "matchAttributes": {
+                        "roomType": "double room",
+                        "roomCategory": "superior",
+                        "board": "room only",
+                        "view": "unknown",
+                        "bedType": "queen bed",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "G4ZTONJXGA3DKNZSGY4TMZRXGIZDANRUGZTDONJWGI3GGNRVGIYDOMRWMY3GMNTEPQYSGMRQGI2DANJRG56DEMBSGQYDKMJZPRSW4X2VKN6ESVD4IVKVE7BSIEYEG7BSGI4DG7CVGJLFQ4T4GE3TAOJRGI4DOOJUHE3TE42MKNKSGMZYGYZDQMRDGMYS2MZYGYZDQMT4KJDE47BSGAZDIMBVGEZTEMRQGB6DC7BXGI3TGOBDIJBCGUSGJYRTEMBSGQWTANJNGEZQ",
+                    "supplierRoomName": "Superior Double Room - Full Breakfast",
+                    "cleanSupplierRoomName": "superior double room full breakfast",
+                    "matchAttributes": {
+                        "roomType": "double room",
+                        "roomCategory": "superior",
+                        "board": "unknown",
+                        "view": "unknown",
+                        "bedType": "double",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "G4ZTONJXGA3DKNZSGY4TMZRXGIZDANRUGZTDONJWGI3GGNRVGIYDOMRWMY3GMNTEPQYSGMRQGI2DANJRG56DEMBSGQYDKMJZPRSW4X2VKN6ESVD4IVKVE7BSIEYEG7BSGI4DG7CVGJLFQ4T4GE3TAOJRGI4DOOJUHE3TE42MKNKSGMZYGYZDQMRDGMYS2MZYGYZDQMT4KJDE47BSGAZDIMBVGEZTEMRQGB6DE7BXGI4DEOBDIJBCGUSGJYRTEMBSGQWTANJNGEZQ",
+                    "supplierRoomName": "Superior Double Room - Full Breakfast",
+                    "cleanSupplierRoomName": "superior double room full breakfast",
+                    "matchAttributes": {
+                        "roomType": "double room",
+                        "roomCategory": "superior",
+                        "board": "unknown",
+                        "view": "unknown",
+                        "bedType": "double",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "G4ZTONJXGA3DKNZSGY4TMZRXGIZDANRUGZTDONJWGI3GGNRVGIYDOMRWMY3GMNTEPQYSGMRQGI2DANJRG56DEMBSGQYDKMJZPRSW4X2VKN6ESVD4IVKVE7BSIEYEG7BSGI4DG7CVGJLFQ4T4GE3TAOJRGI4DOOJUHE3TE42MKNKSGMZYGYZDQMRDGM4DCLJTHA3DEOBSPRJEMTT4GIYDENBQGUYTG7BRGJ6DOMZRGA2CGUSPENJEMTRDGIYDENBNGA2S2MJT",
+                    "supplierRoomName": "Superior Double Room - Room Only",
+                    "cleanSupplierRoomName": "superior double room room only",
+                    "matchAttributes": {
+                        "roomType": "double room",
+                        "roomCategory": "superior",
+                        "board": "room only",
+                        "view": "unknown",
+                        "bedType": "double",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "G4ZTONJXGA3DKNZSGY4TMZRXGIZDANRUGZTDONJWGI3GGNRVGIYDOMRWMY3GMNTEGIYDEOBTGEZDANZRG42TMNJWGU3GKMRQGYZDMNJWGQZDSMRQGJSDEMBXGA3DCNRTGZRDMMJWG43DKMRQG4ZDMMJXGQ3DK7BREMZDAMRUGA2TCN34GIYDENBQGUYTS7DFNZPVKU34JFKHYRKVKJ6DEQJQIN6DEMRYGN6FKMSWLBZHYMJXGA4TCMRYG44TIOJXGJZUYU2VEMZTQNRSHAZCGMJQGIWTGOBWGI4DE7CSIZHHYMRQGI2DANJRGJ6DCND4G4ZTQNRQENBEEI2SIZHCGMRQGI2C2MBVFUYTE",
+                    "supplierRoomName": "Superior Double Room (1 Queen Bed) - Package Rate - BED AND BREAKFAST",
+                    "cleanSupplierRoomName": "superior double room 1 queen bed package rate bed and breakfast",
+                    "matchAttributes": {
+                        "roomType": "double room",
+                        "roomCategory": "superior",
+                        "board": "bed and breakfast",
+                        "view": "unknown",
+                        "bedType": "queen bed",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "G4ZTONJXGA3DKNZSGY4TMZRXGIZDANRUGZTDONJWGI3GGNRVGIYDOMRWMY3GMNTEGIYDEOBTGEZDANZRG42TMNJWGU3GKMRQGYZDMNJWGQZDS7BREMZDAMRUGA2TCN34GIYDENBQGUYTS7DFNZPVKU34JFKHYRKVKJ6DEQJQIN6DEMRYGN6FKMSWLBZHYMJXGA4TCMRYG44TIOJXGJZUYU2VEMZTQNRSHAZCGMJQGIWTGOBWGI4DE7CSIZHHYMRQGI2DANJRGJ6DCN34G4ZTQNRQENBEEI2SIZHCGMRQGI2C2MBVFUYTE",
+                    "supplierRoomName": "Superior Double Room (1 Queen Bed) - BED AND BREAKFAST",
+                    "cleanSupplierRoomName": "superior double room 1 queen bed bed and breakfast",
+                    "matchAttributes": {
+                        "roomType": "double room",
+                        "roomCategory": "superior",
+                        "board": "bed and breakfast",
+                        "view": "unknown",
+                        "bedType": "queen bed",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "G4ZTONJXGA3DKNZSGY4TMZRXGIZDANRUGZTDONJWGI3GGNRVGIYDOMRWMY3GMNTEGI4DGMJSGA3TCNZVGY2TMNJWMUZDANRSGY2TMNBSHF6DCIZSGAZDIMBVGE3XYMRQGI2DANJRHF6GK3S7KVJXYSKUPRCVKUT4GJATAQ34GIZDQM34KUZFMWDSPQYTOMBZGEZDQNZZGQ4TOMTTJRJVKIZTHA3DEOBSEM2DQMRNGM4DMMRYGJ6E4USGJZ6DEMBSGQYDEMRXGEZTKOL4GMZHYNZUGUZTGI2CIIZCGTSSIZHCGMRQGI2C2MBSFUZDO",
+                    "supplierRoomName": "Superior Double Room(1 Queen Bed) - Breakfast for Two Guest",
+                    "cleanSupplierRoomName": "superior double room1 queen bed breakfast for two guest",
+                    "matchAttributes": {
+                        "roomType": "double room",
+                        "roomCategory": "superior",
+                        "board": "unknown",
+                        "view": "unknown",
+                        "bedType": "queen bed",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "G4ZTONJXGA3DKNZSGY4TMZRXGIZDANRUGZTDONJWGI3GGNRVGIYDOMRWMY3GMNTEGI4DGMJSGA3TCNZVGY2TMNJWMUZDANRSGY2TMNBSHF6DCIZSGAZDIMBVGE3XYMRQGI2DANJRHF6GK3S7KVJXYSKUPRCVKUT4GJATAQ34GIZDQM34KUZFMWDSPQYTOMBZGEZDQNZZGQ4TOMTTJRJVKIZTHA3DEOBSEM2DQMRNGM4DMMRYGJ6E4USGJZ6DEMBSGQYDEMRXGEZTKOL4GM2XYNZVGI2DII2CIIZCGTSSIZHCGMRQGI2C2MBSFUZDO",
+                    "supplierRoomName": "Superior Double Room(1 Queen Bed) - Breakfast for Two Guest",
+                    "cleanSupplierRoomName": "superior double room1 queen bed breakfast for two guest",
+                    "matchAttributes": {
+                        "roomType": "double room",
+                        "roomCategory": "superior",
+                        "board": "unknown",
+                        "view": "unknown",
+                        "bedType": "queen bed",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "G4ZTONJXGA3DKNZSGY4TMZRXGIZDANRUGZTDONJWGI3GGNRVGIYDOMRWMY3GMNTEGI4DGMJSGA3TCNZVGY2TMNJWMUZDANRSGY2TMNBSHF6DCIZSGAZDIMBVGE3XYMRQGI2DANJRHF6GK3S7KVJXYSKUPRCVKUT4GJATAQ34GIZDQM34KUZFMWDSPQYTOMBZGEZDQNZZGQ4TOMTTJRJVKIZTHA3DEOBSEM2DQMRNGM4DMMRYGJ6FERSOPQZDAMRUGAZDEOJRGAYDA7BTGN6DONRQGM2CGQSCGIRVERSOEMZDAMRUFUYDELJSG4",
+                    "supplierRoomName": "Superior Double Room(1 Queen Bed) - Breakfast for Two Guest",
+                    "cleanSupplierRoomName": "superior double room1 queen bed breakfast for two guest",
+                    "matchAttributes": {
+                        "roomType": "double room",
+                        "roomCategory": "superior",
+                        "board": "unknown",
+                        "view": "unknown",
+                        "bedType": "queen bed",
+                        "amenities": ""
+                    }
+                },
+                {
+                    "supplierRoomId": "G4ZTONJXGA3DKNZSGY4TMZRXGIZDANRUGZTDONJWGI3GGNRVGIYDOMRWMY3GMNTEPQYSGMRQGI2DANJRG56DEMBSGQYDKMJZPRSW4X2VKN6ESVD4IVKVE7BSIEYEG7BSGI4DG7CVGJLFQ4T4GE3TAOJRGI4DOOJUHE3TE42MKNKSGMZYGYZDQMRDGM4DCLJTHA3DEOBSPRJEMTT4GIYDENBQGUYTG7BRGZ6DONRVG43CGQSCENJEMTRDGIYDENBNGA2S2MJT",
+                    "supplierRoomName": "Superior Double Room - Breakfast",
+                    "cleanSupplierRoomName": "superior double room breakfast",
+                    "matchAttributes": {
+                        "roomType": "double room",
+                        "roomCategory": "superior",
+                        "board": "unknown",
+                        "view": "unknown",
+                        "bedType": "double",
+                        "amenities": ""
                     }
                 }
             ]
         }
-    ]
+    ],
+    "UnmappedRooms": [
+        {
+            "normalizedRoomName": "standard double room only",
+            "roomType": "room",
+            "roomCategory": [
+                "standard"
+            ],
+            "board": "room only",
+            "view": "unknown",
+            "bedType": "double",
+            "amenities": [],
+            "other": [],
+            "supplierRoomId": "G4ZTONBWGE3GKNRUGYYTOMRWGQZDANRUGZTDONJWGI3GGNRVPQYSGMRQGI2DANJRG56DEMBSGQYDKMJZPRSW4X2VKN6ESVD4IVKVE7BSIEYEG7BSGI4DG7CVGJLFQ4T4GE3TAOJRGI4DOOJUHE3TE42MKNKSGMZYGYZDQMRDGQZC2MZYGYZDQMT4JZJEMTT4GIYDENBQGIZDM7BUPQ2DSNRRGQRVETZDJZJEMTRDGIYDENBNGAZC2MRW",
+            "supplierRoomName": "STANDARD DOUBLE - ROOM ONLY",
+            "cleanSupplierRoomName": "standard double room only"
+        },
+        {
+            "normalizedRoomName": "standard double room only",
+            "roomType": "room",
+            "roomCategory": [
+                "standard"
+            ],
+            "board": "room only",
+            "view": "unknown",
+            "bedType": "double",
+            "amenities": [],
+            "other": [],
+            "supplierRoomId": "G4ZTONBWGE3GKNRUGYYTOMRWGQZDANRUGZTDONJWGI3GGNRVPQYSGMRQGI2DANJRG56DEMBSGQYDKMJZPRSW4X2VKN6ESVD4IVKVE7BSIEYEG7BSGI4DG7CVGJLFQ4T4GE3TAOJRGI4DOOJUHE3TE42MKNKSGMZYGYZDQMRDGU3C2MZYGYZDQMT4JZJEMTT4GIYDENBQGIZDM7BRGJ6DIOJWGE2CGUSPENHFERSOEMZDAMRUFUYDELJSGY",
+            "supplierRoomName": "STANDARD DOUBLE - ROOM ONLY",
+            "cleanSupplierRoomName": "standard double room only"
+        },
+        {
+            "normalizedRoomName": "standard double room only",
+            "roomType": "room",
+            "roomCategory": [
+                "standard"
+            ],
+            "board": "room only",
+            "view": "unknown",
+            "bedType": "double",
+            "amenities": [],
+            "other": [],
+            "supplierRoomId": "G4ZTONBWGE3GKNRUGYYTOMRWGQZDANRUGZTDONJWGI3GGNRVPQYSGMRQGI2DANJRG56DEMBSGQYDKMJZPRSW4X2VKN6ESVD4IVKVE7BSIEYEG7BSGI4DG7CVGJLFQ4T4GE3TAOJRGI4DOOJUHE3TE42MKNKSGMZYGYZDQMRDGEYDOLJTHA3DEOBSPRHFERSOPQZDAMRUGAZDENT4HB6DIOJWGE2CGUSPENHFERSOEMZDAMRUFUYDELJSGY",
+            "supplierRoomName": "STANDARD DOUBLE - ROOM ONLY",
+            "cleanSupplierRoomName": "standard double room only"
+        },
+        {
+            "normalizedRoomName": "standard double room only",
+            "roomType": "room",
+            "roomCategory": [
+                "standard"
+            ],
+            "board": "room only",
+            "view": "unknown",
+            "bedType": "double",
+            "amenities": [],
+            "other": [],
+            "supplierRoomId": "G4ZTONBWGE3GKNRUGYYTOMRWGQZDANRUGZTDONJWGI3GGNRVPQYSGMRQGI2DANJRG56DEMBSGQYDKMJZPRSW4X2VKN6ESVD4IVKVE7BSIEYEG7BSGI4DG7CVGJLFQ4T4GE3TAOJRGI4DOOJUHE3TE42MKNKSGMZYGYZDQMRDGIZDOLJTHA3DEOBSPRHFERSOPQZDAMRUGAZDENT4HF6DIOJWGE2CGUSPENHFERSOEMZDAMRUFUYDELJSGY",
+            "supplierRoomName": "STANDARD DOUBLE - ROOM ONLY",
+            "cleanSupplierRoomName": "standard double room only"
+        },
+        {
+            "normalizedRoomName": "double standard double room only",
+            "roomType": "room",
+            "roomCategory": [
+                "standard"
+            ],
+            "board": "room only",
+            "view": "unknown",
+            "bedType": "double",
+            "amenities": [],
+            "other": [],
+            "supplierRoomId": "GY2DMZRXGU3DENTDGY2TEMBXGM3TINRRGZSTMNBWGE3TENRUGIYDMNBWMY3TKNRSGZRTMNL4GERTEMBSGQYDKMJXPQZDAMRUGA2TCOL4MVXF6VKTPREVI7CFKVJHYMSBGBBXYMRSHAZXYVJSKZMHE7BRG4YDSMJSHA3TSNBZG4ZHGTCTKURTGOBWGI4DEIZTGYYS2MZYGYZDQMT4JZJEMTT4GIYDENBQGIZDIMJWGAYHYOL4GUZDENZYENJE6I2OKJDE4IZSGAZDILJQGIWTENA",
+            "supplierRoomName": "DOUBLE STANDARD DOUBLE - Room Only",
+            "cleanSupplierRoomName": "double standard double room only"
+        },
+        {
+            "normalizedRoomName": "standard double room only",
+            "roomType": "room",
+            "roomCategory": [
+                "standard"
+            ],
+            "board": "room only",
+            "view": "unknown",
+            "bedType": "double",
+            "amenities": [],
+            "other": [],
+            "supplierRoomId": "G4ZTONBWGE3GKNRUGYYTOMRWGQZDANRUGZTDONJWGI3GGNRVPQYSGMRQGI2DANJRG56DEMBSGQYDKMJZPRSW4X2VKN6ESVD4IVKVE7BSIEYEG7BSGI4DG7CVGJLFQ4T4GE3TAOJRGI4DOOJUHE3TE42MKNKSGMZYGYZDQMRDGM4DCLJTHA3DEOBSPRHFERSOPQZDAMRSGAYTAML4GF6DKNJTHEZCGUSPENHFERSOEMZDAMRSFUYDCLJQGE",
+            "supplierRoomName": "Standard Double - Room Only",
+            "cleanSupplierRoomName": "standard double room only"
+        },
+        {
+            "normalizedRoomName": "standard double room only",
+            "roomType": "room",
+            "roomCategory": [
+                "standard"
+            ],
+            "board": "room only",
+            "view": "unknown",
+            "bedType": "double",
+            "amenities": [],
+            "other": [],
+            "supplierRoomId": "G4ZTONBWGE3GKNRUGYYTOMRWGQZDANRUGZTDONJWGI3GGNRVPQYSGMRQGI2DANJRG56DEMBSGQYDKMJZPRSW4X2VKN6ESVD4IVKVE7BSIEYEG7BSGI4DG7CVGJLFQ4T4GE3TAOJRGI4DOOJUHE3TE42MKNKSGMZYGYZDQMRDGU3C2MZYGYZDQMT4KJDE47BSGAZDIMBVGE2HYMJRPQ2TMMZZGURVETZDKJDE4IZSGAZDILJQGUWTCNA",
+            "supplierRoomName": "STANDARD DOUBLE - ROOM ONLY",
+            "cleanSupplierRoomName": "standard double room only"
+        },
+        {
+            "normalizedRoomName": "standard double room only",
+            "roomType": "room",
+            "roomCategory": [
+                "standard"
+            ],
+            "board": "room only",
+            "view": "unknown",
+            "bedType": "double",
+            "amenities": [],
+            "other": [],
+            "supplierRoomId": "G4ZTONBWGE3GKNRUGYYTOMRWGQZDANRUGZTDONJWGI3GGNRVPQYSGMRQGI2DANJRG56DEMBSGQYDKMJZPRSW4X2VKN6ESVD4IVKVE7BSIEYEG7BSGI4DG7CVGJLFQ4T4GE3TAOJRGI4DOOJUHE3TE42MKNKSGMZYGYZDQMRDGEYDOLJTHA3DEOBSPRJEMTT4GIYDENBQGUYTI7BWPQ2TMMZZGURVETZDKJDE4IZSGAZDILJQGUWTCNA",
+            "supplierRoomName": "STANDARD DOUBLE - ROOM ONLY",
+            "cleanSupplierRoomName": "standard double room only"
+        },
+        {
+            "normalizedRoomName": "standard double room only",
+            "roomType": "room",
+            "roomCategory": [
+                "standard"
+            ],
+            "board": "room only",
+            "view": "unknown",
+            "bedType": "double",
+            "amenities": [],
+            "other": [],
+            "supplierRoomId": "G4ZTONBWGE3GKNRUGYYTOMRWGQZDANRUGZTDONJWGI3GGNRVPQYSGMRQGI2DANJRG56DEMBSGQYDKMJZPRSW4X2VKN6ESVD4IVKVE7BSIEYEG7BSGI4DG7CVGJLFQ4T4GE3TAOJRGI4DOOJUHE3TE42MKNKSGMZYGYZDQMRDGIZDOLJTHA3DEOBSPRJEMTT4GIYDENBQGUYTI7BYPQ2TMMZZGURVETZDKJDE4IZSGAZDILJQGUWTCNA",
+            "supplierRoomName": "STANDARD DOUBLE - ROOM ONLY",
+            "cleanSupplierRoomName": "standard double room only"
+        },
+        {
+            "normalizedRoomName": "double standard double room only",
+            "roomType": "room",
+            "roomCategory": [
+                "standard"
+            ],
+            "board": "room only",
+            "view": "unknown",
+            "bedType": "double",
+            "amenities": [],
+            "other": [],
+            "supplierRoomId": "GY2DMZRXGU3DENTDGY2TEMBXGM3TINRRGZSTMNBWGE3TENRUGIYDMNBWMY3TKNRSGZRTMNL4GERTEMBSGQYDKMJXPQZDAMRUGA2TCOL4MVXF6VKTPREVI7CFKVJHYMSBGBBXYMRSHAZXYVJSKZMHE7BRG4YDSMJSHA3TSNBZG4ZHGTCTKURTGOBWGI4DEIZTGYYS2MZYGYZDQMT4JZJEMTT4GIYDENBQGIZDIMJWGAYHYMJVPQ2TSMRUGYRVETZDJZJEMTRDGIYDENBNGAZC2MRU",
+            "supplierRoomName": "DOUBLE STANDARD DOUBLE - Room Only",
+            "cleanSupplierRoomName": "double standard double room only"
+        },
+        {
+            "normalizedRoomName": "double standard double room only",
+            "roomType": "room",
+            "roomCategory": [
+                "standard"
+            ],
+            "board": "room only",
+            "view": "unknown",
+            "bedType": "double",
+            "amenities": [],
+            "other": [],
+            "supplierRoomId": "GY2DMZRXGU3DENTDGY2TEMBXGM3TINRRGZSTMNBWGE3TENRUGIYDMNBWMY3TKNRSGZRTMNL4GERTEMBSGQYDKMJXPQZDAMRUGA2TCOL4MVXF6VKTPREVI7CFKVJHYMSBGBBXYMRSHAZXYVJSKZMHE7BRG4YDSMJSHA3TSNBZG4ZHGTCTKURTGOBWGI4DEIZTGYYS2MZYGYZDQMT4KJDE47BSGAZDIMBVGEZDCNRQGB6DM7BVHE2DENBDKJHSGUSGJYRTEMBSGQWTANJNGEZA",
+            "supplierRoomName": "DOUBLE STANDARD DOUBLE - Room Only",
+            "cleanSupplierRoomName": "double standard double room only"
+        },
+        {
+            "normalizedRoomName": "standard double breakfast",
+            "roomType": "room",
+            "roomCategory": [
+                "standard"
+            ],
+            "board": "unknown",
+            "view": "unknown",
+            "bedType": "double",
+            "amenities": [],
+            "other": [
+                "breakfast"
+            ],
+            "supplierRoomId": "G4ZTONBWGE3GKNRUGYYTOMRWGQZDANRUGZTDONJWGI3GGNRVPQYSGMRQGI2DANJRG56DEMBSGQYDKMJZPRSW4X2VKN6ESVD4IVKVE7BSIEYEG7BSGI4DG7CVGJLFQ4T4GE3TAOJRGI4DOOJUHE3TE42MKNKSGMZYGYZDQMRDGEZC2MZYGYZDQMT4KJDE47BSGAZDIMBVGEZXYML4GYYTSMBUENBEEI2SIZHCGMRQGI2C2MBVFUYTG",
+            "supplierRoomName": "Standard Double - Breakfast",
+            "cleanSupplierRoomName": "standard double breakfast"
+        },
+        {
+            "normalizedRoomName": "standard double room only",
+            "roomType": "room",
+            "roomCategory": [
+                "standard"
+            ],
+            "board": "room only",
+            "view": "unknown",
+            "bedType": "double",
+            "amenities": [],
+            "other": [],
+            "supplierRoomId": "G4ZTONBWGE3GKNRUGYYTOMRWGQZDANRUGZTDONJWGI3GGNRVPQYSGMRQGI2DANJRG56DEMBSGQYDKMJZPRSW4X2VKN6ESVD4IVKVE7BSIEYEG7BSGI4DG7CVGJLFQ4T4GE3TAOJRGI4DOOJUHE3TE42MKNKSGMZYGYZDQMRDGQZC2MZYGYZDQMT4KJDE47BSGAZDIMBVGE2HYNT4GYZDMNRRENJE6I2SIZHCGMRQGI2C2MBVFUYTI",
+            "supplierRoomName": "STANDARD DOUBLE - ROOM ONLY",
+            "cleanSupplierRoomName": "standard double room only"
+        },
+        {
+            "normalizedRoomName": "standard double room only",
+            "roomType": "room",
+            "roomCategory": [
+                "standard"
+            ],
+            "board": "room only",
+            "view": "unknown",
+            "bedType": "double",
+            "amenities": [],
+            "other": [],
+            "supplierRoomId": "G4ZTONBWGE3GKNRUGYYTOMRWGQZDANRUGZTDONJWGI3GGNRVPQYSGMRQGI2DANJRG56DEMBSGQYDKMJZPRSW4X2VKN6ESVD4IVKVE7BSIEYEG7BSGI4DG7CVGJLFQ4T4GE3TAOJRGI4DOOJUHE3TE42MKNKSGMZYGYZDQMRDGU3C2MZYGYZDQMT4KJDE47BSGAZDIMBVGE2HYNL4GYZDMNRRENJE6I2SIZHCGMRQGI2C2MBVFUYTI",
+            "supplierRoomName": "STANDARD DOUBLE - ROOM ONLY",
+            "cleanSupplierRoomName": "standard double room only"
+        },
+        {
+            "normalizedRoomName": "standard double room only",
+            "roomType": "room",
+            "roomCategory": [
+                "standard"
+            ],
+            "board": "room only",
+            "view": "unknown",
+            "bedType": "double",
+            "amenities": [],
+            "other": [],
+            "supplierRoomId": "G4ZTONBWGE3GKNRUGYYTOMRWGQZDANRUGZTDONJWGI3GGNRVPQYSGMRQGI2DANJRG56DEMBSGQYDKMJZPRSW4X2VKN6ESVD4IVKVE7BSIEYEG7BSGI4DG7CVGJLFQ4T4GE3TAOJRGI4DOOJUHE3TE42MKNKSGMZYGYZDQMRDGEYDOLJTHA3DEOBSPRJEMTT4GIYDENBQGUYTI7BVPQ3DENRWGERVETZDKJDE4IZSGAZDILJQGUWTCNA",
+            "supplierRoomName": "STANDARD DOUBLE - ROOM ONLY",
+            "cleanSupplierRoomName": "standard double room only"
+        },
+        {
+            "normalizedRoomName": "standard double room only",
+            "roomType": "room",
+            "roomCategory": [
+                "standard"
+            ],
+            "board": "room only",
+            "view": "unknown",
+            "bedType": "double",
+            "amenities": [],
+            "other": [],
+            "supplierRoomId": "G4ZTONBWGE3GKNRUGYYTOMRWGQZDANRUGZTDONJWGI3GGNRVPQYSGMRQGI2DANJRG56DEMBSGQYDKMJZPRSW4X2VKN6ESVD4IVKVE7BSIEYEG7BSGI4DG7CVGJLFQ4T4GE3TAOJRGI4DOOJUHE3TE42MKNKSGMZYGYZDQMRDGIZDOLJTHA3DEOBSPRJEMTT4GIYDENBQGUYTI7BWPQ3DENRWGERVETZDKJDE4IZSGAZDILJQGUWTCNA",
+            "supplierRoomName": "STANDARD DOUBLE - ROOM ONLY",
+            "cleanSupplierRoomName": "standard double room only"
+        },
+        {
+            "normalizedRoomName": "standard double bed and breakfast",
+            "roomType": "room",
+            "roomCategory": [
+                "standard"
+            ],
+            "board": "bed and breakfast",
+            "view": "unknown",
+            "bedType": "double bed",
+            "amenities": [],
+            "other": [],
+            "supplierRoomId": "G4ZTONBWGE3GKNRUGYYTOMRWGQZDANRUGZTDONJWGI3GGNRVPQYSGMRQGI2DANJRG56DEMBSGQYDKMJZPRSW4X2VKN6ESVD4IVKVE7BSIEYEG7BSGI4DG7CVGJLFQ4T4GE3TAOJRGI4DOOJUHE3TE42MKNKSGMZYGYZDQMRDGQZC2MZYGYZDQMT4KJDE47BSGAZDIMBVGE2HYML4GYZDOOJWENBEEI2SIZHCGMRQGI2C2MBVFUYTI",
+            "supplierRoomName": "STANDARD DOUBLE - BED AND BREAKFAST",
+            "cleanSupplierRoomName": "standard double bed and breakfast"
+        },
+        {
+            "normalizedRoomName": "standard double bed and breakfast",
+            "roomType": "room",
+            "roomCategory": [
+                "standard"
+            ],
+            "board": "bed and breakfast",
+            "view": "unknown",
+            "bedType": "double bed",
+            "amenities": [],
+            "other": [],
+            "supplierRoomId": "G4ZTONBWGE3GKNRUGYYTOMRWGQZDANRUGZTDONJWGI3GGNRVPQYSGMRQGI2DANJRG56DEMBSGQYDKMJZPRSW4X2VKN6ESVD4IVKVE7BSIEYEG7BSGI4DG7CVGJLFQ4T4GE3TAOJRGI4DOOJUHE3TE42MKNKSGMZYGYZDQMRDGU3C2MZYGYZDQMT4KJDE47BSGAZDIMBVGE2HYM34GYZDOOJWENBEEI2SIZHCGMRQGI2C2MBVFUYTI",
+            "supplierRoomName": "STANDARD DOUBLE - BED AND BREAKFAST",
+            "cleanSupplierRoomName": "standard double bed and breakfast"
+        },
+        {
+            "normalizedRoomName": "standard double bed and breakfast",
+            "roomType": "room",
+            "roomCategory": [
+                "standard"
+            ],
+            "board": "bed and breakfast",
+            "view": "unknown",
+            "bedType": "double bed",
+            "amenities": [],
+            "other": [],
+            "supplierRoomId": "G4ZTONBWGE3GKNRUGYYTOMRWGQZDANRUGZTDONJWGI3GGNRVPQYSGMRQGI2DANJRG56DEMBSGQYDKMJZPRSW4X2VKN6ESVD4IVKVE7BSIEYEG7BSGI4DG7CVGJLFQ4T4GE3TAOJRGI4DOOJUHE3TE42MKNKSGMZYGYZDQMRDGEYDOLJTHA3DEOBSPRJEMTT4GIYDENBQGUYTI7BRPQ3DENZZGYRUEQRDKJDE4IZSGAZDILJQGUWTCNA",
+            "supplierRoomName": "STANDARD DOUBLE - BED AND BREAKFAST",
+            "cleanSupplierRoomName": "standard double bed and breakfast"
+        },
+        {
+            "normalizedRoomName": "standard double bed and breakfast",
+            "roomType": "room",
+            "roomCategory": [
+                "standard"
+            ],
+            "board": "bed and breakfast",
+            "view": "unknown",
+            "bedType": "double bed",
+            "amenities": [],
+            "other": [],
+            "supplierRoomId": "G4ZTONBWGE3GKNRUGYYTOMRWGQZDANRUGZTDONJWGI3GGNRVPQYSGMRQGI2DANJRG56DEMBSGQYDKMJZPRSW4X2VKN6ESVD4IVKVE7BSIEYEG7BSGI4DG7CVGJLFQ4T4GE3TAOJRGI4DOOJUHE3TE42MKNKSGMZYGYZDQMRDGIZDOLJTHA3DEOBSPRJEMTT4GIYDENBQGUYTI7BTPQ3DENZZGYRUEQRDKJDE4IZSGAZDILJQGUWTCNA",
+            "supplierRoomName": "STANDARD DOUBLE - BED AND BREAKFAST",
+            "cleanSupplierRoomName": "standard double bed and breakfast"
+        },
+        {
+            "normalizedRoomName": "standard double room only",
+            "roomType": "room",
+            "roomCategory": [
+                "standard"
+            ],
+            "board": "room only",
+            "view": "unknown",
+            "bedType": "double",
+            "amenities": [],
+            "other": [],
+            "supplierRoomId": "G4ZTONBWGE3GKNRUGYYTOMRWGQZDANRUGZTDONJWGI3GGNRVPQYSGMRQGI2DANJRG56DEMBSGQYDKMJZPRSW4X2VKN6ESVD4IVKVE7BSIEYEG7BSGI4DG7CVGJLFQ4T4GE3TAOJRGI4DOOJUHE3TE42MKNKSGMZYGYZDQMRDGM4DCLJTHA3DEOBSPRJEMTT4GIYDENBQGUYTG7BUPQ3DEOJWGMRVETZDKJDE4IZSGAZDILJQGUWTCMY",
+            "supplierRoomName": "Standard Double - Room Only",
+            "cleanSupplierRoomName": "standard double room only"
+        },
+        {
+            "normalizedRoomName": "double standard double with breakfast",
+            "roomType": "room",
+            "roomCategory": [
+                "standard"
+            ],
+            "board": "unknown",
+            "view": "unknown",
+            "bedType": "double",
+            "amenities": [],
+            "other": [
+                "with",
+                "breakfast"
+            ],
+            "supplierRoomId": "GY2DMZRXGU3DENTDGY2TEMBXGM3TINRRGZSTMNBWGE3TENRUGIYDMNBWMY3TKNRSGZRTMNL4GERTEMBSGQYDKMJXPQZDAMRUGA2TCOL4MVXF6VKTPREVI7CFKVJHYMSBGBBXYMRSHAZXYVJSKZMHE7BRG4YDSMJSHA3TSNBZG4ZHGTCTKURTGOBWGI4DEIZTGYYS2MZYGYZDQMT4JZJEMTT4GIYDENBQGIZDIMJWGAYHYMJTPQ3DKOJXGARUEQRDJZJEMTRDGIYDENBNGAZC2MRU",
+            "supplierRoomName": "DOUBLE STANDARD DOUBLE - With Breakfast",
+            "cleanSupplierRoomName": "double standard double with breakfast"
+        },
+        {
+            "normalizedRoomName": "double standard double with breakfast",
+            "roomType": "room",
+            "roomCategory": [
+                "standard"
+            ],
+            "board": "unknown",
+            "view": "unknown",
+            "bedType": "double",
+            "amenities": [],
+            "other": [
+                "with",
+                "breakfast"
+            ],
+            "supplierRoomId": "GY2DMZRXGU3DENTDGY2TEMBXGM3TINRRGZSTMNBWGE3TENRUGIYDMNBWMY3TKNRSGZRTMNL4GERTEMBSGQYDKMJXPQZDAMRUGA2TCOL4MVXF6VKTPREVI7CFKVJHYMSBGBBXYMRSHAZXYVJSKZMHE7BRG4YDSMJSHA3TSNBZG4ZHGTCTKURTGOBWGI4DEIZTGYYS2MZYGYZDQMT4KJDE47BSGAZDIMBVGEZDCNRQGB6DI7BWGYYTMOJDIJBCGUSGJYRTEMBSGQWTANJNGEZA",
+            "supplierRoomName": "DOUBLE STANDARD DOUBLE - With Breakfast",
+            "cleanSupplierRoomName": "double standard double with breakfast"
+        },
+        {
+            "normalizedRoomName": "standard double breakfast",
+            "roomType": "room",
+            "roomCategory": [
+                "standard"
+            ],
+            "board": "unknown",
+            "view": "unknown",
+            "bedType": "double",
+            "amenities": [],
+            "other": [
+                "breakfast"
+            ],
+            "supplierRoomId": "G4ZTONBWGE3GKNRUGYYTOMRWGQZDANRUGZTDONJWGI3GGNRVPQYSGMRQGI2DANJRG56DEMBSGQYDKMJZPRSW4X2VKN6ESVD4IVKVE7BSIEYEG7BSGI4DG7CVGJLFQ4T4GE3TAOJRGI4DOOJUHE3TE42MKNKSGMZYGYZDQMRDGM4DCLJTHA3DEOBSPRJEMTT4GIYDENBQGUYTG7BRGN6DOMBRGEZCGQSCENJEMTRDGIYDENBNGA2S2MJT",
+            "supplierRoomName": "Standard Double - Breakfast",
+            "cleanSupplierRoomName": "standard double breakfast"
+        },
+        {
+            "normalizedRoomName": "standard room only",
+            "roomType": "room",
+            "roomCategory": [
+                "standard"
+            ],
+            "board": "room only",
+            "view": "unknown",
+            "bedType": "unknown",
+            "amenities": [],
+            "other": [],
+            "supplierRoomId": "G4ZTONBWGE3GKNRUGYYTOMRWGR6DCIZSGAZDIMBVGE3XYMRQGI2DANJRHF6GK3S7KVJXYSKUPRCVKUT4GJATAQ34GIZDQM34KUZFMWDSPQYTOMBZGEZDQNZZGQ4TOMTTJRJVKIZTHA3DEOBSEMZTCOJNGM4DMMRYGJ6E4USGJZ6FIRD4GF6DQMZXGAYSGUSPENHFERSOEMZDAMRUFUYDELJSG4",
+            "supplierRoomName": "Standard - Room Only",
+            "cleanSupplierRoomName": "standard room only"
+        },
+        {
+            "normalizedRoomName": "standard free breakfast",
+            "roomType": "room",
+            "roomCategory": [
+                "standard"
+            ],
+            "board": "free breakfast",
+            "view": "unknown",
+            "bedType": "unknown",
+            "amenities": [],
+            "other": [],
+            "supplierRoomId": "G4ZTONBWGE3GKNRUGYYTOMRWGR6DCIZSGAZDIMBVGE3XYMRQGI2DANJRHF6GK3S7KVJXYSKUPRCVKUT4GJATAQ34GIZDQM34KUZFMWDSPQYTOMBZGEZDQNZZGQ4TOMTTJRJVKIZTHA3DEOBSEMZTCOJNGM4DMMRYGJ6E4USGJZ6FIRD4GJ6DSMZTGQYSGQSCENHFERSOEMZDAMRUFUYDELJSG4",
+            "supplierRoomName": "Standard - Free Breakfast",
+            "cleanSupplierRoomName": "standard free breakfast"
+        }
+    ],
+    "Counts": {
+        "TotalSupplierRooms": 156,
+        "MappedSupplierRooms": 130,
+        "UnmappedSupplierRooms": 26
+    }
 }
