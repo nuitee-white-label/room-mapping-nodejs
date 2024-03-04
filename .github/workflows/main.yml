@@ -1,0 +1,79 @@
+name: Deployment
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+
+    env:
+      AWS_ACCOUNT_ID: "021748665536"
+      AWS_REGION: us-east-1
+      CLUSTER: whitelabel-production-Cluster-iao5D0kITy8m
+      SERVICE_APP: whitelabel-production-room-mapping-Service-RmZCtsT9LuYd
+      TASK_APP: whitelabel-production-room-mapping
+      CONTAINER_APP: room-mapping
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ env.AWS_REGION }}
+
+      - name: Login to Amazon ECR
+        id: login-ecr
+        uses: aws-actions/amazon-ecr-login@v2
+
+      - name: Build, tag, and push image to Amazon ECR
+        id: build-image-app
+        env:
+          ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
+          ECR_REPOSITORY: whitelabel/${{ env.CONTAINER_APP }}
+          IMAGE_TAG: ${{ github.sha }}
+        run: |
+          # Build a docker container and
+          # push it to ECR so that it can
+          # be deployed to ECS.
+          docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG ./
+          docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
+          echo "image=$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG" >> $GITHUB_OUTPUT
+
+      - name: Get current task definition
+        run: >
+          aws ecs describe-task-definition
+          --task-definition "arn:aws:ecs:${{ env.AWS_REGION }}:${{ env.AWS_ACCOUNT_ID }}:task-definition/${{ env.TASK_APP }}" --region "${{ env.AWS_REGION }}" --query 'taskDefinition'
+          > task-definition-app.json
+
+      - name: Fill in the new image ID in the Amazon ECS task definition
+        id: task-def-app
+        uses: aws-actions/amazon-ecs-render-task-definition@v1
+        with:
+          task-definition: task-definition-app.json
+          container-name: ${{ env.CONTAINER_APP }}
+          image: ${{ steps.build-image-app.outputs.image }}
+
+      - name: Deploy Amazon ECS task definition
+        uses: aws-actions/amazon-ecs-deploy-task-definition@v1
+        with:
+          task-definition: ${{ steps.task-def-app.outputs.task-definition }}
+          service: ${{ env.SERVICE_APP }}
+          cluster: ${{ env.CLUSTER }}
+          wait-for-service-stability: true
+
+      - name: Invalidate CDN cache
+        uses: chetan/invalidate-cloudfront-action@v2
+        env:
+          DISTRIBUTION: EVLXA2MUVVF1U
+          PATHS: "/*"
+          AWS_REGION: "us-east-1"
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
