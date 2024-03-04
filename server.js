@@ -4,7 +4,6 @@ import cors from 'cors';
 import { calculateMatchScore } from './functions.js';
 
 dotenv.config();
-import express from 'express';
 import { createServer } from 'node:http';
 
 const app = express();
@@ -136,31 +135,29 @@ function extractBedType(roomName) {
   const bedTypes = [
     'single bed', 'double bed', 'queen bed', 'king bed', 'twin bed', 
     'bunk bed', 'double sofa bed', 'sofa bed', 'futon', 'murphy bed', 'queen', 'king', 
-     'full bed', 'california king bed', 'kingsize', 'queensize',
+    'full bed', 'california king bed', 'kingsize', 'queensize',
     'day bed', 'trundle bed', 'extra bed', 'cot', 'rollaway bed', 'single sofa bed', 'sofabed'
   ];
+
+  // Normalize roomName to lowercase once
+  roomName = roomName.toLowerCase();
 
   // Sort bedTypes by length in descending order to prioritize longer matches first
   bedTypes.sort((a, b) => b.length - a.length);
 
   const foundBedTypes = bedTypes.reduce((acc, type) => {
-    const regex = new RegExp("\\b" + type.replace(/ /g, '\\s') + "\\b", "i");
-    if (regex.test(roomName.toLowerCase())) {
+    // Escape potential regular expression special characters in bed type names
+    const escapedType = type.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    const regex = new RegExp("\\b" + escapedType.replace(/ /g, '\\s') + "\\b", "i");
+    if (regex.test(roomName)) {
       acc.push(type);
       // Remove matched type from roomName to prevent overlapping matches
-      roomName = roomName.toLowerCase().replace(regex, '').trim();
+      roomName = roomName.replace(regex, '').trim();
     }
     return acc;
   }, []);
 
   return foundBedTypes.length > 0 ? foundBedTypes : ['unknown'];
-    'single bed', 'double bed', 'queen bed', 'king bed', 'twin bed',
-    'bunk bed', 'sofa bed', 'futon', 'murphy bed', 'queen', 'king',
-    'single', 'double', 'twin', 'full bed', 'california king bed',
-    'day bed', 'trundle bed', 'extra bed', 'cot', 'rollaway bed'
-  ];
-  // Enhance logic to handle overlaps like "king" being in "king bed"
-  return bedTypes.find(type => roomName.toLowerCase().includes(type)) || 'unknown';
 }
 
 
