@@ -1,8 +1,7 @@
 import * as dotenv from 'dotenv';
 import express, { json } from 'express';
 import cors from 'cors';
-//import { Configuration, OpenAIApi } from 'openai';
-import Fuse from "fuse.js"
+import { calculateMatchScore } from './functions.js';
 
 dotenv.config();
 
@@ -29,34 +28,40 @@ app.post('/map-rooms', (req, res) => {
 
 // Helper functions to extract room details
 function extractRoomType(roomName) {
-  // Pre-process the roomName to insert a space before any digit if it is directly preceded by a letter without spacing
   let modifiedRoomName = roomName.replace(/(\D)(\d)/g, '$1 $2').replace(/room only/gi, '').trim();
 
   const roomTypes = [
-      'suite', 'executive room', 'rooms',
-      'single room', 'double room', 'triple room', 'quad room', 'family room', 'shared room',
-      'private room', 'studio room', // Specific room configurations
-      'room', 'apartment', 'studio', 'villa', 'bungalow',
-      'cottage', 'penthouse', 'loft', 'cabin', 'chalet', 'mansion',
-      'duplex', 'guesthouse', 'hostel', // General types
-      'single', 'double', 'triple', 'quad' // Adding singular terms for matching
-  ];
+      'suite', 'single room', 'double room', 'triple room', 'quad room', 'family room','room',
+      'shared room', 'private room', 'studio room', 'apartment', 'studio', 'villa', 'bungalow',
+      'cottage', 'penthouse', 'loft', 'cabin', 'chalet', 'mansion', 'duplex', 'guesthouse', 'hostel','singe','double', 'triple', 'quad',
+      // Ensure "room" is checked after more specific configurations to prevent premature matches
+  ].sort((a, b) => b.length - a.length); // Sort by length to prioritize more specific terms
 
-  // Sort roomTypes by length in descending order to prioritize longer matches first
-  roomTypes.sort((a, b) => b.length - a.length);
+  const excludeBedTypePatterns = ['single', 'double', 'triple', 'quad'];
+  const foundBedTypes = extractBedType(roomName); // This should return an array of bed types
+
+  // Remove bed type terms from the modifiedRoomName if they are not meant to be identified as room types
+  foundBedTypes.forEach(bedType => {
+      if (excludeBedTypePatterns.includes(bedType)) {
+          modifiedRoomName = modifiedRoomName.replace(new RegExp("\\b" + bedType + "\\b", 'gi'), '').trim();
+      }
+  });
 
   for (let type of roomTypes) {
       let pattern = type.replace(/ /g, '\\s'); // Replace spaces with regex space character
-      // Adjust regex to match the type followed by a non-word character or end of string
-      let regex = new RegExp("\\b" + pattern + "(\\W|$)", "i");
+      let regex = new RegExp("\\b" + pattern + "\\b", "i");
       if (regex.test(modifiedRoomName)) {
-          // Normalize the room type to handle 'double' and 'double room' equivalently
-          return type.replace(/ room$/, ""); // Remove trailing " room" if present
+          return type; // Directly return the matched room type
       }
   }
+
+  // Fallback to "room" if no other room type is identified but the string still contains "room"
+  if (modifiedRoomName.includes("room")) {
+      return "room";
+  }
+
   return 'unknown'; // Return 'unknown' if no specific type matches
 }
-
 
 
 
@@ -73,7 +78,7 @@ function extractBoardType(roomName) {
 
 function extractRoomCategory(roomName) {
   const roomCategories = [
-    'deluxe', 'superior', 'executive', 'club', 'presidential', 
+    'deluxe', 'superior', 'executive', 'club', 'presidential', 'classic',
     'junior', 'luxury', 'economy', 'standard', 'budget', 
     'accessible', 'family-friendly', 'romantic', 'honeymoon', 
     'business class', 'premium', 'boutique', 'historic', 'modern', 
@@ -108,7 +113,7 @@ function extractView(roomName) {
     ...extractRoomType(normalizedRoomName).split(' '),
     ...extractBoardType(normalizedRoomName).split(' '),
     ...extractRoomCategory(normalizedRoomName),
-    ...extractBedType(normalizedRoomName).split(' '),
+    ...extractBedType(normalizedRoomName),
     ...extractAmenities(normalizedRoomName),
   ].map(keyword => keyword.toLowerCase());
 
@@ -135,13 +140,27 @@ function extractView(roomName) {
 function extractBedType(roomName) {
   const bedTypes = [
     'single bed', 'double bed', 'queen bed', 'king bed', 'twin bed', 
-    'bunk bed', 'sofa bed', 'futon', 'murphy bed', 'queen', 'king', 
-    'single', 'double', 'twin', 'full bed', 'california king bed', 
-    'day bed', 'trundle bed', 'extra bed', 'cot', 'rollaway bed'
+    'bunk bed', 'double sofa bed', 'sofa bed', 'futon', 'murphy bed', 'queen', 'king', 
+     'full bed', 'california king bed', 'kingsize', 'queensize',
+    'day bed', 'trundle bed', 'extra bed', 'cot', 'rollaway bed', 'single sofa bed', 'sofabed'
   ];
-  // Enhance logic to handle overlaps like "king" being in "king bed"
-  return bedTypes.find(type => roomName.toLowerCase().includes(type)) || 'unknown';
+
+  // Sort bedTypes by length in descending order to prioritize longer matches first
+  bedTypes.sort((a, b) => b.length - a.length);
+
+  const foundBedTypes = bedTypes.reduce((acc, type) => {
+    const regex = new RegExp("\\b" + type.replace(/ /g, '\\s') + "\\b", "i");
+    if (regex.test(roomName.toLowerCase())) {
+      acc.push(type);
+      // Remove matched type from roomName to prevent overlapping matches
+      roomName = roomName.toLowerCase().replace(regex, '').trim();
+    }
+    return acc;
+  }, []);
+
+  return foundBedTypes.length > 0 ? foundBedTypes : ['unknown'];
 }
+
 
 function extractAmenities(roomName) {
   const amenities = [
@@ -158,7 +177,6 @@ function extractAmenities(roomName) {
   // Return all amenities found in room name
   return amenities.filter(amenity => roomName.toLowerCase().includes(amenity));
 }
-
 
 
 function normalizeRoomName(roomName) {
@@ -193,140 +211,93 @@ function normalizeRoomName(roomName) {
 }
 
 function mapRooms(referenceCatalog, inputCatalog) {
-  let results = []; // This will hold the final structured data
-  let unmappedRooms = []; // To track unmapped supplier rooms
+  let results = []; // Holds structured data for matched rooms
+  let totalSupplierRooms = inputCatalog[0].supplierRoomInfo.length;
+  let mappedSupplierRoomIds = new Set(); // Tracks matched supplier rooms
 
-  // Initial counts
-  let totalSupplierRooms = 0;
+  // Normalize data
+  const filteredReferenceRooms = referenceCatalog[0].referenceRoomInfo
+      .filter(refRoom => !/^Room\s*#\d+$/.test(refRoom.roomName))
+      .map(refRoom => ({...refRoom, ...normalizeRoomName(refRoom.roomName)}));
 
-  const numericPattern = /^Room\s*#\d+$/; 
-  const filteredReferenceRooms = referenceCatalog[0].referenceRoomInfo.filter(refRoom => 
-      !numericPattern.test(refRoom.roomName)
-  );
+  const supplierRooms = inputCatalog[0].supplierRoomInfo
+      .map(room => ({...room, ...normalizeRoomName(room.supplierRoomName)}));
 
-  const supplierRooms = inputCatalog[0].supplierRoomInfo.map(room => ({
-      ...normalizeRoomName(room.supplierRoomName),
-      supplierRoomId: room.supplierRoomId,
-      supplierRoomName: room.supplierRoomName,
-      cleanSupplierRoomName: room.supplierRoomName.toLowerCase().replace(/[^\w\s]|_/g, "").replace(/\s+/g, " "),
-  }));
+  // First Pass: Strict matching
+  matchRooms(filteredReferenceRooms, supplierRooms, mappedSupplierRoomIds, results, "First Pass");
 
-  // Update total supplier rooms count
-  totalSupplierRooms = supplierRooms.length;
+  // Second Pass: Fuzzy matching with remaining unmapped supplier rooms
+  let unmappedSupplierRooms = supplierRooms.filter(room => !mappedSupplierRoomIds.has(room.supplierRoomId));
+  matchRooms(filteredReferenceRooms, unmappedSupplierRooms, mappedSupplierRoomIds, results, "Second Pass");
 
-  let mappedSupplierRoomIds = new Set(); // Track supplier rooms that have been mapped
+  // Calculate unmapped supplier rooms after both passes
+  let unmappedRooms = supplierRooms.filter(room => !mappedSupplierRoomIds.has(room.supplierRoomId));
+  let unmappedRoomsCount = unmappedRooms.length;
 
-  filteredReferenceRooms.forEach(refRoom => {
-    const normalizedRefRoom = normalizeRoomName(refRoom.roomName);
-    let mappedRooms = [];
-
-    supplierRooms.forEach(supplierRoom => {
-      // Skip this supplier room if it has already been mapped
-      if (mappedSupplierRoomIds.has(supplierRoom.supplierRoomId)) return;
-
-      const score = calculateMatchScore(normalizedRefRoom, supplierRoom); 
-
-      if (score > 0) {
-        mappedRooms.push({
-            supplierRoomId: supplierRoom.supplierRoomId,
-            supplierRoomName: supplierRoom.supplierRoomName,
-            cleanSupplierRoomName: supplierRoom.cleanSupplierRoomName,
-            matchAttributes: {
-                roomType: supplierRoom.roomType,
-                roomCategory: supplierRoom.roomCategory.join(', '),
-                board: supplierRoom.board,
-                view: supplierRoom.view,
-                bedType: supplierRoom.bedType,
-                amenities: supplierRoom.amenities.join(', '),
-            }
-        });
-        // Mark this supplier room as mapped to prevent it from being matched again
-        mappedSupplierRoomIds.add(supplierRoom.supplierRoomId);
-      }
-    });
-
-    if (mappedRooms.length > 0) {
-      results.push({
-          propertyName: referenceCatalog[0].propertyName,
-          propertyId: referenceCatalog[0].propertyId,
-          roomId: refRoom.roomId,
-          roomName: refRoom.roomName,
-          cleanRoomName: normalizedRefRoom.normalizedRoomName,
-          roomDescription: {
-              roomType: normalizedRefRoom.roomType,
-              roomCategory: normalizedRefRoom.roomCategory.join(', '),
-              board: normalizedRefRoom.board,
-              view: normalizedRefRoom.view,
-              bedType: normalizedRefRoom.bedType,
-              amenities: normalizedRefRoom.amenities.join(', '),
-          },
-          mappedRooms: mappedRooms
-      });
-    }
-  });
-
-  // Calculate unmapped supplier rooms and their count
-  let unmappedRoomsCount = totalSupplierRooms - mappedSupplierRoomIds.size;
-  unmappedRooms = supplierRooms.filter(room => !mappedSupplierRoomIds.has(room.supplierRoomId));
-
-  // Return results with counts
-  return { 
+  return {
       Results: results,
       UnmappedRooms: unmappedRooms.length > 0 ? unmappedRooms : { Message: "There are no unmapped rooms" },
       Counts: {
           TotalSupplierRooms: totalSupplierRooms,
-          MappedSupplierRooms: totalSupplierRooms - unmappedRoomsCount, // or simply use mappedSupplierRoomIds.size
+          MappedSupplierRooms: totalSupplierRooms - unmappedRoomsCount,
           UnmappedSupplierRooms: unmappedRoomsCount
       }
   };
 }
 
-function calculateMatchScore(refRoom, supplierRoom) {
-  let score = 0;
+function matchRooms(referenceRooms, supplierRooms, mappedSupplierRoomIds, results, pass) {
+  referenceRooms.forEach(refRoom => {
+      supplierRooms.forEach(supplierRoom => {
+          if (mappedSupplierRoomIds.has(supplierRoom.supplierRoomId)) return;
 
-  // Basic match on room type
-  if (refRoom.roomType !== supplierRoom.roomType) return 0;
-  score += 50; // Matching room type
-
-  // Handling room category
-  let categoryMatch = false;
-  if (refRoom.roomCategory.length > 0 && supplierRoom.roomCategory.length > 0) {
-      // Check if at least one category from refRoom matches any category in supplierRoom
-      categoryMatch = refRoom.roomCategory.some(refCategory => 
-          supplierRoom.roomCategory.some(suppCategory => 
-              suppCategory.includes(refCategory) || refCategory.includes(suppCategory)));
-
-      if (categoryMatch) {
-          score += 30; // Matching room category
-      } else {
-          return 0; // Explicitly different rooms if there's no overlap in categories
-      }
-  }
-
-  // Handling views explicitly
-  if (refRoom.view !== 'unknown' && supplierRoom.view !== 'unknown') {
-      if (refRoom.view === supplierRoom.view) {
-          score += 20; // Matching views
-      } else {
-          return 0; // Explicitly different rooms if views don't match
-      }
-  }
-
-  // If only roomType is present in refRoom and roomCategory is empty
-  if (refRoom.roomCategory.length === 0) {
-      // Check for matches in amenities and other if they are present
-      let amenitiesMatch = refRoom.amenities.length > 0 && refRoom.amenities.every(amenity => supplierRoom.amenities.includes(amenity));
-      let otherMatch = refRoom.other.length > 0 && refRoom.other.every(other => supplierRoom.other.includes(other));
-      if (amenitiesMatch || otherMatch) score += 20; // Matching amenities or other contributes to the score
-  }
-
-  // Fallback for general match
-  return score;
+          let score = calculateMatchScore(refRoom, supplierRoom, pass === "Second Pass");
+          if (score > 30) {
+              let match = {
+                  pass,
+                  supplierRoomId: supplierRoom.supplierRoomId,
+                  supplierRoomName: supplierRoom.supplierRoomName,
+                  matchAttributes: {
+                      roomType: supplierRoom.roomType,
+                      roomCategory: supplierRoom.roomCategory.join(', '),
+                      board: supplierRoom.board,
+                      view: supplierRoom.view,
+                      bedType: supplierRoom.bedType,
+                      amenities: supplierRoom.amenities.join(', '),
+                  }
+              };
+              addMatchToResults(refRoom, match, results);
+              mappedSupplierRoomIds.add(supplierRoom.supplierRoomId);
+          }
+      });
+  });
 }
 
-
-
-
+function addMatchToResults(refRoom, match, results) {
+  // Check if refRoom already has an entry in results
+  let resultEntry = results.find(result => result.roomId === refRoom.roomId);
+  if (resultEntry) {
+      // If entry exists, append the new match to its mappedRooms array
+      resultEntry.mappedRooms.push(match);
+  } else {
+      // If not, create a new entry for the refRoom with the match
+      results.push({
+          propertyName: refRoom.propertyName,
+          propertyId: refRoom.propertyId,
+          roomId: refRoom.roomId,
+          roomName: refRoom.roomName,
+          cleanRoomName: refRoom.normalizedRoomName,
+          roomDescription: {
+              roomType: refRoom.roomType,
+              roomCategory: refRoom.roomCategory.join(', '),
+              board: refRoom.board,
+              view: refRoom.view,
+              bedType: refRoom.bedType,
+              amenities: refRoom.amenities.join(', '),
+          },
+          mappedRooms: [match]
+      });
+  }
+}
 
 
 
