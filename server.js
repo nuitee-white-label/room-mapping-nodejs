@@ -303,7 +303,7 @@ function addMatchToResults(refRoom, match, results) {
 //Test route
 app.get('/', async (req, res) => {
   res.status(200).send({
-    message: 'Hello from Nuitee mapping assistant !',
+    message: 'Hello from Nuitee room mapping API !',
   });
 });
 
