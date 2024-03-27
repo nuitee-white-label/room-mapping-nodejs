@@ -9,6 +9,7 @@ jobs:
   deploy:
     name: Deploy
     runs-on: ubuntu-latest
+    environment: production
 
     env:
       AWS_ACCOUNT_ID: "021748665536"
@@ -51,20 +52,20 @@ jobs:
         run: >
           aws ecs describe-task-definition
           --task-definition "arn:aws:ecs:${{ env.AWS_REGION }}:${{ env.AWS_ACCOUNT_ID }}:task-definition/${{ env.TASK_APP }}" --region "${{ env.AWS_REGION }}" --query 'taskDefinition'
-          > task-definition-app.json
+          > task-definition.json
 
       - name: Fill in the new image ID in the Amazon ECS task definition
-        id: task-def-app
+        id: task-def
         uses: aws-actions/amazon-ecs-render-task-definition@v1
         with:
-          task-definition: task-definition-app.json
+          task-definition: task-definition.json
           container-name: ${{ env.CONTAINER_APP }}
           image: ${{ steps.build-image-app.outputs.image }}
 
       - name: Deploy Amazon ECS task definition
         uses: aws-actions/amazon-ecs-deploy-task-definition@v1
         with:
-          task-definition: ${{ steps.task-def-app.outputs.task-definition }}
+          task-definition: ${{ steps.task-def.outputs.task-definition }}
           service: ${{ env.SERVICE_APP }}
           cluster: ${{ env.CLUSTER }}
           wait-for-service-stability: true

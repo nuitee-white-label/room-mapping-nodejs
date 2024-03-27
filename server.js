@@ -304,6 +304,7 @@ function addMatchToResults(refRoom, match, results) {
 app.get('/', async (req, res) => {
   res.status(200).send({
     message: 'Hello from Nuitee room mapping API !',
+    release: '27-March-2024'
   });
 });
 
