@@ -1,6 +1,5 @@
 import * as dotenv from 'dotenv';
-import express, { json } from 'express';
-import cors from 'cors';
+import express from 'express';
 import { calculateMatchScore } from './functions.js';
 
 dotenv.config();
