@@ -44,4 +44,5 @@ network:
 environments:
   production:
     http:
+      alb: white-Publi-YO6OGAEXCY80
       alias: room-mapping.wlbl.cloud
