@@ -47,27 +47,31 @@ function extractRoomType(roomName) {
     .trim();
 
   if (normalizedRoomName.includes("communicating double rooms")) {
-    console.log("occurence detected");
     let type = "connected rooms"
     return type;
   }
   if (normalizedRoomName.includes("family")) {
-    console.log("occurence detected");
+
     let type = "family room"
     return type;
   }
 
   // Improved fallback logic for 'single', 'double', 'triple', 'quad'
-  if (/(single|double|triple|quad|twin)(?!\s+(bed|sofa|sofabed))/.test(normalizedRoomName)) {
+  if (/(single|double|triple|quad|)(?!\s+(bed|sofa|sofabed))/.test(normalizedRoomName)) {
     // If matched at the start and not followed by bed/sofa/sofabed, return it as room type
     let type = RegExp.$1 + ' ' + "room";
+    return type
+  }
+
+  if (/(|twin|)(?!\s+(bed|sofa|sofabed))/.test(normalizedRoomName)) {
+    // If matched at the start and not followed by bed/sofa/sofabed, return it as room type
+    let type = "double" + ' ' + "room";
     return type
   }
 
   // Synonyms normalization, expanded to include more variations
   const synonyms = {
     'double-double': 'double room', // Example where room might have two double beds
-    'studio': 'studio room',
     'accessible': 'accessible room',
     'family': 'family room',
     'connected': 'connected rooms',
@@ -87,7 +91,7 @@ function extractRoomType(roomName) {
     'suite', 'single room', 'double room', 'triple room', 'quad room', 'family room',
     'shared room', 'private room', 'studio room', 'apartment', 'villa', 'bungalow',
     'king room', 'queen room', 'cottage', 'penthouse', 'loft', 'cabin', 'chalet', 'mansion',
-    'duplex', 'guesthouse', 'hostel', 'accessible room', 'connected rooms',
+    'duplex', 'guesthouse', 'hostel', 'accessible room', 'connected rooms', 'studio'
     // Ensure these are already in standard form
   ];
 
@@ -356,6 +360,7 @@ function normalizeRoomName(roomName) {
 }
 
 function mapRooms(referenceCatalog, inputCatalog) {
+  const startTime = Date.now();
   let results = []; // Holds structured data for matched rooms
   let totalSupplierRooms = inputCatalog[0].supplierRoomInfo.length;
   let mappedSupplierRoomIds = new Set(); // Tracks matched supplier rooms
@@ -368,7 +373,7 @@ function mapRooms(referenceCatalog, inputCatalog) {
     .filter(refRoom => !/^Room\s*#\d+$/.test(refRoom.roomName))
     .map(refRoom => ({ ...refRoom, ...normalizeRoomName(refRoom.roomName) }));
 
-  console.log(filteredReferenceRooms);
+  //console.log(filteredReferenceRooms);
 
   const supplierRooms = inputCatalog[0].supplierRoomInfo
     .map(room => ({ ...room, ...normalizeRoomName(room.supplierRoomName) }));
@@ -386,6 +391,9 @@ function mapRooms(referenceCatalog, inputCatalog) {
   let unmappedRooms = supplierRooms.filter(room => !mappedSupplierRoomIds.has(room.supplierRoomId));
   let unmappedRoomsCount = unmappedRooms.length;
 
+  const endTime = Date.now(); // Capture end time
+  const duration = endTime - startTime; // Calculate duration in ms
+
   return {
     Results: results,
     UnmappedRooms: unmappedRooms.length > 0 ? unmappedRooms : { Message: "There are no unmapped rooms" },
@@ -395,8 +403,9 @@ function mapRooms(referenceCatalog, inputCatalog) {
       SecondPassMatches: secondPassMatchCount,
       thirdPassMatches: thirdPassMatchCount,
       MappedSupplierRooms: firstPassMatchCount + secondPassMatchCount + thirdPassMatchCount,
-      UnmappedSupplierRooms: unmappedRoomsCount
-    }
+      UnmappedSupplierRooms: unmappedRoomsCount,
+    },
+    ExecutionDuration: `${duration}ms`
   };
 }
 
@@ -446,6 +455,7 @@ function matchRooms(referenceRooms, supplierRooms, mappedSupplierRoomIds, result
 
 function isMatchBasedOnOutcome(outcome, pass) {
   //console.log("Outcome at start:", outcome); // Print the outcome at the beginning
+  //console.log("pass:", pass);
   let result; // Initialize a variable to hold the result
   // Check conditions based on the pass
   switch (pass) {
@@ -459,18 +469,18 @@ function isMatchBasedOnOutcome(outcome, pass) {
 
     case 'Second Pass':
       result = (outcome.matchedRoomType === true) &&
-        ((outcome.matchedRoomCategory === true || outcome.matchedRoomCategory === 'partial') &&
+        ((outcome.matchedRoomCategory === true || outcome.matchedRoomCategory === 'partial' || outcome.matchedRoomCategory === null) &&
           (outcome.matchedView === true || outcome.matchedView === null) &&
           (outcome.matchedAmenities === true || outcome.matchedAmenities === null || outcome.matchedAmenities === 'partial') &&
           (outcome.bedTypes === true || outcome.bedTypes === 'partial' || outcome.bedTypes === null));
       break;
 
     case 'Third Pass':
-      result = (outcome.matchedRoomType === true) &&
-        (outcome.matchedRoomCategory === true || outcome.matchedRoomCategory === null || outcome.matchedRoomCategory === 'supplierInfo') &&
-        (outcome.matchedView === true || outcome.matchedView === null || outcome.matchedView === 'supplierInfo') &&
-        (outcome.matchedAmenities === true || outcome.matchedAmenities === null || outcome.matchedAmenities === 'supplierInfo' || outcome.matchedAmenities === 'partial') &&
-        (outcome.bedTypes === true || outcome.bedTypes === 'partial' || outcome.bedTypes === null || outcome.bedTypes === 'supplierInfo');
+      result = (outcome.matchedRoomType === true || outcome.matchedRoomType === 'partial') &&
+        (outcome.matchedRoomCategory === true || outcome.matchedRoomCategory === null || outcome.matchedRoomCategory === 'supplierInfo' || outcome.matchedRoomCategory === 'refInfo') &&
+        (outcome.matchedView === true || outcome.matchedView === null || outcome.matchedView === 'supplierInfo' || outcome.matchedView === 'refInfo') &&
+        (outcome.matchedAmenities === true || outcome.matchedAmenities === null || outcome.matchedAmenities === 'refInfo' || outcome.matchedAmenities === 'supplierInfo' || outcome.matchedAmenities === 'partial') &&
+        (outcome.bedTypes === true || outcome.bedTypes === 'partial' || outcome.bedTypes === null || outcome.bedTypes === 'supplierInfo' || outcome.bedTypes === 'refInfo');
       break;
 
     default:
