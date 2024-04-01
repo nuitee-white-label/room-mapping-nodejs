@@ -40,16 +40,18 @@ function extractRoomType(roomName) {
         'trpl': 'triple',
         'qd': 'quad',
         'quad': 'quad room',
-        'quadruple': 'quad room'
+        'quadruple': 'quad room',
       };
       return abbreviationMap[match] || match;
     })
+    .replace(/\broom only\b/g, ' ')
     .trim();
 
   if (normalizedRoomName.includes("communicating double rooms")) {
     let type = "connected rooms"
     return type;
   }
+
   if (normalizedRoomName.includes("family")) {
 
     let type = "family room"
@@ -57,17 +59,18 @@ function extractRoomType(roomName) {
   }
 
   // Improved fallback logic for 'single', 'double', 'triple', 'quad'
-  if (/(single|double|triple|quad|)(?!\s+(bed|sofa|sofabed))/.test(normalizedRoomName)) {
+  if (/(single|double|triple|quad)(?!\s+(bed|sofa|sofabed|murphy))/.test(normalizedRoomName)) {
     // If matched at the start and not followed by bed/sofa/sofabed, return it as room type
     let type = RegExp.$1 + ' ' + "room";
-    return type
+    return type;
   }
-
-  if (/(|twin|)(?!\s+(bed|sofa|sofabed))/.test(normalizedRoomName)) {
-    // If matched at the start and not followed by bed/sofa/sofabed, return it as room type
-    let type = "double" + ' ' + "room";
-    return type
-  }
+  
+  
+  if (/twin(?!\s+(bed|sofa|sofabed))/.test(normalizedRoomName)) {
+    // This will now only match if "twin" is present and not followed by "bed", "sofa", or "sofabed"
+    let type = "twin room";
+    return type;
+  }  
 
   // Synonyms normalization, expanded to include more variations
   const synonyms = {
@@ -91,7 +94,7 @@ function extractRoomType(roomName) {
     'suite', 'single room', 'double room', 'triple room', 'quad room', 'family room',
     'shared room', 'private room', 'studio room', 'apartment', 'villa', 'bungalow',
     'king room', 'queen room', 'cottage', 'penthouse', 'loft', 'cabin', 'chalet', 'mansion',
-    'duplex', 'guesthouse', 'hostel', 'accessible room', 'connected rooms', 'studio'
+    'duplex', 'guesthouse', 'hostel', 'accessible room', 'connected rooms', 'studio', 'appartment'
     // Ensure these are already in standard form
   ];
 
@@ -144,7 +147,7 @@ function extractRoomCategory(roomName) {
     'family-friendly', 'romantic', 'honeymoon',
     'business class', 'premium', 'boutique', 'historic', 'modern',
     'oceanfront', 'beachfront', 'executive club',
-    'high floor', 'low floor',
+    'high floor', 'low floor', 'prestige','singular','style', 'privilege','design',
     'balcony',
   ];
 
@@ -172,7 +175,7 @@ function extractView(roomName) {
     'city view', 'sea view', 'garden view', 'courtyard view', 'mountain view',
     'beachfront', 'pool view', 'lake view', 'river view', 'panoramic view',
     'ocean view', 'forest view', 'park view', 'street view', 'skyline view',
-    'terrace view', 'courtyard area', 'empire state view', 'fifth avenue'
+    'terrace view', 'courtyard area', 'empire state view', 'fifth avenue', 'seine river view'
   ];
 
   // Normalize the room name for consistent comparison
@@ -373,7 +376,7 @@ function mapRooms(referenceCatalog, inputCatalog) {
     .filter(refRoom => !/^Room\s*#\d+$/.test(refRoom.roomName))
     .map(refRoom => ({ ...refRoom, ...normalizeRoomName(refRoom.roomName) }));
 
-  //console.log(filteredReferenceRooms);
+  console.log(filteredReferenceRooms);
 
   const supplierRooms = inputCatalog[0].supplierRoomInfo
     .map(room => ({ ...room, ...normalizeRoomName(room.supplierRoomName) }));
