@@ -59,14 +59,19 @@ function extractRoomType(roomName) {
   }
 
   // Improved fallback logic for 'single', 'double', 'triple', 'quad'
-  if (/(single|double|triple|quad)(?!\s+(bed|sofa|sofabed|murphy))/.test(normalizedRoomName)) {
-    // If matched at the start and not followed by bed/sofa/sofabed, return it as room type
-    let type = RegExp.$1 + ' ' + "room";
-    return type;
+  let match = normalizedRoomName.match(/\b(single|double|triple|quad)\b/i);
+  if (match) {
+    let indexAfterMatch = match.index + match[0].length; // Calculate the index immediately after the match
+    let subsequentText = normalizedRoomName.slice(indexAfterMatch); // Extract subsequent text
+    // Verify if not immediately describing a bed type, to consider as a room type
+    if (!/\b(bed|sofa|sofabed|murphy|beds)\b/i.test(subsequentText)) {
+      return match[1] + ' room'; // Consider it as room type
+    }
   }
+
   
   
-  if (/twin(?!\s+(bed|sofa|sofabed))/.test(normalizedRoomName)) {
+  if (/twin(?!\s+(bed|sofa|sofabed|beds))/.test(normalizedRoomName)) {
     // This will now only match if "twin" is present and not followed by "bed", "sofa", or "sofabed"
     let type = "twin room";
     return type;
@@ -79,7 +84,6 @@ function extractRoomType(roomName) {
     'family': 'family room',
     'connected': 'connected rooms',
     'communicating rooms': 'connected rooms',
-    'Disability access': 'accessible',
     // Extend with more synonyms as needed
   };
 
@@ -132,6 +136,7 @@ function extractRoomCategory(roomName) {
     'low-rise': 'low floor',
     'ground floor': 'low floor',
     'with a view': 'balcony',
+    'disability access': 'accessible',
     // Add other synonyms or similar terms as needed
   };
 
@@ -148,7 +153,7 @@ function extractRoomCategory(roomName) {
     'business class', 'premium', 'boutique', 'historic', 'modern',
     'oceanfront', 'beachfront', 'executive club',
     'high floor', 'low floor', 'prestige','singular','style', 'privilege','design',
-    'balcony',
+    'balcony', 'accessible'
   ];
 
   // Collect all matching categories
@@ -202,8 +207,8 @@ function extractView(roomName) {
 
 function extractBedTypes(roomName) {
   const bedTypes = [
-    'single bed', 'double bed', 'queen bed', 'king bed', 'twin bed', 'twin beds',
-    'bunk bed', 'double sofa bed', 'sofa bed', 'futon', 'murphy bed',
+    'single bed', 'double bed', 'queen bed', 'king bed', 'twin bed', 'twin beds', 'double beds',
+    'bunk bed', 'double sofa bed', 'sofa bed', 'futon', 'murphy bed', 'queen',
     'full bed', 'california king bed', 'kingsize', 'queensize', 'twin sofa bed', 'twin sofabed',
     'day bed', 'trundle bed', 'extra bed', 'cot', 'rollaway bed', 'single sofa bed', 'sofabed',
     'queen beds', 'king beds', 'kingsize bed', 'kingsize beds', 'queen size bed', 'queensize bed',
@@ -211,7 +216,7 @@ function extractBedTypes(roomName) {
   ].sort((a, b) => b.length - a.length); // Ensure longer (more specific) names are matched first
 
   const sizeAndTypeNormalization = {
-    'single bed': 'single', 'double bed': 'double', 'queen bed': 'queen',
+    'single bed': 'single', 'double bed': 'double', 'queen bed': 'queen', 'double beds': 'double',
     'king bed': 'king', 'twin bed': 'twin', 'twin beds': 'twin', 'bunk bed': 'bunk',
     'double sofa bed': 'double sofa', 'single sofa bed': 'single sofa',
     'sofa bed': 'single sofa', 'futon': 'futon', 'murphy bed': 'murphy',
@@ -224,8 +229,8 @@ function extractBedTypes(roomName) {
     // Additions to cover all specified bed types
     'queen size bed': 'queen', 'queen size beds': 'queen',
     'king size bed': 'king', 'king size beds': 'king',
-    'queensize bed': 'queen', 'queensize beds': 'queen',
-    'kingsize bed': 'king', 'kingsize beds': 'king',
+    'queensize bed': 'queen', 'queensize beds': 'queen', 'queen': 'queen',
+    'kingsize bed': 'king', 'kingsize beds': 'king', 
   };
 
   roomName = roomName.toLowerCase();
@@ -525,7 +530,7 @@ function addMatchToResults(refRoom, match, results) {
 //Test route
 app.get('/', async (req, res) => {
   res.status(200).send({
-    message: 'Hello from Nuitee room mapping API v0.4 !',
+    message: 'Hello from Nuitee room mapping API v0.45 !',
   });
 });
 
